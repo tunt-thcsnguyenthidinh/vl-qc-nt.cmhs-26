@@ -1,0 +1,689 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Quy chế phối hợp Nhà trường – BĐD CMHS 2026–2027 | Trường THCS Văn Lương</title>
+<meta name="description" content="Quy chế phối hợp giữa Nhà trường và Ban đại diện cha mẹ học sinh Trường THCS Văn Lương, năm học 2026–2027 — tóm tắt dễ hiểu dành cho phụ huynh.">
+<style>
+  * { margin:0; padding:0; box-sizing:border-box; }
+  html { scroll-behavior:smooth; -webkit-text-size-adjust:100%; }
+  body {
+    font-family: "Segoe UI", "Helvetica Neue", Arial, "Noto Sans", sans-serif;
+    background:#eef2f7; color:#1f2a37; line-height:1.7; font-size:17px;
+  }
+  .page { max-width:1080px; margin:0 auto; background:#fff; box-shadow:0 0 40px rgba(11,61,145,.08); }
+  section { scroll-margin-top:84px; }
+
+  /* STICKY NAV */
+  .topnav {
+    position:sticky; top:0; z-index:100;
+    background:#0b3d91; color:#fff;
+    display:flex; align-items:center; gap:8px;
+    padding:0 16px; height:60px;
+    box-shadow:0 2px 12px rgba(0,0,0,.18);
+  }
+  .topnav .brand { font-weight:800; font-size:16px; white-space:nowrap; margin-right:6px; }
+  .topnav .brand span { color:#ffd166; }
+  .topnav .links { display:flex; gap:4px; overflow-x:auto; scrollbar-width:none; flex:1; }
+  .topnav .links::-webkit-scrollbar { display:none; }
+  .topnav .links a {
+    color:#fff; text-decoration:none; font-size:14.5px; font-weight:600;
+    padding:10px 12px; border-radius:10px; white-space:nowrap;
+  }
+  .topnav .links a:active, .topnav .links a:hover { background:rgba(255,255,255,.16); }
+  .menu-btn {
+    display:none; background:rgba(255,255,255,.14); border:1px solid rgba(255,255,255,.45);
+    color:#fff; font-size:22px; border-radius:12px; width:50px; height:50px;
+    cursor:pointer; flex-shrink:0; margin-left:auto;
+  }
+  .menu-btn:active { background:rgba(255,255,255,.28); }
+  .mobile-menu {
+    display:none; position:absolute; top:60px; left:0; right:0; z-index:101;
+    background:#0a357e; flex-direction:column; padding:10px 14px 14px;
+    box-shadow:0 14px 28px rgba(0,0,0,.3); max-height:70vh; overflow-y:auto;
+  }
+  .mobile-menu.open { display:flex; }
+  .mobile-menu a {
+    color:#fff; text-decoration:none; font-size:16.5px; font-weight:600;
+    padding:14px 12px; border-radius:10px; min-height:54px;
+    display:flex; align-items:center; border-bottom:1px solid rgba(255,255,255,.08);
+  }
+  .mobile-menu a:active { background:rgba(255,255,255,.14); }
+
+  /* HERO */
+  .hero {
+    background: linear-gradient(135deg, #0b3d91 0%, #1a6fd4 55%, #0aa1dd 100%);
+    color:#fff; padding:64px 40px 48px; position:relative; overflow:hidden;
+  }
+  .hero::before{
+    content:"🤝💬"; position:absolute; right:24px; bottom:8px; font-size:120px; opacity:.14;
+    transform:rotate(-8deg); pointer-events:none;
+  }
+  .hero::after{
+    content:""; position:absolute; right:-60px; top:-60px; width:300px; height:300px;
+    border-radius:50%; background:rgba(255,255,255,.08);
+  }
+  .hero .school { font-size:15px; letter-spacing:2px; text-transform:uppercase; opacity:.92; margin-bottom:8px; }
+  .hero h1 { font-size:clamp(28px, 6.5vw, 44px); line-height:1.25; margin-bottom:12px; font-weight:800; }
+  .hero .sub { font-size:clamp(15px, 2.6vw, 17.5px); opacity:.94; max-width:780px; }
+  .hero .draft {
+    display:inline-block; margin-top:16px; background:#ffb703; color:#1f2a37;
+    font-weight:700; font-size:14px; padding:8px 18px; border-radius:24px;
+    text-transform:uppercase; letter-spacing:1px;
+  }
+  .cta-row { display:flex; gap:10px; margin-top:20px; flex-wrap:wrap; }
+  .cta {
+    display:inline-flex; align-items:center; justify-content:center; gap:8px;
+    min-height:48px; padding:10px 20px;
+    border-radius:14px; font-weight:700; font-size:16px; text-decoration:none;
+  }
+  .cta.primary { background:#ffb703; color:#1f2a37; box-shadow:0 4px 14px rgba(0,0,0,.18); }
+  .cta.parent {
+    background:linear-gradient(135deg,#ff6b9d,#d6336c); color:#fff;
+    box-shadow:0 4px 16px rgba(214,51,108,.45);
+    animation:ctaPulse 2.2s ease-in-out infinite;
+  }
+  @keyframes ctaPulse {
+    0%,100% { box-shadow:0 4px 16px rgba(214,51,108,.45), 0 0 0 0 rgba(255,107,157,.45); }
+    50% { box-shadow:0 4px 16px rgba(214,51,108,.45), 0 0 0 10px rgba(255,107,157,0); }
+  }
+  .cta:active { transform:scale(.97); }
+  @media (prefers-reduced-motion: reduce){ .cta.parent{ animation:none; } }
+  .stats { display:grid; grid-template-columns:repeat(3,1fr); gap:12px; margin-top:24px; }
+  .stat {
+    display:flex; align-items:center; gap:12px;
+    background:rgba(255,255,255,.12); border:1px solid rgba(255,255,255,.28);
+    border-radius:16px; padding:12px 14px;
+  }
+  .stat .ic {
+    width:46px; height:46px; flex-shrink:0; border-radius:13px;
+    background:rgba(255,255,255,.2); display:flex; align-items:center; justify-content:center;
+    font-size:24px;
+  }
+  .stat .num { font-size:23px; font-weight:800; line-height:1.15; }
+  .stat .lbl { font-size:12.5px; opacity:.93; line-height:1.35; }
+
+  /* TOC — dropdown */
+  .toc { padding:28px 40px 8px; }
+  .toc h3 { font-size:18px; color:#0b3d91; margin-bottom:14px; }
+  .toc-select {
+    width:100%; min-height:60px; padding:12px 52px 12px 18px;
+    font-size:16.5px; font-weight:600; color:#0b3d91; font-family:inherit;
+    background-color:#f2f6fb; border:2px solid #c9d9ef; border-radius:14px;
+    appearance:none; -webkit-appearance:none; cursor:pointer;
+    background-image:url('data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="%230b3d91" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><path d="M6 9l6 6 6-6"/></svg>');
+    background-repeat:no-repeat; background-position:right 16px center;
+  }
+  .toc-select:focus { outline:none; border-color:#1565d8; box-shadow:0 0 0 3px rgba(21,101,216,.18); }
+
+  /* SECTION */
+  section { padding:36px 40px; }
+  section.alt { background:#f6f9fd; }
+  .sec-head { display:flex; align-items:center; gap:16px; margin-bottom:22px; }
+  .sec-num {
+    width:56px; height:56px; border-radius:16px; display:flex; align-items:center; justify-content:center;
+    font-size:27px; color:#fff; flex-shrink:0; box-shadow:0 4px 10px rgba(0,0,0,.12);
+  }
+  .sec-head h2 { font-size:clamp(20px, 3.8vw, 26px); color:#0b3d91; line-height:1.35; }
+  .sec-head p { font-size:14.5px; color:#5b6b7c; }
+  .c1 .sec-num { background:#1565d8; } .c2 .sec-num { background:#0a9b6c; }
+  .c3 .sec-num { background:#9c5cdd; } .c4 .sec-num { background:#e03131; }
+  .c5 .sec-num { background:#e67700; } .c6 .sec-num { background:#0aa1dd; }
+  .c7 .sec-num { background:#5f3dc4; }
+
+  h3.block-title { font-size:18.5px; color:#0b3d91; margin:24px 0 14px; }
+  h3.block-title:first-child { margin-top:0; }
+
+  /* CARDS */
+  .grid { display:grid; gap:16px; }
+  .g2 { grid-template-columns:1fr 1fr; }
+  .g3 { grid-template-columns:1fr 1fr 1fr; }
+  .card {
+    background:#fff; border-radius:16px; padding:20px 22px;
+    border:1px solid #e2e8f0; box-shadow:0 2px 8px rgba(11,61,145,.06);
+  }
+  .card h3 { font-size:17px; color:#0b3d91; margin-bottom:10px; }
+  .card ul { margin-left:20px; font-size:16px; }
+  .card li { margin-bottom:7px; }
+  .card.icon-top { text-align:center; }
+  .card.icon-top .big {
+    font-size:40px; margin-bottom:10px; display:inline-flex; align-items:center; justify-content:center;
+    width:76px; height:76px; border-radius:50%; background:#eef4fd;
+  }
+  .card.icon-top h3 { text-align:center; }
+  .card.icon-top ul { text-align:left; }
+
+  /* NUMBERED LIST */
+  .nlist { display:grid; gap:12px; }
+  .nitem {
+    display:flex; gap:14px; background:#fff; border:1px solid #e2e8f0;
+    border-radius:14px; padding:14px 18px; box-shadow:0 2px 8px rgba(11,61,145,.05);
+  }
+  .nitem .n {
+    width:36px; height:36px; border-radius:50%; flex-shrink:0;
+    display:flex; align-items:center; justify-content:center;
+    font-weight:800; font-size:17px; color:#fff; background:#1565d8;
+  }
+  .nitem p { font-size:16px; }
+  .nitem.red .n { background:#e03131; }
+  .nitem.amber .n { background:#e67700; }
+  .nitem.green .n { background:#0a9b6c; }
+
+  /* STEPS */
+  .ladder { display:grid; grid-template-columns:repeat(3,1fr); gap:16px; }
+  .step { border-radius:16px; padding:22px; color:#fff; }
+  .step .lvl { font-size:13.5px; text-transform:uppercase; letter-spacing:1px; opacity:.88; }
+  .step h3 { font-size:19px; margin:8px 0 10px; }
+  .step p { font-size:15.5px; }
+  .s1 { background:linear-gradient(135deg,#9c5cdd,#6d28a8); }
+  .s2 { background:linear-gradient(135deg,#5f3dc4,#3b1f8f); }
+  .s3 { background:linear-gradient(135deg,#3b5bdb,#2b3f9e); }
+
+  /* HIGHLIGHT */
+  .highlight {
+    background:linear-gradient(135deg,#fff8e1,#ffecb3); border:2px solid #ffb703;
+    border-radius:18px; padding:26px;
+  }
+  .highlight h3 { color:#8a5a00; font-size:19px; margin-bottom:10px; }
+  .highlight p, .highlight li { font-size:16.5px; }
+  .highlight ul { margin-left:20px; }
+  .highlight li { margin-bottom:6px; }
+  .highlight.blue { background:linear-gradient(135deg,#e7f0fd,#d3e3fb); border-color:#1565d8; }
+  .highlight.blue h3 { color:#0b3d91; }
+  .highlight.red { background:linear-gradient(135deg,#fdecec,#fbd5d5); border-color:#e03131; }
+  .highlight.red h3 { color:#a61e4d; }
+  .highlight + .highlight { margin-top:16px; }
+
+  /* TWO COL */
+  .two-col { display:grid; grid-template-columns:1fr 1fr; gap:16px; }
+  .panel { border-radius:16px; padding:22px 24px; }
+  .panel.duties { background:#e7f0fd; border:1px solid #a9c8f5; }
+  .panel.rights { background:#e6f7ef; border:1px solid #9bdfba; }
+  .panel h3 { font-size:18px; margin-bottom:12px; color:#0b3d91; }
+  .panel ul { margin-left:20px; font-size:16px; }
+  .panel li { margin-bottom:8px; }
+
+  /* BACK TO TOP */
+  #toTop {
+    position:fixed; right:18px; bottom:18px; z-index:100;
+    width:56px; height:56px; border-radius:50%; border:none;
+    background:#0b3d91; color:#fff; font-size:24px; cursor:pointer;
+    box-shadow:0 4px 14px rgba(0,0,0,.25); display:none;
+  }
+  #toTop.show { display:block; }
+
+  /* FOOTER */
+  .foot { background:#0b3d91; color:#fff; padding:34px 40px; font-size:15.5px; }
+  .foot .cols { display:flex; gap:30px; flex-wrap:wrap; }
+  .foot .col { flex:1; min-width:220px; }
+  .foot h4 { font-size:16px; margin-bottom:10px; color:#ffd166; }
+  .foot ul { margin-left:20px; opacity:.94; }
+  .foot li { margin-bottom:5px; }
+  .credit { text-align:center; margin-top:24px; font-size:14px; opacity:.85; border-top:1px solid rgba(255,255,255,.2); padding-top:18px; }
+
+  /* MOBILE */
+  @media (max-width:760px){
+    body { font-size:16.5px; }
+    .g2,.g3,.ladder,.two-col{ grid-template-columns:1fr; }
+    .topnav .links { display:none; }
+    .menu-btn { display:block; }
+    .cta-row { flex-direction:column; }
+    .cta { width:100%; }
+    .stats { grid-template-columns:1fr 1fr; gap:10px; }
+    .stat { padding:10px 12px; gap:10px; }
+    .stat .ic { width:42px; height:42px; font-size:22px; }
+    .hero{ padding:48px 22px 36px; }
+    section{ padding:30px 20px; }
+    .toc{ padding:22px 20px 6px; }
+    .foot{ padding:28px 20px; }
+    .topnav .brand { font-size:14.5px; }
+    .highlight { padding:22px 20px; }
+  }
+  @media print{
+    body{ background:#fff; } .page{ max-width:none; box-shadow:none; }
+    .topnav, .toc, #toTop, .cta-row { display:none; }
+  }
+</style>
+</head>
+<body>
+<div class="page">
+
+  <!-- STICKY NAV -->
+  <nav class="topnav">
+    <div class="brand">🏫 Trường THCS <span>Văn Lương</span></div>
+    <div class="links">
+      <a href="#muc-dich">🎯 Mục đích</a>
+      <a href="#noi-dung">🤲 Nội dung</a>
+      <a href="#to-chuc">🏛️ Tổ chức</a>
+      <a href="#cam-lam">⛔ Không được làm</a>
+      <a href="#tai-chinh">💰 Tài chính</a>
+      <a href="#phan-anh">📞 Phản ánh</a>
+      <a href="#khen-thuong">🏅 Khen thưởng</a>
+    </div>
+    <button class="menu-btn" id="menuBtn" aria-label="Mở menu điều hướng" aria-expanded="false">☰</button>
+    <div class="mobile-menu" id="mobileMenu">
+      <a href="#muc-dich">🎯 Mục đích &amp; nguyên tắc</a>
+      <a href="#noi-dung">🤲 Nội dung phối hợp</a>
+      <a href="#to-chuc">🏛️ Tổ chức &amp; trách nhiệm</a>
+      <a href="#cam-lam">⛔ 7 việc không được làm</a>
+      <a href="#tai-chinh">💰 Tài chính minh bạch</a>
+      <a href="#phan-anh">📞 Phản ánh &amp; đối thoại</a>
+      <a href="#khen-thuong">🏅 Khen thưởng &amp; thi hành</a>
+    </div>
+  </nav>
+
+  <!-- HERO -->
+  <header class="hero">
+    <div class="school">Trường THCS Văn Lương · Xã Long Điền · Thành phố Hồ Chí Minh</div>
+    <h1>🤝 Quy chế phối hợp giữa Nhà trường và <br>Ban đại diện cha mẹ học sinh<br>⏳Năm học 2026–2027</h1>
+    <div class="sub">Dự thảo Quyết định ban hành Quy chế — Căn cứ Luật Giáo dục 2019 (sửa đổi 2025), Thông tư 55/2011 (Điều lệ BĐD CMHS), Thông tư 15/2026, 19/2025, 22/2021 và Công văn 7608/SGDĐT-KHTC.</div>
+    <span class="draft">Dự thảo · Chờ ký ban hành</span>
+    <div class="cta-row">
+      <a class="cta primary" href="#muc-dich">📖 Xem toàn bộ quy chế</a>
+      <a class="cta parent" href="#tai-chinh">💰 Tài chính minh bạch →</a>
+    </div>
+    <div class="stats">
+      <div class="stat"><div class="ic">📘</div><div><div class="num">6</div><div class="lbl">chương quy chế</div></div></div>
+      <div class="stat"><div class="ic">📄</div><div><div class="num">21</div><div class="lbl">điều quy định</div></div></div>
+      <div class="stat"><div class="ic">⛔</div><div><div class="num">7</div><div class="lbl">việc BĐD không được làm</div></div></div>
+      <div class="stat"><div class="ic">💰</div><div><div class="num">0₫</div><div class="lbl">quỹ phụ huynh</div></div></div>
+      <div class="stat"><div class="ic">🗓️</div><div><div class="num">01 năm</div><div class="lbl">nhiệm kỳ BĐD</div></div></div>
+      <div class="stat"><div class="ic">📞</div><div><div class="num">03–07</div><div class="lbl">ngày xử lý phản ánh</div></div></div>
+    </div>
+  </header>
+
+  <!-- MỤC LỤC -->
+  <nav class="toc" aria-label="Mục lục">
+    <h3>📑 Mục lục</h3>
+    <select class="toc-select" id="tocSelect" aria-label="Chọn mục để xem">
+      <option value="">— Chạm để chọn mục cần xem —</option>
+      <option value="#muc-dich">🎯 Mục đích &amp; nguyên tắc phối hợp</option>
+      <option value="#noi-dung">🤲 Nội dung phối hợp</option>
+      <option value="#to-chuc">🏛️ Tổ chức, nhiệm kỳ &amp; trách nhiệm</option>
+      <option value="#cam-lam">⛔ 7 việc BĐD CMHS không được làm</option>
+      <option value="#tai-chinh">💰 Tài chính minh bạch</option>
+      <option value="#phan-anh">📞 Phản ánh &amp; đối thoại</option>
+      <option value="#khen-thuong">🏅 Khen thưởng &amp; thi hành</option>
+    </select>
+  </nav>
+
+  <!-- 1. MỤC ĐÍCH & NGUYÊN TẮC -->
+  <section class="c1" id="muc-dich">
+    <div class="sec-head">
+      <div class="sec-num">🎯</div>
+      <div><h2>Mục đích &amp; nguyên tắc phối hợp</h2><p>Chương I — Điều 2, 3</p></div>
+    </div>
+
+    <h3 class="block-title">🎯 Mục đích phối hợp</h3>
+    <div class="nlist">
+      <div class="nitem"><div class="n">1</div><p>Thiết lập mối quan hệ phối hợp <b>thường xuyên, chặt chẽ, đồng bộ và hiệu quả</b> giữa Nhà trường và Ban đại diện cha mẹ học sinh nhằm thực hiện thắng lợi nhiệm vụ năm học 2026–2027, nâng cao chất lượng giáo dục toàn diện (đạo đức, trí tuệ, thể chất, thẩm mỹ và kỹ năng sống) cho học sinh.</p></div>
+      <div class="nitem"><div class="n">2</div><p>Phát huy vai trò <b>cầu nối</b> của Ban đại diện cha mẹ học sinh trong việc đồng hành cùng Nhà trường xây dựng môi trường giáo dục <b>an toàn, lành mạnh, thân thiện, dân chủ, kỷ cương</b>, phòng chống bạo lực học đường và các tệ nạn xã hội.</p></div>
+      <div class="nitem"><div class="n">3</div><p>Tuyên truyền, nâng cao nhận thức và trách nhiệm của cha mẹ học sinh trong việc phối hợp với Nhà trường chăm sóc, quản lý, giáo dục học sinh; đồng thời huy động các nguồn lực hợp pháp phục vụ hoạt động giáo dục theo đúng quy định của pháp luật.</p></div>
+    </div>
+
+    <h3 class="block-title">📏 6 nguyên tắc phối hợp</h3>
+    <div class="grid g2">
+      <div class="card"><h3>⚖️ Tuân thủ pháp luật &amp; dân chủ</h3><p style="font-size:16px">Phối hợp trên cơ sở tôn trọng, hợp tác bình đẳng, công khai, minh bạch; bảo đảm đúng chức năng, nhiệm vụ, quyền hạn theo Điều lệ Trường trung học và Điều lệ Ban đại diện cha mẹ học sinh do Bộ GD&amp;ĐT ban hành.</p></div>
+      <div class="card"><h3>🔄 Không thay thế hoặc chuyển giao trách nhiệm</h3><p style="font-size:16px">Hoạt động phối hợp không làm thay thế hoặc chuyển giao trách nhiệm quản lý nhà nước, quản lý hành chính, điều hành chuyên môn của Nhà trường; đồng thời không làm thay trách nhiệm nuôi dưỡng, chăm sóc, quản lý, giáo dục con em của cha mẹ học sinh.</p></div>
+      <div class="card"><h3>🚧 Không can thiệp sâu vào chuyên môn</h3><p style="font-size:16px">Ban đại diện cha mẹ học sinh <b>không can thiệp</b> vào tổ chức bộ máy, quản trị, điều hành, công tác nghiệp vụ chuyên môn dạy học, kiểm tra, đánh giá học sinh và công tác nhân sự của Nhà trường.</p></div>
+      <div class="card"><h3>💵 Không thu, quản lý tiền quỹ — tự nguyện hoàn toàn</h3><p style="font-size:16px">Ban đại diện cha mẹ học sinh <b>không</b> đứng ra thu, tiếp nhận hay quản lý tiền hỗ trợ (tiền quỹ); không thành lập các loại “Quỹ trường”, “Quỹ lớp”, “Quỹ phụ huynh”. Mọi sự hỗ trợ phải bảo đảm <b>hoàn toàn tự nguyện</b>, không cào bằng, không ấn định mức tối thiểu hay tối đa, không phát sinh nghĩa vụ tài chính trái quy định.</p></div>
+      <div class="card"><h3>🔒 Bảo mật dữ liệu cá nhân</h3><p style="font-size:16px">Tuân thủ nghiêm ngặt các quy định pháp luật về an toàn thông tin, bảo vệ dữ liệu cá nhân, quyền riêng tư, bí mật đời tư của học sinh và gia đình học sinh.</p></div>
+      <div class="card"><h3>🤗 Không phân biệt đối xử</h3><p style="font-size:16px">Tuyệt đối <b>không phân biệt đối xử</b> hoặc gây bất lợi đối với học sinh và cha mẹ học sinh vì lý do tham gia hay không tham gia các hoạt động hỗ trợ.</p></div>
+    </div>
+  </section>
+
+  <!-- 2. NỘI DUNG PHỐI HỢP -->
+  <section class="c2 alt" id="noi-dung">
+    <div class="sec-head">
+      <div class="sec-num">🤲</div>
+      <div><h2>Nội dung phối hợp</h2><p>Chương II — Điều 4, 5, 6, 7, 8</p></div>
+    </div>
+    <div class="grid g2">
+      <div class="card icon-top">
+        <div class="big">🌱</div>
+        <h3>Giáo dục đạo đức, lối sống</h3>
+        <ul>
+          <li><b>Nắm bắt tâm lý:</b> GVCN và cha mẹ duy trì liên lạc thường xuyên, trao đổi về diễn biến tâm sinh lý, sức khỏe, thái độ học tập, quan hệ bạn bè và các biểu hiện bất thường để phối hợp uốn nắn kịp thời.</li>
+          <li><b>Văn hóa ứng xử:</b> nhà trường phổ biến công khai Nội quy học sinh, Quy tắc ứng xử văn hóa học đường đến từng gia đình; cha mẹ nhắc con đi học đúng giờ, mặc đồng phục đúng quy định, giữ vệ sinh cá nhân, tôn trọng thầy cô, đoàn kết bạn bè.</li>
+          <li><b>Xử lý vi phạm:</b> khi HS vi phạm, GVCN <b>thông báo trực tiếp</b> đến cha mẹ; cha mẹ tham gia buổi làm việc, <b>ký xác nhận bản tự kiểm điểm</b> và cam kết hỗ trợ con khắc phục (theo TT 19/2025). Tuyệt đối không áp dụng biện pháp kỷ luật mang tính bạo lực, xúc phạm danh dự.</li>
+          <li><b>Rèn luyện hè:</b> phối hợp với Đoàn Thanh niên và chính quyền địa phương bàn giao, theo dõi, quản lý, giáo dục HS chưa đạt rèn luyện trong dịp nghỉ hè tại địa phương.</li>
+        </ul>
+      </div>
+      <div class="card icon-top">
+        <div class="big">📚</div>
+        <h3>Học tập &amp; đánh giá</h3>
+        <ul>
+          <li><b>Theo dõi kết quả:</b> nhà trường cập nhật kết quả học tập, rèn luyện định kỳ (giữa kỳ, cuối kỳ) và thường xuyên qua Sổ theo dõi và đánh giá học sinh, Sổ liên lạc điện tử hoặc tài khoản tra cứu chính thức.</li>
+          <li>Cha mẹ định kỳ kiểm tra việc học ở nhà, tạo góc học tập yên tĩnh, trang bị đầy đủ sách vở, dụng cụ và đôn đốc con hoàn thành nhiệm vụ học tập.</li>
+          <li>GV thông báo cụ thể các môn HS còn hạn chế để gia đình phối hợp kèm cặp; BĐD CMHS động viên, khen thưởng kịp thời HS có tiến bộ vượt bậc hoặc thành tích xuất sắc.</li>
+        </ul>
+      </div>
+      <div class="card icon-top">
+        <div class="big">🛡️</div>
+        <h3>An toàn trường học</h3>
+        <ul>
+          <li><b>An toàn giao thông:</b> cha mẹ cam kết <b>không giao xe máy từ 50cm³ trở lên</b> hoặc xe máy điện không đúng độ tuổi cho con điều khiển; đội mũ bảo hiểm đạt chuẩn cho con khi ngồi trên xe mô tô, gắn máy, xe máy điện; dừng, đỗ xe đúng nơi quy định khi đưa đón, không gây ùn tắc trước cổng trường.</li>
+          <li><b>Phòng chống bạo lực &amp; tệ nạn:</b> thiết lập <b>đường dây nóng</b> và kênh tiếp nhận phản ánh về nguy cơ bạo lực, xâm hại, bắt nạt trên mạng, tệ nạn xã hội; khi phát hiện nguy cơ, hai bên trao đổi, xác minh và phối hợp cơ quan chức năng xử lý triệt để.</li>
+        </ul>
+      </div>
+      <div class="card icon-top">
+        <div class="big">🏥</div>
+        <h3>Sức khỏe &amp; chính sách hỗ trợ</h3>
+        <ul>
+          <li><b>Khám sức khỏe định kỳ:</b> từ nguồn <b>ngân sách nhà nước</b> — nhà trường <b>tuyệt đối không thu</b> bất kỳ khoản tiền nào của phụ huynh; cha mẹ cung cấp chính xác tiền sử bệnh lý của con và theo dõi kết quả khám do y tế trường học thông báo.</li>
+          <li><b>Miễn, giảm học phí:</b> nhà trường công khai minh bạch chính sách; GVCN hướng dẫn gia đình diện chính sách (hộ nghèo, cận nghèo, dân tộc thiểu số, khuyết tật, mồ côi) hoàn thiện hồ sơ đề nghị cấp bù tiền miễn, giảm học phí và hỗ trợ chi phí học tập kịp thời, đúng quy định.</li>
+          <li><b>Mượn SGK:</b> phối hợp rà soát nhu cầu, tổ chức cho HS mượn sách giáo khoa từ thư viện, bảo đảm <b>100% học sinh có đủ sách</b> học tập.</li>
+        </ul>
+      </div>
+    </div>
+
+    <h3 class="block-title">🗓️ Hình thức phối hợp &amp; kênh trao đổi (Điều 8)</h3>
+    <div class="grid g2">
+      <div class="card">
+        <h3>Hội nghị &amp; cuộc họp định kỳ</h3>
+        <ul>
+          <li><b>Họp toàn thể cha mẹ học sinh lớp:</b> 03 lần/năm học (đầu năm học, kết thúc Học kỳ I, kết thúc năm học). Họp bất thường khi có ít nhất <b>50%</b> cha mẹ học sinh lớp yêu cầu.</li>
+          <li><b>Họp Ban đại diện CMHS trường:</b> định kỳ theo chương trình công tác năm học; họp bất thường khi có ít nhất 50% số thành viên hoặc Trưởng ban đề nghị.</li>
+        </ul>
+      </div>
+      <div class="card">
+        <h3>Các kênh thông tin chính thức</h3>
+        <ul>
+          <li>Sổ liên lạc điện tử, cổng thông tin điện tử của trường, ứng dụng kết nối chuyển đổi số chính thức do Nhà trường triển khai.</li>
+          <li>Trao đổi trực tiếp, gửi văn bản thông báo hoặc liên lạc qua điện thoại giữa GVCN và cha mẹ học sinh.</li>
+          <li>Hộp thư góp ý, buổi tiếp dân và đối thoại trực tiếp giữa Hiệu trưởng với Ban đại diện cha mẹ học sinh.</li>
+        </ul>
+      </div>
+    </div>
+  </section>
+
+  <!-- 3. TỔ CHỨC & TRÁCH NHIỆM -->
+  <section class="c3" id="to-chuc">
+    <div class="sec-head">
+      <div class="sec-num">🏛️</div>
+      <div><h2>Tổ chức, nhiệm kỳ &amp; trách nhiệm các bên</h2><p>Chương III — Điều 9, 10, 11, 12 · theo Thông tư 55/2011</p></div>
+    </div>
+
+    <h3 class="block-title">3 bước thành lập Ban đại diện CMHS trường</h3>
+    <div class="ladder">
+      <div class="step s1">
+        <div class="lvl">Bước 1</div>
+        <h3>🤝 Cử ra BĐD trường</h3>
+        <p>Hiệu trưởng họp với Trưởng ban và Phó trưởng ban của tất cả các Ban đại diện CMHS lớp để cử ra Ban đại diện CMHS trường (gồm các Trưởng ban và một số Phó trưởng ban BĐD lớp).</p>
+      </div>
+      <div class="step s2">
+        <div class="lvl">Bước 2</div>
+        <h3>🗳️ Kiện toàn ban</h3>
+        <p>Hiệu trưởng chủ trì cuộc họp đầu tiên của BĐD trường để Ban cử Trưởng ban, các Phó trưởng ban và cử các ủy viên phụ trách các mảng công tác.</p>
+      </div>
+      <div class="step s3">
+        <div class="lvl">Bước 3</div>
+        <h3>📋 Thông qua kế hoạch</h3>
+        <p>Trưởng ban BĐD trường chính thức điều hành cuộc họp toàn thể các Trưởng ban, Phó trưởng ban BĐD lớp để thông qua chương trình, kế hoạch hoạt động toàn trường cho năm học.</p>
+      </div>
+    </div>
+
+    <h3 class="block-title">Nhiệm kỳ &amp; vị trí pháp lý</h3>
+    <div class="highlight blue">
+      <h3>⏳ Nhiệm kỳ 01 năm học</h3>
+      <ul>
+        <li>Nhiệm kỳ của Ban đại diện CMHS lớp và trường là <b>01 năm học</b>; hết nhiệm kỳ khi BĐD năm học mới được đề cử ra.</li>
+        <li><b>Lớp 9 (cuối cấp):</b> BĐD lớp 9 hết nhiệm kỳ khi kết thúc năm học (sau khi xét hoàn thành chương trình giáo dục THCS).</li>
+        <li><b>Thay đổi giữa nhiệm kỳ:</b> bãi nhiệm, thay thế hoặc bổ sung thành viên BĐD lớp do <b>cuộc họp toàn thể cha mẹ học sinh lớp</b> quyết định; BĐD trường do <b>cuộc họp toàn thể BĐD trường</b> quyết định.</li>
+      </ul>
+    </div>
+    <div class="highlight red">
+      <h3>⚖️ Vị trí pháp lý của Ban đại diện CMHS</h3>
+      <p>Ban đại diện cha mẹ học sinh là tổ chức đại diện cho cha mẹ học sinh, được cử ra mỗi năm học để phối hợp với Nhà trường thực hiện các hoạt động giáo dục. <b>Ban đại diện CMHS không thuộc cơ cấu tổ chức của Nhà trường, không có tư cách pháp nhân, không có con dấu và không mở tài khoản ngân hàng riêng.</b></p>
+    </div>
+
+    <h3 class="block-title">🛡Trách nhiệm của Nhà trường</h3>
+    <div class="grid g2">
+      <div class="card">
+        <h3>👔 Hiệu trưởng</h3>
+        <ul>
+          <li>Chủ động tổ chức thực hiện phối hợp với cha mẹ học sinh; bố trí địa điểm, tạo điều kiện thuận lợi về cơ sở vật chất để BĐD họp và hoạt động.</li>
+          <li>Chỉ đạo GVCN phối hợp chặt chẽ với BĐD CMHS lớp; định kỳ làm việc với BĐD trường; tổ chức đối thoại khi cần thiết để lắng nghe ý kiến, giải quyết phản ánh, kiến nghị của cha mẹ.</li>
+          <li>Kiểm tra, giám sát, chấn chỉnh và <b>xử lý nghiêm</b> các hành vi vi phạm quy định về thu chi, lạm thu hoặc quyên góp trái quy định.</li>
+          <li><b>Tuyệt đối không</b> giao cho cha mẹ học sinh, BĐD CMHS hoặc các thành viên thực hiện các nhiệm vụ thuộc trách nhiệm quản trị, quản lý, điều hành, chuyên môn hoặc tài chính của Nhà trường.</li>
+        </ul>
+      </div>
+      <div class="card">
+        <h3>👩‍🏫 Giáo viên chủ nhiệm</h3>
+        <ul>
+          <li><b>Tối thiểu 01 lần/tháng</b> trao đổi thông tin về học tập, rèn luyện của học sinh với cha mẹ học sinh.</li>
+          <li>Chủ trì tổ chức Hội nghị cha mẹ học sinh lớp đầu năm học; phối hợp chuẩn bị nội dung cho các cuộc họp định kỳ.</li>
+          <li>Tiếp nhận, phản ánh trung thực, khách quan ý kiến của cha mẹ tới Ban Giám hiệu; phối hợp xử lý học sinh vi phạm theo đúng quy định.</li>
+          <li>Không giao cho cha mẹ học sinh hoặc BĐD CMHS thực hiện các nhiệm vụ chuyên môn của giáo viên.</li>
+        </ul>
+      </div>
+    </div>
+
+    <h3 class="block-title">⚖️ Nhiệm vụ &amp; quyền hạn của Ban đại diện CMHS trường</h3>
+    <div class="two-col">
+      <div class="panel duties">
+        <h3>📌 Nhiệm vụ</h3>
+        <ul>
+          <li>Phối hợp với Hiệu trưởng tổ chức thực hiện kế hoạch hoạt động giáo dục.</li>
+          <li>Tuyên truyền, phổ biến chủ trương, chính sách giáo dục, pháp luật đến cha mẹ học sinh.</li>
+          <li>Tập hợp, tổng hợp ý kiến, nguyện vọng chính đáng của cha mẹ học sinh để trao đổi, đối thoại với Hiệu trưởng.</li>
+          <li>Phối hợp tổ chức các hoạt động giáo dục có sự tham gia của cha mẹ học sinh; phối hợp quản lý học sinh rèn luyện hè tại địa phương.</li>
+        </ul>
+      </div>
+      <div class="panel rights">
+        <h3>✅ Quyền hạn</h3>
+        <ul>
+          <li>Quyết định triệu tập các cuộc họp Ban đại diện CMHS theo quy định sau khi thống nhất với Hiệu trưởng.</li>
+          <li>Đề xuất với Hiệu trưởng các giải pháp nâng cao chất lượng giáo dục và quản lý học sinh.</li>
+          <li>Đề nghị Hiệu trưởng tổ chức trao đổi, đối thoại về những vấn đề liên quan đến công tác chăm sóc, giáo dục học sinh.</li>
+        </ul>
+      </div>
+    </div>
+
+    <h3 class="block-title">Trách nhiệm &amp; quyền hạn của cha mẹ học sinh</h3>
+    <div class="two-col">
+      <div class="panel duties">
+        <h3>📌 Trách nhiệm</h3>
+        <ul>
+          <li>Nuôi dưỡng, quản lý, giáo dục và tạo điều kiện tốt nhất cho con em học tập, rèn luyện.</li>
+          <li>Tôn trọng nhà giáo, cán bộ, nhân viên nhà trường; chủ động trao đổi thông tin cần thiết, chính xác, kịp thời về tình hình của con em.</li>
+          <li>Thường xuyên theo dõi kết quả học tập, rèn luyện; <b>tham gia đầy đủ</b> các cuộc họp cha mẹ học sinh.</li>
+          <li><b>Bồi thường thiệt hại</b> theo quy định pháp luật nếu con em gây hư hỏng, mất mát tài sản của Nhà trường hoặc của người khác.</li>
+        </ul>
+      </div>
+      <div class="panel rights">
+        <h3>✅ Quyền hạn</h3>
+        <ul>
+          <li>Được Nhà trường cung cấp đầy đủ, chính xác thông tin liên quan trực tiếp đến việc học tập, rèn luyện và phát triển của con em.</li>
+          <li>Tự do <b>ứng cử, đề cử</b> vào Ban đại diện cha mẹ học sinh lớp.</li>
+          <li><b>Tự nguyện</b> quyết định việc tham gia hoặc không tham gia các hoạt động hỗ trợ; có quyền <b>từ chối</b> mọi khoản đóng góp, ủng hộ không tự nguyện hoặc trái quy định.</li>
+          <li>Đóng góp ý kiến, phản ánh, kiến nghị trực tiếp với nhà trường hoặc qua Ban đại diện CMHS về công tác giáo dục của Nhà trường.</li>
+        </ul>
+      </div>
+    </div>
+  </section>
+
+  <!-- 4. 7 VIỆC KHÔNG ĐƯỢC LÀM -->
+  <section class="c4 alt" id="cam-lam">
+    <div class="sec-head">
+      <div class="sec-num">⛔</div>
+      <div><h2>7 việc Ban đại diện CMHS không được làm</h2><p>Chương III — Điều 13</p></div>
+    </div>
+    <div class="nlist">
+      <div class="nitem red"><div class="n">1</div><p>Can thiệp vào tổ chức bộ máy, quản trị, điều hành, hoạt động chuyên môn, kế hoạch giảng dạy, kiểm tra, đánh giá học sinh và công tác nhân sự của Nhà trường.</p></div>
+      <div class="nitem red"><div class="n">2</div><p>Lợi dụng danh nghĩa Ban đại diện cha mẹ học sinh để thực hiện hành vi trái pháp luật, cản trở hoạt động giáo dục hoặc xâm phạm quyền, lợi ích hợp pháp của tổ chức, cá nhân.</p></div>
+      <div class="nitem red"><div class="n">3</div><p>Thành lập các loại quỹ trái quy định như “Quỹ trường”, “Quỹ lớp”, “Quỹ phụ huynh”; không đứng ra thu, tiếp nhận hoặc quản lý tiền hỗ trợ (tiền quỹ) từ cha mẹ học sinh dưới mọi hình thức.</p></div>
+      <div class="nitem red"><div class="n">4</div><p>Đặt ra các khoản đóng góp bắt buộc, ấn định hoặc phân bổ mức hỗ trợ bình quân, mức hỗ trợ tối thiểu, thời hạn phải đóng đối với cha mẹ học sinh.</p></div>
+      <div class="nitem red"><div class="n">5</div><p>Sử dụng danh nghĩa Ban đại diện cha mẹ học sinh để vận động tài trợ cho Nhà trường; thu, tiếp nhận, quản lý hoặc sử dụng kinh phí tài trợ dành cho Nhà trường.</p></div>
+      <div class="nitem red"><div class="n">6</div><p>Phân biệt đối xử hoặc gây bất lợi đối với học sinh và cha mẹ học sinh vì lý do tham gia hay không tham gia đóng góp, hỗ trợ.</p></div>
+      <div class="nitem red"><div class="n">7</div><p>Thu thập, cung cấp, sử dụng hoặc công khai trái quy định pháp luật thông tin cá nhân, bí mật đời tư của học sinh và gia đình học sinh.</p></div>
+    </div>
+  </section>
+
+  <!-- 5. TÀI CHÍNH -->
+  <section class="c5" id="tai-chinh">
+    <div class="sec-head">
+      <div class="sec-num">💰</div>
+      <div><h2>Tài chính minh bạch</h2><p>Chương IV — Điều 14, 15, 16 · theo TT 55/2011 &amp; CV 7608/SGDĐT-KHTC</p></div>
+    </div>
+
+    <div class="highlight">
+      <h3>💵 Phương thức hỗ trợ — không dùng tiền mặt qua Ban đại diện</h3>
+      <ul>
+        <li>Ngay từ đầu năm học 2026–2027, Ban đại diện CMHS <b>không tổ chức lập quỹ tiền mặt hay tài khoản thu tiền</b> đóng góp.</li>
+        <li>Khi phát sinh nhu cầu hỗ trợ cho hoạt động cụ thể: BĐD <b>thông tin công khai</b> với cha mẹ về mục đích, nội dung hoạt động, nhu cầu hỗ trợ và phương thức thực hiện.</li>
+        <li>Cha mẹ học sinh <b>tự nguyện</b> quyết định việc hỗ trợ thông qua 02 hình thức <b>phi tiền mặt trực tiếp</b>:
+          <br>① Cung cấp trực tiếp hàng hóa, dịch vụ cần thiết cho hoạt động
+          <br>② Thanh toán trực tiếp cho tổ chức, cá nhân cung cấp hàng hóa, dịch vụ</li>
+        <li>Ban đại diện CMHS <b>tuyệt đối không</b> thu, tiếp nhận hoặc quản lý tiền hỗ trợ.</li>
+      </ul>
+    </div>
+
+    <h3 class="block-title">🚫 5 nội dung cấm đề nghị / sử dụng nguồn hỗ trợ (Điều 15)</h3>
+    <div class="nlist">
+      <div class="nitem amber"><div class="n">1</div><p>Xây dựng, cải tạo, nâng cấp, sửa chữa cơ sở vật chất, công trình kiến trúc của Nhà trường; bảo vệ cơ sở vật chất, bảo đảm an ninh nhà trường.</p></div>
+      <div class="nitem amber"><div class="n">2</div><p>Mua sắm, thuê, lắp đặt, sửa chữa, bảo dưỡng máy móc, trang thiết bị, đồ dùng phục vụ hoạt động dạy học của trường, lớp học hoặc cho cán bộ, giáo viên, nhân viên.</p></div>
+      <div class="nitem amber"><div class="n">3</div><p>Hoạt động quản trị, điều hành, chuyên môn, tổ chức thực hiện chương trình, kế hoạch giáo dục thuộc trách nhiệm của Nhà trường.</p></div>
+      <div class="nitem amber"><div class="n">4</div><p>Chi trả thù lao, tiền công, tiền thưởng, quà tặng hoặc các khoản hỗ trợ khác cho cán bộ quản lý, giáo viên, nhân viên nhà trường.</p></div>
+      <div class="nitem amber"><div class="n">5</div><p>Chi trả dịch vụ phục vụ hoạt động thường xuyên của Nhà trường (vệ sinh trường lớp, trông giữ phương tiện giao thông của học sinh, dịch vụ bảo vệ…).</p></div>
+    </div>
+
+    <h3 class="block-title">🧾 Khoản thu dịch vụ &amp; cấm giao thu hộ (Điều 16)</h3>
+    <div class="card">
+      <ul>
+        <li>Chỉ tổ chức thu các khoản dịch vụ phục vụ <b>trực tiếp cá nhân học sinh</b> (đồng phục, học phẩm, tiền ăn bán trú, nước uống…) khi có sự <b>thống nhất, tự nguyện</b> của cha mẹ — trên tinh thần công khai, đúng giá thực tế, không phát sinh chênh lệch và không ép buộc; thực hiện nghiêm công khai tài chính theo TT 09/2024.</li>
+        <li><b>Nghiêm cấm giao Ban đại diện CMHS thu hộ</b> các khoản thu dịch vụ, học phí hay bất kỳ khoản thu nào thuộc trách nhiệm quản lý của Nhà trường.</li>
+        <li>Mọi khoản thu của Nhà trường phải do <b>bộ phận tài vụ</b> thực hiện qua hình thức <b>thanh toán không dùng tiền mặt</b> và xuất hóa đơn / chứng từ điện tử theo quy định pháp luật.</li>
+      </ul>
+    </div>
+  </section>
+
+  <!-- 6. PHẢN ÁNH & ĐỐI THOẠI -->
+  <section class="c6 alt" id="phan-anh">
+    <div class="sec-head">
+      <div class="sec-num">📞</div>
+      <div><h2>Tiếp nhận phản ánh &amp; tổ chức đối thoại</h2><p>Chương V — Điều 17, 18</p></div>
+    </div>
+    <div class="grid g2">
+      <div class="card">
+        <h3>📥 Kênh tiếp nhận phản ánh, kiến nghị</h3>
+        <ul>
+          <li>Hộp thư góp ý trực tiếp tại cổng trường và văn phòng.</li>
+          <li>Đường dây nóng, hộp thư điện tử chính thức và ứng dụng kết nối chuyển đổi số của nhà trường.</li>
+		  	  <h4 class="block-title">📞Số điện thoại Hiệu trưởng: 0909.817.794</h4>
+			  <h4 class="block-title">📞Số điện thoại Phó hiệu trưởng: 0933.100.727</h4>
+          <li>Buổi tiếp dân trực tiếp của Ban Giám hiệu.</li>
+          <li>Ban đại diện CMHS có trách nhiệm tiếp nhận, tổng hợp, phản ánh ý kiến, nguyện vọng chính đáng của cha mẹ với Nhà trường — <b>không thay cha mẹ thực hiện quyền khiếu nại, tố cáo</b>.</li>
+        </ul>
+      </div>
+      <div class="card">
+        <h3>⏱️ Thời hạn xử lý</h3>
+        <ul>
+          <li>Ý kiến thuộc thẩm quyền <b>Giáo viên chủ nhiệm</b>: xử lý và phản hồi trực tiếp cho cha mẹ trong vòng <b>03 ngày làm việc</b>.</li>
+          <li>Ý kiến thuộc thẩm quyền <b>Hiệu trưởng</b>: giải quyết và thông báo kết quả trong vòng <b>07 ngày làm việc</b>; trường hợp không thuộc thẩm quyền, Hiệu trưởng hướng dẫn hoặc chuyển phản ánh đến cơ quan có thẩm quyền.</li>
+        </ul>
+      </div>
+    </div>
+    <div class="highlight blue" style="margin-top:16px;">
+      <h3>💬 Đối thoại định kỳ</h3>
+      <p>Mỗi năm học, Hiệu trưởng tổ chức <b>tối thiểu 02 buổi đối thoại</b> trực tiếp với Ban đại diện CMHS trường và đại diện cha mẹ học sinh các lớp (<b>vào đầu năm học và giữa năm học</b>) để công khai tình hình hoạt động giáo dục, giải đáp thắc mắc và tiếp thu ý kiến đóng góp xây dựng Nhà trường. Việc tiếp nhận, xử lý phản ánh và tổ chức đối thoại <b>không làm phát sinh thủ tục, hồ sơ phức tạp</b>; bảo đảm dân chủ, khách quan, không phân biệt đối xử hoặc gây bất lợi đối với người phản ánh.</p>
+    </div>
+  </section>
+
+  <!-- 7. KHEN THƯỞNG & THI HÀNH -->
+  <section class="c7" id="khen-thuong">
+    <div class="sec-head">
+      <div class="sec-num">🏅</div>
+      <div><h2>Khen thưởng, xử lý vi phạm &amp; thi hành</h2><p>Chương VI — Điều 19, 20, 21</p></div>
+    </div>
+    <div class="grid g2">
+      <div class="card icon-top">
+        <div class="big">🌟</div>
+        <h3>Khen thưởng và thi đua</h3>
+        <ul>
+          <li>Kế hoạch và kết quả phối hợp giữa Nhà trường với Ban đại diện CMHS là một trong những <b>tiêu chí xét thi đua khen thưởng</b> cuối năm học đối với tập thể lớp, Giáo viên chủ nhiệm và Nhà trường.</li>
+          <li>Tập thể BĐD trường, BĐD lớp và các cá nhân cha mẹ có nhiều đóng góp xuất sắc cho công tác giáo dục học sinh sẽ được Hiệu trưởng <b>biểu dương, tặng Giấy khen</b> hoặc đề xuất các cấp quản lý giáo dục khen thưởng theo Luật Thi đua, Khen thưởng.</li>
+        </ul>
+      </div>
+      <div class="card icon-top">
+        <div class="big">⚖️</div>
+        <h3>Xử lý vi phạm</h3>
+        <ul>
+          <li><b>Cán bộ, giáo viên, nhân viên</b> vi phạm Quy chế — đặc biệt vi phạm quy định về thu chi, lạm thu, giao BĐD CMHS thu hộ hoặc ép buộc đóng góp — tùy mức độ sẽ bị <b>xử lý kỷ luật nghiêm khắc</b>.</li>
+          <li><b>Thành viên BĐD CMHS</b> lợi dụng danh nghĩa để thực hiện hành vi trái quy định, tự ý đặt ra các khoản thu trái phép hoặc gây mất đoàn kết — sẽ bị <b>xem xét bãi nhiệm</b> và xử lý theo quy định pháp luật.</li>
+        </ul>
+      </div>
+    </div>
+    <div class="highlight" style="margin-top:16px;">
+      <h3>📜 Hiệu lực &amp; điều khoản chuyển tiếp</h3>
+      <ul>
+        <li>Quy chế có hiệu lực thi hành <b>kể từ ngày ký</b> Quyết định ban hành và áp dụng cho năm học 2026–2027.</li>
+        <li><b>Chuyển tiếp:</b> thực hiện theo <b>Thông tư 55/2011</b> từ đầu năm học 2026–2027 đến hết <b>ngày 14/11/2026</b>; kể từ <b>ngày 15/11/2026</b>, các nội dung quản lý và hoạt động của BĐD CMHS tự động cập nhật và thực hiện theo các quy định mới tương ứng của <b>Thông tư 81/2026</b> (thay thế TT 55/2011). BĐD đã thành lập đầu năm học tiếp tục hoạt động đến hết nhiệm kỳ; việc kiện toàn (nếu có) thực hiện theo TT 81/2026.</li>
+        <li>Ban Giám hiệu, đoàn thể, GVCN, GV bộ môn, nhân viên có trách nhiệm phổ biến, quán triệt và thực hiện nghiêm túc; BĐD trường và các lớp triển khai Quy chế đến toàn thể cha mẹ học sinh toàn trường.</li>
+      </ul>
+    </div>
+  </section>
+
+  <!-- FOOTER -->
+  <footer class="foot">
+    <div class="cols">
+      <div class="col">
+        <h4>📌 Thông tin văn bản</h4>
+        <ul>
+          <li>Dự thảo Quyết định ban hành Quy chế phối hợp Nhà trường – BĐD CMHS.</li>
+          <li>Trường THCS Văn Lương — UBND xã Long Điền.</li>
+          <li>Năm học 2026–2027 · Hiệu lực thi hành kể từ ngày ký.</li>
+          <li>Ký bởi: Hiệu trưởng <b>Lê Trần Mộng Thành</b>.</li>
+        </ul>
+      </div>
+      <div class="col">
+        <h4>⚖️ Căn cứ pháp lý</h4>
+        <ul>
+          <li>Luật Giáo dục 2019 (sửa đổi, bổ sung 2025).</li>
+          <li>TT 55/2011 (Điều lệ BĐD CMHS) → TT 81/2026 từ 15/11/2026.</li>
+          <li>TT 15/2026 (Điều lệ trường), TT 19/2025 (khen thưởng–kỷ luật).</li>
+          <li>TT 22/2021 (đánh giá HS), CV 7608/SGDĐT-KHTC (học phí, khoản thu).</li>
+        </ul>
+      </div>
+    </div>
+    <div class="credit">Thiết kế và xây dựng webapp bởi Lê Trần Mộng Thành — Nội dung thuộc về Trường THCS Văn Lương.</div>
+  </footer>
+
+</div>
+
+<button id="toTop" aria-label="Về đầu trang">⬆️</button>
+<script>
+  var btn = document.getElementById('toTop');
+  window.addEventListener('scroll', function(){
+    btn.classList.toggle('show', window.scrollY > 600);
+  }, { passive:true });
+  btn.addEventListener('click', function(){
+    window.scrollTo({ top:0, behavior:'smooth' });
+  });
+
+  /* Menu dropdown trên di động */
+  var menuBtn = document.getElementById('menuBtn');
+  var mobileMenu = document.getElementById('mobileMenu');
+  menuBtn.addEventListener('click', function(){
+    var open = mobileMenu.classList.toggle('open');
+    menuBtn.setAttribute('aria-expanded', open ? 'true' : 'false');
+    menuBtn.textContent = open ? '✕' : '☰';
+    menuBtn.setAttribute('aria-label', open ? 'Đóng menu điều hướng' : 'Mở menu điều hướng');
+  });
+  mobileMenu.querySelectorAll('a').forEach(function(a){
+    a.addEventListener('click', function(){
+      mobileMenu.classList.remove('open');
+      menuBtn.setAttribute('aria-expanded', 'false');
+      menuBtn.textContent = '☰';
+    });
+  });
+
+  /* Mục lục dropdown */
+  var tocSelect = document.getElementById('tocSelect');
+  tocSelect.addEventListener('change', function(){
+    if (this.value) { window.location.hash = this.value; }
+  });
+</script>
+</body>
+</html>
