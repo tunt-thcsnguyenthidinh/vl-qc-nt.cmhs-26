@@ -2,688 +2,1166 @@
 <html lang="vi">
 <head>
 <meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Quy chế phối hợp Nhà trường – BĐD CMHS 2026–2027 | Trường THCS Văn Lương</title>
-<meta name="description" content="Quy chế phối hợp giữa Nhà trường và Ban đại diện cha mẹ học sinh Trường THCS Văn Lương, năm học 2026–2027 — tóm tắt dễ hiểu dành cho phụ huynh.">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<meta name="theme-color" content="#8f1d22">
+<title>Ôn tập 100 câu — Tập huấn ĐL, QS, VT năm 2026</title>
 <style>
-  * { margin:0; padding:0; box-sizing:border-box; }
-  html { scroll-behavior:smooth; -webkit-text-size-adjust:100%; }
-  body {
-    font-family: "Segoe UI", "Helvetica Neue", Arial, "Noto Sans", sans-serif;
-    background:#eef2f7; color:#1f2a37; line-height:1.7; font-size:17px;
-  }
-  .page { max-width:1080px; margin:0 auto; background:#fff; box-shadow:0 0 40px rgba(11,61,145,.08); }
-  section { scroll-margin-top:84px; }
+:root{
+  --bg:#f6f4f0; --card:#ffffff; --ink:#1d1a16; --muted:#6f6a61; --line:#e4ded4;
+  --primary:#8f1d22; --primary-ink:#ffffff; --primary-soft:#fbeeee;
+  --gold:#b8860b;
+  --ok:#177245; --ok-bg:#e5f4ec; --bad:#b3261e; --bad-bg:#fdecea;
+  --warn:#8a6d00; --warn-bg:#fff3cf; --info:#175cd3; --info-bg:#eaf1fe;
+  --chip:#efe9df; --shadow:0 2px 10px rgba(60,30,10,.08);
+  --fs:17px;
+}
+[data-theme="dark"]{
+  --bg:#171512; --card:#221f1c; --ink:#f2eee7; --muted:#a89f93; --line:#3a352f;
+  --primary:#c94f54; --primary-ink:#ffffff; --primary-soft:#3a2122;
+  --gold:#d9a72e;
+  --ok:#4cc07e; --ok-bg:#173326; --bad:#ff8a80; --bad-bg:#3a201e;
+  --warn:#e3b93c; --warn-bg:#38300f; --info:#7dabff; --info-bg:#1c2a45;
+  --chip:#2c2823; --shadow:0 2px 10px rgba(0,0,0,.4);
+}
+*{box-sizing:border-box; -webkit-tap-highlight-color:transparent}
+html{font-size:var(--fs)}
+body{margin:0; background:var(--bg); color:var(--ink);
+  font-family:-apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,"Helvetica Neue",Arial,sans-serif;
+  line-height:1.5; padding-bottom:env(safe-area-inset-bottom)}
+button{font:inherit; cursor:pointer; border:none; background:none; color:inherit}
+.wrap{max-width:720px; margin:0 auto; padding:0 14px}
 
-  /* STICKY NAV */
-  .topnav {
-    position:sticky; top:0; z-index:100;
-    background:#0b3d91; color:#fff;
-    display:flex; align-items:center; gap:8px;
-    padding:0 16px; height:60px;
-    box-shadow:0 2px 12px rgba(0,0,0,.18);
-  }
-  .topnav .brand { font-weight:800; font-size:16px; white-space:nowrap; margin-right:6px; }
-  .topnav .brand span { color:#ffd166; }
-  .topnav .links { display:flex; gap:4px; overflow-x:auto; scrollbar-width:none; flex:1; }
-  .topnav .links::-webkit-scrollbar { display:none; }
-  .topnav .links a {
-    color:#fff; text-decoration:none; font-size:14.5px; font-weight:600;
-    padding:10px 12px; border-radius:10px; white-space:nowrap;
-  }
-  .topnav .links a:active, .topnav .links a:hover { background:rgba(255,255,255,.16); }
-  .menu-btn {
-    display:none; background:rgba(255,255,255,.14); border:1px solid rgba(255,255,255,.45);
-    color:#fff; font-size:22px; border-radius:12px; width:50px; height:50px;
-    cursor:pointer; flex-shrink:0; margin-left:auto;
-  }
-  .menu-btn:active { background:rgba(255,255,255,.28); }
-  .mobile-menu {
-    display:none; position:absolute; top:60px; left:0; right:0; z-index:101;
-    background:#0a357e; flex-direction:column; padding:10px 14px 14px;
-    box-shadow:0 14px 28px rgba(0,0,0,.3); max-height:70vh; overflow-y:auto;
-  }
-  .mobile-menu.open { display:flex; }
-  .mobile-menu a {
-    color:#fff; text-decoration:none; font-size:16.5px; font-weight:600;
-    padding:14px 12px; border-radius:10px; min-height:54px;
-    display:flex; align-items:center; border-bottom:1px solid rgba(255,255,255,.08);
-  }
-  .mobile-menu a:active { background:rgba(255,255,255,.14); }
+/* ---------- App bar ---------- */
+.appbar{position:sticky; top:0; z-index:40; background:var(--primary); color:#fff;
+  box-shadow:0 1px 6px rgba(0,0,0,.25)}
+.appbar .wrap{display:flex; align-items:center; gap:6px; padding-top:10px; padding-bottom:10px; min-height:52px}
+.appbar .ttl{flex:1; font-weight:700; font-size:.92rem; line-height:1.25}
+.iconbtn{width:40px; height:40px; border-radius:10px; display:inline-flex; align-items:center; justify-content:center;
+  font-size:1.05rem; color:#fff; background:rgba(255,255,255,.14); flex:none}
+.iconbtn:active{background:rgba(255,255,255,.3)}
 
-  /* HERO */
-  .hero {
-    background: linear-gradient(135deg, #0b3d91 0%, #1a6fd4 55%, #0aa1dd 100%);
-    color:#fff; padding:64px 40px 48px; position:relative; overflow:hidden;
-  }
-  .hero::before{
-    content:"🤝💬"; position:absolute; right:24px; bottom:8px; font-size:120px; opacity:.14;
-    transform:rotate(-8deg); pointer-events:none;
-  }
-  .hero::after{
-    content:""; position:absolute; right:-60px; top:-60px; width:300px; height:300px;
-    border-radius:50%; background:rgba(255,255,255,.08);
-  }
-  .hero .school { font-size:15px; letter-spacing:2px; text-transform:uppercase; opacity:.92; margin-bottom:8px; }
-  .hero h1 { font-size:clamp(28px, 6.5vw, 44px); line-height:1.25; margin-bottom:12px; font-weight:800; }
-  .hero .sub { font-size:clamp(15px, 2.6vw, 17.5px); opacity:.94; max-width:780px; }
-  .hero .draft {
-    display:inline-block; margin-top:16px; background:#ffb703; color:#1f2a37;
-    font-weight:700; font-size:14px; padding:8px 18px; border-radius:24px;
-    text-transform:uppercase; letter-spacing:1px;
-  }
-  .cta-row { display:flex; gap:10px; margin-top:20px; flex-wrap:wrap; }
-  .cta {
-    display:inline-flex; align-items:center; justify-content:center; gap:8px;
-    min-height:48px; padding:10px 20px;
-    border-radius:14px; font-weight:700; font-size:16px; text-decoration:none;
-  }
-  .cta.primary { background:#ffb703; color:#1f2a37; box-shadow:0 4px 14px rgba(0,0,0,.18); }
-  .cta.parent {
-    background:linear-gradient(135deg,#ff6b9d,#d6336c); color:#fff;
-    box-shadow:0 4px 16px rgba(214,51,108,.45);
-    animation:ctaPulse 2.2s ease-in-out infinite;
-  }
-  @keyframes ctaPulse {
-    0%,100% { box-shadow:0 4px 16px rgba(214,51,108,.45), 0 0 0 0 rgba(255,107,157,.45); }
-    50% { box-shadow:0 4px 16px rgba(214,51,108,.45), 0 0 0 10px rgba(255,107,157,0); }
-  }
-  .cta:active { transform:scale(.97); }
-  @media (prefers-reduced-motion: reduce){ .cta.parent{ animation:none; } }
-  .stats { display:grid; grid-template-columns:repeat(3,1fr); gap:12px; margin-top:24px; }
-  .stat {
-    display:flex; align-items:center; gap:12px;
-    background:rgba(255,255,255,.12); border:1px solid rgba(255,255,255,.28);
-    border-radius:16px; padding:12px 14px;
-  }
-  .stat .ic {
-    width:46px; height:46px; flex-shrink:0; border-radius:13px;
-    background:rgba(255,255,255,.2); display:flex; align-items:center; justify-content:center;
-    font-size:24px;
-  }
-  .stat .num { font-size:23px; font-weight:800; line-height:1.15; }
-  .stat .lbl { font-size:12.5px; opacity:.93; line-height:1.35; }
+/* ---------- Views ---------- */
+.view{display:none}
+.view.on{display:block}
+main{padding:14px 0 110px}
 
-  /* TOC — dropdown */
-  .toc { padding:28px 40px 8px; }
-  .toc h3 { font-size:18px; color:#0b3d91; margin-bottom:14px; }
-  .toc-select {
-    width:100%; min-height:60px; padding:12px 52px 12px 18px;
-    font-size:16.5px; font-weight:600; color:#0b3d91; font-family:inherit;
-    background-color:#f2f6fb; border:2px solid #c9d9ef; border-radius:14px;
-    appearance:none; -webkit-appearance:none; cursor:pointer;
-    background-image:url('data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="%230b3d91" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><path d="M6 9l6 6 6-6"/></svg>');
-    background-repeat:no-repeat; background-position:right 16px center;
-  }
-  .toc-select:focus { outline:none; border-color:#1565d8; box-shadow:0 0 0 3px rgba(21,101,216,.18); }
+/* ---------- Home ---------- */
+.hero{background:var(--card); border:1px solid var(--line); border-radius:16px; padding:20px 18px; box-shadow:var(--shadow); margin-top:6px}
+.hero .kicker{color:var(--gold); font-weight:800; letter-spacing:.06em; font-size:.78rem; text-transform:uppercase}
+.hero h1{margin:6px 0 4px; font-size:1.32rem; line-height:1.3}
+.hero p{margin:6px 0 0; color:var(--muted); font-size:.95rem}
+.chips{display:flex; flex-wrap:wrap; gap:8px; margin-top:14px}
+.chip{background:var(--chip); border-radius:999px; padding:6px 12px; font-size:.85rem; font-weight:600}
+.field{margin-top:16px}
+.field label{display:block; font-weight:700; font-size:.92rem; margin-bottom:6px}
+.field input{width:100%; padding:13px 14px; border:1.5px solid var(--line); border-radius:12px; background:var(--card); color:var(--ink); font:inherit}
+.field input:focus{outline:2px solid var(--primary); border-color:transparent}
+.modegrid{display:grid; gap:12px; margin-top:16px}
+.modecard{display:flex; gap:14px; align-items:flex-start; text-align:left; width:100%;
+  background:var(--card); border:2px solid var(--line); border-radius:16px; padding:16px; box-shadow:var(--shadow)}
+.modecard:active{transform:scale(.99)}
+.modecard .ic{font-size:1.7rem; line-height:1}
+.modecard h3{margin:0 0 4px; font-size:1.08rem}
+.modecard p{margin:0; color:var(--muted); font-size:.9rem}
+.modecard.exam{border-color:var(--primary)}
+.optrow{display:flex; align-items:center; justify-content:space-between; gap:12px;
+  background:var(--card); border:1px solid var(--line); border-radius:12px; padding:12px 14px; margin-top:10px}
+.optrow .t{font-weight:600; font-size:.95rem}
+.optrow .d{color:var(--muted); font-size:.82rem}
+.switch{position:relative; width:52px; height:30px; flex:none}
+.switch input{opacity:0; width:100%; height:100%; position:absolute; margin:0; cursor:pointer}
+.switch .tr{position:absolute; inset:0; background:var(--line); border-radius:999px; transition:.2s; pointer-events:none}
+.switch .tr::after{content:""; position:absolute; width:24px; height:24px; border-radius:50%; background:#fff; top:3px; left:3px; transition:.2s; box-shadow:0 1px 3px rgba(0,0,0,.3)}
+.switch input:checked + .tr{background:var(--primary)}
+.switch input:checked + .tr::after{left:25px}
+.resume{display:none; margin-top:14px; background:var(--info-bg); border:1px solid var(--info); color:var(--ink);
+  border-radius:14px; padding:14px}
+.resume.on{display:block}
+.resume b{color:var(--info)}
+.resume .row{display:flex; gap:8px; margin-top:10px}
+.btn{display:inline-flex; align-items:center; justify-content:center; gap:8px; border-radius:12px;
+  padding:13px 18px; font-weight:700; font-size:.98rem; min-height:50px; border:1.5px solid transparent}
+.btn.pri{background:var(--primary); color:var(--primary-ink)}
+.btn.ghost{background:var(--card); border-color:var(--line); color:var(--ink)}
+.btn.soft{background:var(--chip); color:var(--ink)}
+.btn.block{width:100%}
+.btn.small{min-height:42px; padding:9px 14px; font-size:.9rem}
+.btn:disabled{opacity:.45; cursor:default}
+.foot-note{color:var(--muted); font-size:.85rem; text-align:center; margin:18px 6px 0}
 
-  /* SECTION */
-  section { padding:36px 40px; }
-  section.alt { background:#f6f9fd; }
-  .sec-head { display:flex; align-items:center; gap:16px; margin-bottom:22px; }
-  .sec-num {
-    width:56px; height:56px; border-radius:16px; display:flex; align-items:center; justify-content:center;
-    font-size:27px; color:#fff; flex-shrink:0; box-shadow:0 4px 10px rgba(0,0,0,.12);
-  }
-  .sec-head h2 { font-size:clamp(20px, 3.8vw, 26px); color:#0b3d91; line-height:1.35; }
-  .sec-head p { font-size:14.5px; color:#5b6b7c; }
-  .c1 .sec-num { background:#1565d8; } .c2 .sec-num { background:#0a9b6c; }
-  .c3 .sec-num { background:#9c5cdd; } .c4 .sec-num { background:#e03131; }
-  .c5 .sec-num { background:#e67700; } .c6 .sec-num { background:#0aa1dd; }
-  .c7 .sec-num { background:#5f3dc4; }
+/* ---------- Quiz ---------- */
+.statusrow{display:flex; align-items:center; gap:8px; flex-wrap:wrap}
+.badge{background:var(--primary); color:#fff; border-radius:999px; padding:4px 11px; font-size:.8rem; font-weight:800}
+.badge.study{background:var(--info)}
+.pill{background:var(--card); border:1px solid var(--line); border-radius:999px; padding:4px 11px; font-size:.85rem; font-weight:700}
+.pill.score{border-color:var(--gold); color:var(--gold)}
+.progress{height:9px; background:var(--chip); border-radius:999px; overflow:hidden; margin:10px 0 4px}
+.progress > div{height:100%; background:var(--primary); border-radius:999px; transition:width .3s}
+.progresstxt{font-size:.82rem; color:var(--muted); display:flex; justify-content:space-between}
+.qcard{background:var(--card); border:1px solid var(--line); border-radius:16px; padding:18px 16px; box-shadow:var(--shadow); margin-top:12px}
+.qmeta{display:flex; align-items:center; gap:8px; margin-bottom:8px}
+.qnum{color:var(--primary); font-weight:800; font-size:.9rem; letter-spacing:.02em}
+.qcard h2{margin:0; font-size:1.13rem; line-height:1.45; font-weight:700}
+.tagskip{background:var(--warn-bg); color:var(--warn); border-radius:999px; padding:2px 9px; font-size:.76rem; font-weight:800}
+.options{display:grid; gap:10px; margin-top:16px}
+.opt{display:flex; gap:12px; align-items:flex-start; text-align:left; width:100%;
+  background:var(--card); border:2px solid var(--line); border-radius:14px; padding:14px; min-height:56px; transition:border-color .15s, background .15s}
+.opt .ltr{flex:none; width:32px; height:32px; border-radius:50%; background:var(--chip);
+  display:flex; align-items:center; justify-content:center; font-weight:800; font-size:.95rem}
+.opt .txt{flex:1; padding-top:4px; overflow-wrap:anywhere}
+.opt:active{border-color:var(--primary)}
+.opt.picked{border-color:var(--primary); background:var(--primary-soft)}
+.opt.correct{border-color:var(--ok); background:var(--ok-bg)}
+.opt.correct .ltr{background:var(--ok); color:#fff}
+.opt.wrong{border-color:var(--bad); background:var(--bad-bg)}
+.opt.wrong .ltr{background:var(--bad); color:#fff}
+.opt.dim{opacity:.75}
+.opt[disabled]{cursor:default}
+.feedback{display:none; margin-top:14px; border-radius:12px; padding:13px 14px; font-weight:600}
+.feedback.on{display:block}
+.feedback.ok{background:var(--ok-bg); color:var(--ok)}
+.feedback.bad{background:var(--bad-bg); color:var(--bad)}
+.feedback.info{background:var(--info-bg); color:var(--info)}
+.feedback .mini{display:block; margin-top:8px}
+.feedback .mini button{color:inherit; text-decoration:underline; font-weight:700; padding:6px 2px}
+.underbtns{display:flex; gap:8px; margin-top:12px}
+.underbtns .btn{flex:1}
 
-  h3.block-title { font-size:18.5px; color:#0b3d91; margin:24px 0 14px; }
-  h3.block-title:first-child { margin-top:0; }
+/* bottom nav */
+.bottomnav{position:fixed; left:0; right:0; bottom:0; z-index:40; background:var(--card);
+  border-top:1px solid var(--line); padding:10px 12px calc(10px + env(safe-area-inset-bottom)); display:none}
+.bottomnav.on{display:block}
+.bottomnav .wrap{display:flex; gap:8px; padding:0}
+.navbtn{flex:1; min-height:52px; border-radius:12px; font-weight:700; font-size:.95rem;
+  display:inline-flex; align-items:center; justify-content:center; gap:6px; background:var(--chip); color:var(--ink); padding:8px 4px}
+.navbtn.pri{background:var(--primary); color:#fff}
+.navbtn.warnb{background:var(--warn-bg); color:var(--warn)}
+.navbtn:disabled{opacity:.4}
 
-  /* CARDS */
-  .grid { display:grid; gap:16px; }
-  .g2 { grid-template-columns:1fr 1fr; }
-  .g3 { grid-template-columns:1fr 1fr 1fr; }
-  .card {
-    background:#fff; border-radius:16px; padding:20px 22px;
-    border:1px solid #e2e8f0; box-shadow:0 2px 8px rgba(11,61,145,.06);
-  }
-  .card h3 { font-size:17px; color:#0b3d91; margin-bottom:10px; }
-  .card ul { margin-left:20px; font-size:16px; }
-  .card li { margin-bottom:7px; }
-  .card.icon-top { text-align:center; }
-  .card.icon-top .big {
-    font-size:40px; margin-bottom:10px; display:inline-flex; align-items:center; justify-content:center;
-    width:76px; height:76px; border-radius:50%; background:#eef4fd;
-  }
-  .card.icon-top h3 { text-align:center; }
-  .card.icon-top ul { text-align:left; }
+/* ---------- Drawer / modal ---------- */
+.overlay{position:fixed; inset:0; background:rgba(15,10,5,.55); z-index:60; display:none; align-items:flex-end; justify-content:center}
+.overlay.on{display:flex}
+.sheet{background:var(--card); width:100%; max-width:720px; max-height:86vh; overflow:auto;
+  border-radius:20px 20px 0 0; padding:18px 16px calc(18px + env(safe-area-inset-bottom))}
+.sheet h3{margin:0 0 4px}
+.sheet .sub{color:var(--muted); font-size:.88rem; margin:0 0 12px}
+.grid{display:grid; grid-template-columns:repeat(5,1fr); gap:8px}
+@media(min-width:520px){.grid{grid-template-columns:repeat(10,1fr)}}
+.cell{aspect-ratio:1; border-radius:10px; border:2px solid var(--line); font-weight:700; font-size:.9rem;
+  display:flex; align-items:center; justify-content:center; background:var(--card); color:var(--ink); position:relative}
+.cell.c{border-color:var(--ok); background:var(--ok-bg); color:var(--ok)}
+.cell.w{border-color:var(--bad); background:var(--bad-bg); color:var(--bad)}
+.cell.s{border-color:var(--warn); background:var(--warn-bg); color:var(--warn)}
+.cell.r{border-color:var(--info); background:var(--info-bg); color:var(--info)}
+.cell.cur{outline:3px solid var(--primary); outline-offset:1px}
+.legend{display:flex; flex-wrap:wrap; gap:10px 16px; margin:12px 0; font-size:.83rem; color:var(--muted)}
+.legend i{width:13px; height:13px; border-radius:4px; display:inline-block; vertical-align:-2px; margin-right:5px; border:2px solid var(--line)}
+.legend .lc{border-color:var(--ok); background:var(--ok-bg)} .legend .lw{border-color:var(--bad); background:var(--bad-bg)}
+.legend .ls{border-color:var(--warn); background:var(--warn-bg)} .legend .lr{border-color:var(--info); background:var(--info-bg)}
+.modal{align-items:center; padding:18px}
+.modal .box{background:var(--card); border-radius:18px; padding:20px 18px; width:100%; max-width:440px}
+.modal h3{margin:0 0 8px}
+.modal p{margin:6px 0; color:var(--muted)}
+.modal .row{display:flex; gap:8px; margin-top:14px}
+.modal .row .btn{flex:1}
 
-  /* NUMBERED LIST */
-  .nlist { display:grid; gap:12px; }
-  .nitem {
-    display:flex; gap:14px; background:#fff; border:1px solid #e2e8f0;
-    border-radius:14px; padding:14px 18px; box-shadow:0 2px 8px rgba(11,61,145,.05);
-  }
-  .nitem .n {
-    width:36px; height:36px; border-radius:50%; flex-shrink:0;
-    display:flex; align-items:center; justify-content:center;
-    font-weight:800; font-size:17px; color:#fff; background:#1565d8;
-  }
-  .nitem p { font-size:16px; }
-  .nitem.red .n { background:#e03131; }
-  .nitem.amber .n { background:#e67700; }
-  .nitem.green .n { background:#0a9b6c; }
+/* ---------- Result ---------- */
+.scorebox{background:var(--card); border:1px solid var(--line); border-radius:18px; box-shadow:var(--shadow);
+  padding:22px 18px; text-align:center; margin-top:6px}
+.scorecircle{width:148px; height:148px; margin:4px auto 8px; border-radius:50%;
+  border:9px solid var(--primary); display:flex; flex-direction:column; align-items:center; justify-content:center}
+.scorecircle .big{font-size:2.5rem; font-weight:800; line-height:1; color:var(--primary)}
+.scorecircle .of{font-size:.85rem; color:var(--muted); font-weight:700}
+.scorebox h2{margin:4px 0}
+.scorebox .who{color:var(--muted); margin:2px 0}
+.statgrid{display:grid; grid-template-columns:repeat(4,1fr); gap:8px; margin-top:14px}
+.stat{border-radius:12px; padding:10px 4px; background:var(--chip)}
+.stat b{display:block; font-size:1.2rem}
+.stat span{font-size:.76rem; color:var(--muted); font-weight:700}
+.stat.ok{background:var(--ok-bg)} .stat.ok b{color:var(--ok)}
+.stat.bad{background:var(--bad-bg)} .stat.bad b{color:var(--bad)}
+.stat.warn{background:var(--warn-bg)} .stat.warn b{color:var(--warn)}
+.tabs{display:flex; gap:8px; margin:18px 0 10px; overflow-x:auto; padding-bottom:2px}
+.tab{flex:none; border-radius:999px; padding:9px 15px; font-weight:700; background:var(--card); border:1.5px solid var(--line); font-size:.9rem}
+.tab.on{background:var(--primary); color:#fff; border-color:var(--primary)}
+.rev{background:var(--card); border:1px solid var(--line); border-radius:14px; padding:14px; margin-bottom:10px}
+.rev h4{margin:0 0 8px; font-size:1rem; line-height:1.45}
+.rev .ro{border:1.5px solid var(--line); border-radius:10px; padding:9px 11px; margin-top:7px; display:flex; gap:9px; font-size:.93rem}
+.rev .ro .ltr{font-weight:800; flex:none}
+.rev .ro.correct{border-color:var(--ok); background:var(--ok-bg)}
+.rev .ro.mine-wrong{border-color:var(--bad); background:var(--bad-bg)}
+.rev .note{margin-top:9px; font-size:.88rem; font-weight:700}
+.toast{position:fixed; left:50%; transform:translateX(-50%); bottom:96px; z-index:80;
+  background:#26221e; color:#fff; padding:11px 18px; border-radius:999px; font-size:.92rem; font-weight:600;
+  opacity:0; pointer-events:none; transition:opacity .25s; max-width:92vw; text-align:center}
+.toast.on{opacity:1}
+.hidden{display:none !important}
+.swipehint{font-size:.8rem; color:var(--muted); text-align:center; margin-top:3px}
+@keyframes slideNext{from{transform:translateX(28px); opacity:.3} to{transform:none; opacity:1}}
+@keyframes slidePrev{from{transform:translateX(-28px); opacity:.3} to{transform:none; opacity:1}}
+.qcard.anim-next{animation:slideNext .22s ease}
+.qcard.anim-prev{animation:slidePrev .22s ease}
 
-  /* STEPS */
-  .ladder { display:grid; grid-template-columns:repeat(3,1fr); gap:16px; }
-  .step { border-radius:16px; padding:22px; color:#fff; }
-  .step .lvl { font-size:13.5px; text-transform:uppercase; letter-spacing:1px; opacity:.88; }
-  .step h3 { font-size:19px; margin:8px 0 10px; }
-  .step p { font-size:15.5px; }
-  .s1 { background:linear-gradient(135deg,#9c5cdd,#6d28a8); }
-  .s2 { background:linear-gradient(135deg,#5f3dc4,#3b1f8f); }
-  .s3 { background:linear-gradient(135deg,#3b5bdb,#2b3f9e); }
+/* ================= REDESIGN: CAND identity + one-screen quiz ================= */
+:root{ --quizh: calc(100dvh - 118px); }
+.appbar{ background:linear-gradient(135deg,#a31c24 0%, #7c1219 55%, #5f0d12 100%); border-bottom:3px solid var(--gold); }
+.appbar .wrap{ min-height:48px; padding-top:5px; padding-bottom:5px; gap:5px; }
+.appbar .ttl{ font-size:.8rem; letter-spacing:.03em; line-height:1.2; text-transform:uppercase; }
+.appbar .ttl span{ font-size:.68rem; font-weight:600; opacity:.85; text-transform:none; letter-spacing:0; }
+.emblem{ width:30px; height:30px; flex:none; border-radius:50%; background:radial-gradient(circle at 35% 30%, #ffe27a, #d4af37 65%, #a87f14); color:#8f1d22; display:flex; align-items:center; justify-content:center; font-size:.95rem; box-shadow:0 0 0 2px rgba(255,255,255,.35), 0 2px 6px rgba(0,0,0,.35); }
+.iconbtn{ width:36px; height:36px; border-radius:9px; font-size:.92rem; }
+.emblem-hero{ width:64px; height:64px; margin:2px auto 10px; border-radius:50%; background:radial-gradient(circle at 35% 30%, #ffe27a, #d4af37 65%, #a87f14); color:#8f1d22; font-size:1.9rem; display:flex; align-items:center; justify-content:center; box-shadow:0 0 0 4px #8f1d22, 0 0 0 6px #d4af37, 0 6px 16px rgba(0,0,0,.25); }
+.hero{ text-align:center; border-top:4px solid var(--primary); }
+.hero .chips{ justify-content:center; }
+.hero .field{ text-align:left; }
+.modecard{ text-align:left; }
+.modecard.exam{ background:linear-gradient(180deg, var(--primary-soft), var(--card)); }
+.btn.pri{ background:linear-gradient(135deg,#a31c24,#7c1219); }
+.scorecircle{ border:9px solid var(--gold); outline:3px solid var(--primary); outline-offset:3px; }
+main{ padding:12px 0 44px; }
+body.quizlock{ overflow:hidden; }
+body.quizlock main{ padding:6px 0 0; }
+/* --- quiz: fixed one-screen layout --- */
+#view-quiz.on{ display:flex; flex-direction:column; height:var(--quizh); }
+.statusrow{ background:var(--card); border:1px solid var(--line); border-radius:12px; padding:6px 8px; gap:6px; box-shadow:var(--shadow); }
+.badge{ font-size:.72rem; padding:4px 9px; }
+.pill{ font-size:.78rem; padding:3px 9px; }
+.progress{ height:5px; margin:7px 0 3px; }
+.progresstxt{ font-size:.74rem; align-items:center; }
+.swipehint{ margin:0; font-size:.72rem; text-align:center; }
+.cardwrap{ flex:1; min-height:0; display:flex; align-items:center; margin-top:8px; }
+.qcard{ --qscale:1; width:100%; margin-top:0; padding:14px 13px; max-height:100%; overflow:hidden; border-top:4px solid var(--primary); }
+.qcard h2{ font-size:calc(1.09rem * var(--qscale)); line-height:1.38; }
+.qmeta{ margin-bottom:6px; }
+.options{ gap:8px; margin-top:12px; }
+.opt{ padding:calc(11px * var(--qscale)) 12px; min-height:50px; border-radius:12px; gap:10px; }
+.opt .ltr{ width:29px; height:29px; font-size:.88rem; }
+.opt .txt{ font-size:calc(.99rem * var(--qscale)); padding-top:3px; line-height:1.38; }
+.zone{ position:relative; margin-top:10px; }
+.zone .feedback{ margin-top:0; min-height:56px; display:block; visibility:hidden; font-size:.92rem; line-height:1.35; padding:10px 12px; }
+.zone .feedback.on{ visibility:visible; }
+.zone .underbtns{ position:absolute; inset:0; margin:0; display:flex; }
+.zone .underbtns.hidden{ display:none; }
+.zone .underbtns .btn{ flex:1; min-height:52px; }
+.qcard.compact{ padding:11px 11px; }
+.qcard.compact .options{ gap:6px; margin-top:9px; }
+.qcard.compact .opt{ min-height:46px; }
+.qcard.xcompact .options{ gap:5px; }
+.qcard.xcompact .opt{ min-height:42px; border-radius:10px; }
+.qcard.xcompact h2{ line-height:1.3; }
+/* --- bottom nav: 5 function segments --- */
+.bottomnav{ padding:6px 8px calc(6px + env(safe-area-inset-bottom)); border-top:2px solid var(--gold); }
+.bottomnav .wrap{ gap:5px; }
+.navbtn{ flex-direction:column; gap:0; min-height:52px; padding:5px 2px 4px; border-radius:11px; }
+.navbtn .ni{ font-size:1.02rem; line-height:1.1; }
+.navbtn .nl{ font-size:.64rem; font-weight:700; letter-spacing:.01em; }
+.navbtn.finishb{ background:#f6e3ac; color:#6b5200; }
+[data-theme="dark"] .navbtn.finishb{ background:#4a3d12; color:#f0d47a; }
 
-  /* HIGHLIGHT */
-  .highlight {
-    background:linear-gradient(135deg,#fff8e1,#ffecb3); border:2px solid #ffb703;
-    border-radius:18px; padding:26px;
-  }
-  .highlight h3 { color:#8a5a00; font-size:19px; margin-bottom:10px; }
-  .highlight p, .highlight li { font-size:16.5px; }
-  .highlight ul { margin-left:20px; }
-  .highlight li { margin-bottom:6px; }
-  .highlight.blue { background:linear-gradient(135deg,#e7f0fd,#d3e3fb); border-color:#1565d8; }
-  .highlight.blue h3 { color:#0b3d91; }
-  .highlight.red { background:linear-gradient(135deg,#fdecec,#fbd5d5); border-color:#e03131; }
-  .highlight.red h3 { color:#a61e4d; }
-  .highlight + .highlight { margin-top:16px; }
-
-  /* TWO COL */
-  .two-col { display:grid; grid-template-columns:1fr 1fr; gap:16px; }
-  .panel { border-radius:16px; padding:22px 24px; }
-  .panel.duties { background:#e7f0fd; border:1px solid #a9c8f5; }
-  .panel.rights { background:#e6f7ef; border:1px solid #9bdfba; }
-  .panel h3 { font-size:18px; margin-bottom:12px; color:#0b3d91; }
-  .panel ul { margin-left:20px; font-size:16px; }
-  .panel li { margin-bottom:8px; }
-
-  /* BACK TO TOP */
-  #toTop {
-    position:fixed; right:18px; bottom:18px; z-index:100;
-    width:56px; height:56px; border-radius:50%; border:none;
-    background:#0b3d91; color:#fff; font-size:24px; cursor:pointer;
-    box-shadow:0 4px 14px rgba(0,0,0,.25); display:none;
-  }
-  #toTop.show { display:block; }
-
-  /* FOOTER */
-  .foot { background:#0b3d91; color:#fff; padding:34px 40px; font-size:15.5px; }
-  .foot .cols { display:flex; gap:30px; flex-wrap:wrap; }
-  .foot .col { flex:1; min-width:220px; }
-  .foot h4 { font-size:16px; margin-bottom:10px; color:#ffd166; }
-  .foot ul { margin-left:20px; opacity:.94; }
-  .foot li { margin-bottom:5px; }
-  .credit { text-align:center; margin-top:24px; font-size:14px; opacity:.85; border-top:1px solid rgba(255,255,255,.2); padding-top:18px; }
-
-  /* MOBILE */
-  @media (max-width:760px){
-    body { font-size:16.5px; }
-    .g2,.g3,.ladder,.two-col{ grid-template-columns:1fr; }
-    .topnav .links { display:none; }
-    .menu-btn { display:block; }
-    .cta-row { flex-direction:column; }
-    .cta { width:100%; }
-    .stats { grid-template-columns:1fr 1fr; gap:10px; }
-    .stat { padding:10px 12px; gap:10px; }
-    .stat .ic { width:42px; height:42px; font-size:22px; }
-    .hero{ padding:48px 22px 36px; }
-    section{ padding:30px 20px; }
-    .toc{ padding:22px 20px 6px; }
-    .foot{ padding:28px 20px; }
-    .topnav .brand { font-size:14.5px; }
-    .highlight { padding:22px 20px; }
-  }
-  @media print{
-    body{ background:#fff; } .page{ max-width:none; box-shadow:none; }
-    .topnav, .toc, #toTop, .cta-row { display:none; }
-  }
+@media print{
+  .appbar,.bottomnav,.tabs,.toast{display:none !important}
+  #view-result button{display:none !important}
+  body{background:#fff}
+  main{padding:0}
+  .scorebox,.rev{box-shadow:none}
+}
 </style>
 </head>
 <body>
-<div class="page">
+<header class="appbar">
+  <div class="wrap">
+    <button class="iconbtn" id="btnHome" aria-label="Về trang chủ" title="Trang chủ">⌂</button>
+    <span class="emblem" aria-hidden="true">★</span>
+    <div class="ttl">100_LT. XUÂN MAI<br><span>Điều lệnh · Quân sự · Võ thuật 2026</span></div>
+    <button class="iconbtn" id="btnSound" aria-label="Bật/tắt âm thanh" title="Âm thanh đúng/sai">🔊</button>
+    <button class="iconbtn" id="btnFontDown" aria-label="Giảm cỡ chữ" title="Giảm cỡ chữ">A−</button>
+    <button class="iconbtn" id="btnFontUp" aria-label="Tăng cỡ chữ" title="Tăng cỡ chữ">A+</button>
+    <button class="iconbtn" id="btnTheme" aria-label="Đổi giao diện sáng/tối" title="Sáng / tối">🌙</button>
+  </div>
+</header>
 
-  <!-- STICKY NAV -->
-  <nav class="topnav">
-    <div class="brand">🏫 Trường THCS <span>Văn Lương</span></div>
-    <div class="links">
-      <a href="#muc-dich">🎯 Mục đích</a>
-      <a href="#noi-dung">🤲 Nội dung</a>
-      <a href="#to-chuc">🏛️ Tổ chức</a>
-      <a href="#cam-lam">⛔ Không được làm</a>
-      <a href="#tai-chinh">💰 Tài chính</a>
-      <a href="#phan-anh">📞 Phản ánh</a>
-      <a href="#khen-thuong">🏅 Khen thưởng</a>
-    </div>
-    <button class="menu-btn" id="menuBtn" aria-label="Mở menu điều hướng" aria-expanded="false">☰</button>
-    <div class="mobile-menu" id="mobileMenu">
-      <a href="#muc-dich">🎯 Mục đích &amp; nguyên tắc</a>
-      <a href="#noi-dung">🤲 Nội dung phối hợp</a>
-      <a href="#to-chuc">🏛️ Tổ chức &amp; trách nhiệm</a>
-      <a href="#cam-lam">⛔ 7 việc không được làm</a>
-      <a href="#tai-chinh">💰 Tài chính minh bạch</a>
-      <a href="#phan-anh">📞 Phản ánh &amp; đối thoại</a>
-      <a href="#khen-thuong">🏅 Khen thưởng &amp; thi hành</a>
-    </div>
-  </nav>
-
-  <!-- HERO -->
-  <header class="hero">
-    <div class="school">Trường THCS Văn Lương · Xã Long Điền · Thành phố Hồ Chí Minh</div>
-    <h1>🤝 Quy chế phối hợp giữa Nhà trường và <br>Ban đại diện cha mẹ học sinh<br>⏳Năm học 2026–2027</h1>
-    <div class="sub">Dự thảo Quyết định ban hành Quy chế — Căn cứ Luật Giáo dục 2019 (sửa đổi 2025), Thông tư 55/2011 (Điều lệ BĐD CMHS), Thông tư 15/2026, 19/2025, 22/2021 và Công văn 7608/SGDĐT-KHTC.</div>
-    <span class="draft">Dự thảo · Chờ ký ban hành</span>
-    <div class="cta-row">
-      <a class="cta primary" href="#muc-dich">📖 Xem toàn bộ quy chế</a>
-      <a class="cta parent" href="#tai-chinh">💰 Tài chính minh bạch →</a>
-    </div>
-    <div class="stats">
-      <div class="stat"><div class="ic">📘</div><div><div class="num">6</div><div class="lbl">chương quy chế</div></div></div>
-      <div class="stat"><div class="ic">📄</div><div><div class="num">21</div><div class="lbl">điều quy định</div></div></div>
-      <div class="stat"><div class="ic">⛔</div><div><div class="num">7</div><div class="lbl">việc BĐD không được làm</div></div></div>
-      <div class="stat"><div class="ic">💰</div><div><div class="num">0₫</div><div class="lbl">quỹ phụ huynh</div></div></div>
-      <div class="stat"><div class="ic">🗓️</div><div><div class="num">01 năm</div><div class="lbl">nhiệm kỳ BĐD</div></div></div>
-      <div class="stat"><div class="ic">📞</div><div><div class="num">03–07</div><div class="lbl">ngày xử lý phản ánh</div></div></div>
-    </div>
-  </header>
-
-  <!-- MỤC LỤC -->
-  <nav class="toc" aria-label="Mục lục">
-    <h3>📑 Mục lục</h3>
-    <select class="toc-select" id="tocSelect" aria-label="Chọn mục để xem">
-      <option value="">— Chạm để chọn mục cần xem —</option>
-      <option value="#muc-dich">🎯 Mục đích &amp; nguyên tắc phối hợp</option>
-      <option value="#noi-dung">🤲 Nội dung phối hợp</option>
-      <option value="#to-chuc">🏛️ Tổ chức, nhiệm kỳ &amp; trách nhiệm</option>
-      <option value="#cam-lam">⛔ 7 việc BĐD CMHS không được làm</option>
-      <option value="#tai-chinh">💰 Tài chính minh bạch</option>
-      <option value="#phan-anh">📞 Phản ánh &amp; đối thoại</option>
-      <option value="#khen-thuong">🏅 Khen thưởng &amp; thi hành</option>
-    </select>
-  </nav>
-
-  <!-- 1. MỤC ĐÍCH & NGUYÊN TẮC -->
-  <section class="c1" id="muc-dich">
-    <div class="sec-head">
-      <div class="sec-num">🎯</div>
-      <div><h2>Mục đích &amp; nguyên tắc phối hợp</h2><p>Chương I — Điều 2, 3</p></div>
+<main class="wrap">
+  <!-- ================= HOME ================= -->
+  <section class="view on" id="view-home">
+    <div class="hero">
+      <div style="display:inline-block; background:var(--ok-bg); color:var(--ok); border:1.5px solid var(--ok); border-radius:999px; padding:6px 14px; font-weight:800; font-size:.85rem; margin-bottom:10px">⭐ Lê Thị Xuân Mai ⭐</div>
+      <div class="emblem-hero" aria-hidden="true">★</div>
+      <div class="kicker">Bộ đề ôn tập · Công an nhân dân</div>
+      <h1>100 câu hỏi về công tác tập huấn Điều lệnh, Quân sự, Võ thuật — năm 2026</h1>
+      <p>Đáp án đúng đã có sẵn trong bộ đề gốc. Chọn đáp án là biết ngay đúng/sai. Tối ưu cho điện thoại, dùng được khi không có mạng.</p>
+      <div class="chips">
+        <span class="chip">📋 100 câu</span>
+        <span class="chip">🔘 3 phương án / câu</span>
+        <span class="chip">⭐ 1 điểm / câu đúng</span>
+        <span class="chip">🏆 Tổng 100 điểm</span>
+      </div>
+      <div class="field">
+        <label for="inpName">Họ và tên (không bắt buộc — hiện trên phiếu kết quả kiểm tra)</label>
+        <input id="inpName" type="text" autocomplete="name" placeholder="Ví dụ: Lê Thị Xuân Mai">
+      </div>
     </div>
 
-    <h3 class="block-title">🎯 Mục đích phối hợp</h3>
-    <div class="nlist">
-      <div class="nitem"><div class="n">1</div><p>Thiết lập mối quan hệ phối hợp <b>thường xuyên, chặt chẽ, đồng bộ và hiệu quả</b> giữa Nhà trường và Ban đại diện cha mẹ học sinh nhằm thực hiện thắng lợi nhiệm vụ năm học 2026–2027, nâng cao chất lượng giáo dục toàn diện (đạo đức, trí tuệ, thể chất, thẩm mỹ và kỹ năng sống) cho học sinh.</p></div>
-      <div class="nitem"><div class="n">2</div><p>Phát huy vai trò <b>cầu nối</b> của Ban đại diện cha mẹ học sinh trong việc đồng hành cùng Nhà trường xây dựng môi trường giáo dục <b>an toàn, lành mạnh, thân thiện, dân chủ, kỷ cương</b>, phòng chống bạo lực học đường và các tệ nạn xã hội.</p></div>
-      <div class="nitem"><div class="n">3</div><p>Tuyên truyền, nâng cao nhận thức và trách nhiệm của cha mẹ học sinh trong việc phối hợp với Nhà trường chăm sóc, quản lý, giáo dục học sinh; đồng thời huy động các nguồn lực hợp pháp phục vụ hoạt động giáo dục theo đúng quy định của pháp luật.</p></div>
+    <div class="resume" id="resumeBox">
+      <div id="resumeText"></div>
+      <div class="row">
+        <button class="btn pri small" id="btnResume" style="flex:1">▶ Tiếp tục</button>
+        <button class="btn ghost small" id="btnDiscard" style="flex:1">Làm mới từ đầu</button>
+      </div>
     </div>
 
-    <h3 class="block-title">📏 6 nguyên tắc phối hợp</h3>
-    <div class="grid g2">
-      <div class="card"><h3>⚖️ Tuân thủ pháp luật &amp; dân chủ</h3><p style="font-size:16px">Phối hợp trên cơ sở tôn trọng, hợp tác bình đẳng, công khai, minh bạch; bảo đảm đúng chức năng, nhiệm vụ, quyền hạn theo Điều lệ Trường trung học và Điều lệ Ban đại diện cha mẹ học sinh do Bộ GD&amp;ĐT ban hành.</p></div>
-      <div class="card"><h3>🔄 Không thay thế hoặc chuyển giao trách nhiệm</h3><p style="font-size:16px">Hoạt động phối hợp không làm thay thế hoặc chuyển giao trách nhiệm quản lý nhà nước, quản lý hành chính, điều hành chuyên môn của Nhà trường; đồng thời không làm thay trách nhiệm nuôi dưỡng, chăm sóc, quản lý, giáo dục con em của cha mẹ học sinh.</p></div>
-      <div class="card"><h3>🚧 Không can thiệp sâu vào chuyên môn</h3><p style="font-size:16px">Ban đại diện cha mẹ học sinh <b>không can thiệp</b> vào tổ chức bộ máy, quản trị, điều hành, công tác nghiệp vụ chuyên môn dạy học, kiểm tra, đánh giá học sinh và công tác nhân sự của Nhà trường.</p></div>
-      <div class="card"><h3>💵 Không thu, quản lý tiền quỹ — tự nguyện hoàn toàn</h3><p style="font-size:16px">Ban đại diện cha mẹ học sinh <b>không</b> đứng ra thu, tiếp nhận hay quản lý tiền hỗ trợ (tiền quỹ); không thành lập các loại “Quỹ trường”, “Quỹ lớp”, “Quỹ phụ huynh”. Mọi sự hỗ trợ phải bảo đảm <b>hoàn toàn tự nguyện</b>, không cào bằng, không ấn định mức tối thiểu hay tối đa, không phát sinh nghĩa vụ tài chính trái quy định.</p></div>
-      <div class="card"><h3>🔒 Bảo mật dữ liệu cá nhân</h3><p style="font-size:16px">Tuân thủ nghiêm ngặt các quy định pháp luật về an toàn thông tin, bảo vệ dữ liệu cá nhân, quyền riêng tư, bí mật đời tư của học sinh và gia đình học sinh.</p></div>
-      <div class="card"><h3>🤗 Không phân biệt đối xử</h3><p style="font-size:16px">Tuyệt đối <b>không phân biệt đối xử</b> hoặc gây bất lợi đối với học sinh và cha mẹ học sinh vì lý do tham gia hay không tham gia các hoạt động hỗ trợ.</p></div>
+    <div class="modegrid">
+      <button class="modecard" id="cardStudy">
+        <div class="ic">📚</div>
+        <div>
+          <h3>Chế độ HỌC — Ôn tập</h3>
+          <p>Học từng câu, chọn xong biết ngay đáp án đúng. Có nút “Hiện đáp án” và “Làm lại câu”. Không áp lực điểm số.</p>
+        </div>
+      </button>
+      <button class="modecard exam" id="cardExam">
+        <div class="ic">📝</div>
+        <div>
+          <h3>Chế độ KIỂM TRA — Tính điểm</h3>
+          <p>Làm đủ 100 câu, mỗi câu đúng 1 điểm. Biết đúng/sai ngay sau khi chọn. Cuối buổi có phiếu kết quả để xem lại câu sai.</p>
+        </div>
+      </button>
+    </div>
+
+    <div class="optrow">
+      <div><div class="t">Trộn thứ tự câu hỏi</div><div class="d">Đổi vị trí các câu trong bộ đề</div></div>
+      <label class="switch"><input type="checkbox" id="swShuffleQ"><span class="tr"></span></label>
+    </div>
+    <div class="optrow">
+      <div><div class="t">Trộn phương án A/B/C</div><div class="d">Đổi vị trí đáp án trong từng câu</div></div>
+      <label class="switch"><input type="checkbox" id="swShuffleA"><span class="tr"></span></label>
+    </div>
+
+    <button class="btn soft block" id="btnTestSound" style="margin-top:14px">🔊 Nghe thử âm thanh đúng / sai</button>
+    <p class="foot-note">💡 Mẹo: bấm nút <b>Danh sách</b> khi đang làm để nhảy nhanh tới câu bất kỳ.<br>
+    Câu chưa chắc chắn thì bấm <b>Bỏ qua</b> để quay lại làm sau. Tiến độ được tự lưu trên máy.<br>
+    Nếu không nghe thấy tiếng: kiểm tra điện thoại có đang để <b>chế độ im lặng</b> không, tăng âm lượng media,
+    và mở file bằng <b>Chrome/Safari</b> thay vì xem trước trong Zalo_Design by TM1806</p>
+  </section>
+
+  <!-- ================= QUIZ ================= -->
+  <section class="view" id="view-quiz">
+    <div class="statusrow">
+      <span class="badge" id="modeBadge">KIỂM TRA</span>
+      <span class="pill" id="posPill">Câu 1/100</span>
+      <span class="pill score" id="scorePill">Điểm: 0</span>
+      <span class="pill" id="timePill">⏱ 00:00</span>
+    </div>
+    <div class="progress"><div id="progBar" style="width:0%"></div></div>
+    <div class="progresstxt"><span id="progTxt">Đã xử lý 0/100 câu</span><span class="swipehint">↔ Vuốt phải: tiếp · Vuốt trái: trước</span><span id="progPct">0%</span></div>
+
+    <div class="cardwrap" id="cardWrap">
+    <div class="qcard" id="qCard">
+      <div class="qmeta">
+        <span class="qnum" id="qNumLabel">CÂU 1</span>
+        <span class="tagskip hidden" id="tagSkip">⏭ Đã bỏ qua — làm lại câu này nhé</span>
+      </div>
+      <h2 id="qText"></h2>
+      <div class="options" id="optBox"></div>
+      <div class="zone">
+        <div class="feedback" id="feedback"></div>
+        <div class="underbtns hidden" id="studyTools">
+          <button class="btn ghost" id="btnReveal">👁 Hiện đáp án đúng</button>
+        </div>
+      </div>
+    </div>
     </div>
   </section>
 
-  <!-- 2. NỘI DUNG PHỐI HỢP -->
-  <section class="c2 alt" id="noi-dung">
-    <div class="sec-head">
-      <div class="sec-num">🤲</div>
-      <div><h2>Nội dung phối hợp</h2><p>Chương II — Điều 4, 5, 6, 7, 8</p></div>
+  <!-- ================= RESULT ================= -->
+  <section class="view" id="view-result">
+    <div class="scorebox">
+      <div class="kicker" style="color:var(--gold); font-weight:800; letter-spacing:.06em; font-size:.78rem; text-transform:uppercase" id="resModeLabel">Kết quả kiểm tra</div>
+      <div class="scorecircle"><div class="big" id="resScore">0</div><div class="of">/ 100 điểm</div></div>
+      <h2 id="resVerdict"></h2>
+      <p class="who" id="resWho"></p>
+      <div class="statgrid">
+        <div class="stat ok"><b id="stOk">0</b><span>Đúng</span></div>
+        <div class="stat bad"><b id="stBad">0</b><span>Sai</span></div>
+        <div class="stat warn"><b id="stSkip">0</b><span>Bỏ qua</span></div>
+        <div class="stat"><b id="stTodo">0</b><span id="stTodoLabel">Chưa làm</span></div>
+      </div>
+      <div style="display:flex; gap:8px; margin-top:14px; flex-wrap:wrap">
+        <button class="btn pri" id="btnPdf" style="flex:1">📄 Xuất kết quả PDF</button>
+        <button class="btn ghost" id="btnShare" style="flex:1">📤 Gửi / sao chép</button>
+      </div>
+      <div style="display:flex; gap:8px; margin-top:8px; flex-wrap:wrap">
+        <button class="btn ghost" id="btnAgain" style="flex:1">↺ Làm lại từ đầu</button>
+        <button class="btn soft" id="btnHome2" style="flex:1">⌂ Về trang chủ</button>
+      </div>
+      <button class="btn soft block" id="btnPrint" style="margin-top:8px">🖨 In phiếu kết quả (hoặc lưu PDF từ hộp thoại in)</button>
     </div>
-    <div class="grid g2">
-      <div class="card icon-top">
-        <div class="big">🌱</div>
-        <h3>Giáo dục đạo đức, lối sống</h3>
-        <ul>
-          <li><b>Nắm bắt tâm lý:</b> GVCN và cha mẹ duy trì liên lạc thường xuyên, trao đổi về diễn biến tâm sinh lý, sức khỏe, thái độ học tập, quan hệ bạn bè và các biểu hiện bất thường để phối hợp uốn nắn kịp thời.</li>
-          <li><b>Văn hóa ứng xử:</b> nhà trường phổ biến công khai Nội quy học sinh, Quy tắc ứng xử văn hóa học đường đến từng gia đình; cha mẹ nhắc con đi học đúng giờ, mặc đồng phục đúng quy định, giữ vệ sinh cá nhân, tôn trọng thầy cô, đoàn kết bạn bè.</li>
-          <li><b>Xử lý vi phạm:</b> khi HS vi phạm, GVCN <b>thông báo trực tiếp</b> đến cha mẹ; cha mẹ tham gia buổi làm việc, <b>ký xác nhận bản tự kiểm điểm</b> và cam kết hỗ trợ con khắc phục (theo TT 19/2025). Tuyệt đối không áp dụng biện pháp kỷ luật mang tính bạo lực, xúc phạm danh dự.</li>
-          <li><b>Rèn luyện hè:</b> phối hợp với Đoàn Thanh niên và chính quyền địa phương bàn giao, theo dõi, quản lý, giáo dục HS chưa đạt rèn luyện trong dịp nghỉ hè tại địa phương.</li>
-        </ul>
-      </div>
-      <div class="card icon-top">
-        <div class="big">📚</div>
-        <h3>Học tập &amp; đánh giá</h3>
-        <ul>
-          <li><b>Theo dõi kết quả:</b> nhà trường cập nhật kết quả học tập, rèn luyện định kỳ (giữa kỳ, cuối kỳ) và thường xuyên qua Sổ theo dõi và đánh giá học sinh, Sổ liên lạc điện tử hoặc tài khoản tra cứu chính thức.</li>
-          <li>Cha mẹ định kỳ kiểm tra việc học ở nhà, tạo góc học tập yên tĩnh, trang bị đầy đủ sách vở, dụng cụ và đôn đốc con hoàn thành nhiệm vụ học tập.</li>
-          <li>GV thông báo cụ thể các môn HS còn hạn chế để gia đình phối hợp kèm cặp; BĐD CMHS động viên, khen thưởng kịp thời HS có tiến bộ vượt bậc hoặc thành tích xuất sắc.</li>
-        </ul>
-      </div>
-      <div class="card icon-top">
-        <div class="big">🛡️</div>
-        <h3>An toàn trường học</h3>
-        <ul>
-          <li><b>An toàn giao thông:</b> cha mẹ cam kết <b>không giao xe máy từ 50cm³ trở lên</b> hoặc xe máy điện không đúng độ tuổi cho con điều khiển; đội mũ bảo hiểm đạt chuẩn cho con khi ngồi trên xe mô tô, gắn máy, xe máy điện; dừng, đỗ xe đúng nơi quy định khi đưa đón, không gây ùn tắc trước cổng trường.</li>
-          <li><b>Phòng chống bạo lực &amp; tệ nạn:</b> thiết lập <b>đường dây nóng</b> và kênh tiếp nhận phản ánh về nguy cơ bạo lực, xâm hại, bắt nạt trên mạng, tệ nạn xã hội; khi phát hiện nguy cơ, hai bên trao đổi, xác minh và phối hợp cơ quan chức năng xử lý triệt để.</li>
-        </ul>
-      </div>
-      <div class="card icon-top">
-        <div class="big">🏥</div>
-        <h3>Sức khỏe &amp; chính sách hỗ trợ</h3>
-        <ul>
-          <li><b>Khám sức khỏe định kỳ:</b> từ nguồn <b>ngân sách nhà nước</b> — nhà trường <b>tuyệt đối không thu</b> bất kỳ khoản tiền nào của phụ huynh; cha mẹ cung cấp chính xác tiền sử bệnh lý của con và theo dõi kết quả khám do y tế trường học thông báo.</li>
-          <li><b>Miễn, giảm học phí:</b> nhà trường công khai minh bạch chính sách; GVCN hướng dẫn gia đình diện chính sách (hộ nghèo, cận nghèo, dân tộc thiểu số, khuyết tật, mồ côi) hoàn thiện hồ sơ đề nghị cấp bù tiền miễn, giảm học phí và hỗ trợ chi phí học tập kịp thời, đúng quy định.</li>
-          <li><b>Mượn SGK:</b> phối hợp rà soát nhu cầu, tổ chức cho HS mượn sách giáo khoa từ thư viện, bảo đảm <b>100% học sinh có đủ sách</b> học tập.</li>
-        </ul>
-      </div>
+    <div class="tabs" id="revTabs">
+      <button class="tab on" data-f="all">Tất cả (100)</button>
+      <button class="tab" data-f="wrong">Câu sai</button>
+      <button class="tab" data-f="open">Bỏ qua / chưa làm</button>
+      <button class="tab" data-f="right">Câu đúng</button>
     </div>
-
-    <h3 class="block-title">🗓️ Hình thức phối hợp &amp; kênh trao đổi (Điều 8)</h3>
-    <div class="grid g2">
-      <div class="card">
-        <h3>Hội nghị &amp; cuộc họp định kỳ</h3>
-        <ul>
-          <li><b>Họp toàn thể cha mẹ học sinh lớp:</b> 03 lần/năm học (đầu năm học, kết thúc Học kỳ I, kết thúc năm học). Họp bất thường khi có ít nhất <b>50%</b> cha mẹ học sinh lớp yêu cầu.</li>
-          <li><b>Họp Ban đại diện CMHS trường:</b> định kỳ theo chương trình công tác năm học; họp bất thường khi có ít nhất 50% số thành viên hoặc Trưởng ban đề nghị.</li>
-        </ul>
-      </div>
-      <div class="card">
-        <h3>Các kênh thông tin chính thức</h3>
-        <ul>
-          <li>Sổ liên lạc điện tử, cổng thông tin điện tử của trường, ứng dụng kết nối chuyển đổi số chính thức do Nhà trường triển khai.</li>
-          <li>Trao đổi trực tiếp, gửi văn bản thông báo hoặc liên lạc qua điện thoại giữa GVCN và cha mẹ học sinh.</li>
-          <li>Hộp thư góp ý, buổi tiếp dân và đối thoại trực tiếp giữa Hiệu trưởng với Ban đại diện cha mẹ học sinh.</li>
-        </ul>
-      </div>
-    </div>
+    <div id="revList"></div>
+    <button class="btn pri block" id="btnPdf2" style="margin:4px 0 22px">📄 Xuất kết quả PDF để đối chiếu</button>
   </section>
+</main>
 
-  <!-- 3. TỔ CHỨC & TRÁCH NHIỆM -->
-  <section class="c3" id="to-chuc">
-    <div class="sec-head">
-      <div class="sec-num">🏛️</div>
-      <div><h2>Tổ chức, nhiệm kỳ &amp; trách nhiệm các bên</h2><p>Chương III — Điều 9, 10, 11, 12 · theo Thông tư 55/2011</p></div>
-    </div>
+<!-- bottom nav -->
+<nav class="bottomnav" id="bottomNav">
+  <div class="wrap">
+    <button class="navbtn" id="btnPrev"><span class="ni">←</span><span class="nl">Trước</span></button>
+    <button class="navbtn" id="btnGrid"><span class="ni">▦</span><span class="nl">Danh sách</span></button>
+    <button class="navbtn warnb" id="btnSkip"><span class="ni">⏭</span><span class="nl" id="skipLabel">Bỏ qua</span></button>
+    <button class="navbtn finishb" id="btnFinishTop"><span class="ni">✔</span><span class="nl">Kết thúc</span></button>
+    <button class="navbtn pri" id="btnNext"><span class="ni">→</span><span class="nl" id="nextLabel">Tiếp</span></button>
+  </div>
+</nav>
 
-    <h3 class="block-title">3 bước thành lập Ban đại diện CMHS trường</h3>
-    <div class="ladder">
-      <div class="step s1">
-        <div class="lvl">Bước 1</div>
-        <h3>🤝 Cử ra BĐD trường</h3>
-        <p>Hiệu trưởng họp với Trưởng ban và Phó trưởng ban của tất cả các Ban đại diện CMHS lớp để cử ra Ban đại diện CMHS trường (gồm các Trưởng ban và một số Phó trưởng ban BĐD lớp).</p>
-      </div>
-      <div class="step s2">
-        <div class="lvl">Bước 2</div>
-        <h3>🗳️ Kiện toàn ban</h3>
-        <p>Hiệu trưởng chủ trì cuộc họp đầu tiên của BĐD trường để Ban cử Trưởng ban, các Phó trưởng ban và cử các ủy viên phụ trách các mảng công tác.</p>
-      </div>
-      <div class="step s3">
-        <div class="lvl">Bước 3</div>
-        <h3>📋 Thông qua kế hoạch</h3>
-        <p>Trưởng ban BĐD trường chính thức điều hành cuộc họp toàn thể các Trưởng ban, Phó trưởng ban BĐD lớp để thông qua chương trình, kế hoạch hoạt động toàn trường cho năm học.</p>
-      </div>
+<!-- grid drawer -->
+<div class="overlay" id="gridOverlay">
+  <div class="sheet">
+    <h3>Danh sách câu hỏi</h3>
+    <p class="sub">Chạm vào số câu để đến thẳng câu đó.</p>
+    <div class="legend">
+      <span><i></i>Chưa làm</span>
+      <span><i class="lc"></i>Đúng</span>
+      <span><i class="lw"></i>Sai</span>
+      <span><i class="ls"></i>Bỏ qua</span>
+      <span><i class="lr"></i>Đã xem đáp án</span>
     </div>
-
-    <h3 class="block-title">Nhiệm kỳ &amp; vị trí pháp lý</h3>
-    <div class="highlight blue">
-      <h3>⏳ Nhiệm kỳ 01 năm học</h3>
-      <ul>
-        <li>Nhiệm kỳ của Ban đại diện CMHS lớp và trường là <b>01 năm học</b>; hết nhiệm kỳ khi BĐD năm học mới được đề cử ra.</li>
-        <li><b>Lớp 9 (cuối cấp):</b> BĐD lớp 9 hết nhiệm kỳ khi kết thúc năm học (sau khi xét hoàn thành chương trình giáo dục THCS).</li>
-        <li><b>Thay đổi giữa nhiệm kỳ:</b> bãi nhiệm, thay thế hoặc bổ sung thành viên BĐD lớp do <b>cuộc họp toàn thể cha mẹ học sinh lớp</b> quyết định; BĐD trường do <b>cuộc họp toàn thể BĐD trường</b> quyết định.</li>
-      </ul>
+    <div class="grid" id="gridBox"></div>
+    <div style="display:flex; gap:8px; margin-top:16px">
+      <button class="btn ghost" id="btnCloseGrid" style="flex:1">Đóng</button>
+      <button class="btn pri" id="btnFinishGrid" style="flex:1">Kết thúc &amp; xem kết quả</button>
     </div>
-    <div class="highlight red">
-      <h3>⚖️ Vị trí pháp lý của Ban đại diện CMHS</h3>
-      <p>Ban đại diện cha mẹ học sinh là tổ chức đại diện cho cha mẹ học sinh, được cử ra mỗi năm học để phối hợp với Nhà trường thực hiện các hoạt động giáo dục. <b>Ban đại diện CMHS không thuộc cơ cấu tổ chức của Nhà trường, không có tư cách pháp nhân, không có con dấu và không mở tài khoản ngân hàng riêng.</b></p>
-    </div>
-
-    <h3 class="block-title">🛡Trách nhiệm của Nhà trường</h3>
-    <div class="grid g2">
-      <div class="card">
-        <h3>👔 Hiệu trưởng</h3>
-        <ul>
-          <li>Chủ động tổ chức thực hiện phối hợp với cha mẹ học sinh; bố trí địa điểm, tạo điều kiện thuận lợi về cơ sở vật chất để BĐD họp và hoạt động.</li>
-          <li>Chỉ đạo GVCN phối hợp chặt chẽ với BĐD CMHS lớp; định kỳ làm việc với BĐD trường; tổ chức đối thoại khi cần thiết để lắng nghe ý kiến, giải quyết phản ánh, kiến nghị của cha mẹ.</li>
-          <li>Kiểm tra, giám sát, chấn chỉnh và <b>xử lý nghiêm</b> các hành vi vi phạm quy định về thu chi, lạm thu hoặc quyên góp trái quy định.</li>
-          <li><b>Tuyệt đối không</b> giao cho cha mẹ học sinh, BĐD CMHS hoặc các thành viên thực hiện các nhiệm vụ thuộc trách nhiệm quản trị, quản lý, điều hành, chuyên môn hoặc tài chính của Nhà trường.</li>
-        </ul>
-      </div>
-      <div class="card">
-        <h3>👩‍🏫 Giáo viên chủ nhiệm</h3>
-        <ul>
-          <li><b>Tối thiểu 01 lần/tháng</b> trao đổi thông tin về học tập, rèn luyện của học sinh với cha mẹ học sinh.</li>
-          <li>Chủ trì tổ chức Hội nghị cha mẹ học sinh lớp đầu năm học; phối hợp chuẩn bị nội dung cho các cuộc họp định kỳ.</li>
-          <li>Tiếp nhận, phản ánh trung thực, khách quan ý kiến của cha mẹ tới Ban Giám hiệu; phối hợp xử lý học sinh vi phạm theo đúng quy định.</li>
-          <li>Không giao cho cha mẹ học sinh hoặc BĐD CMHS thực hiện các nhiệm vụ chuyên môn của giáo viên.</li>
-        </ul>
-      </div>
-    </div>
-
-    <h3 class="block-title">⚖️ Nhiệm vụ &amp; quyền hạn của Ban đại diện CMHS trường</h3>
-    <div class="two-col">
-      <div class="panel duties">
-        <h3>📌 Nhiệm vụ</h3>
-        <ul>
-          <li>Phối hợp với Hiệu trưởng tổ chức thực hiện kế hoạch hoạt động giáo dục.</li>
-          <li>Tuyên truyền, phổ biến chủ trương, chính sách giáo dục, pháp luật đến cha mẹ học sinh.</li>
-          <li>Tập hợp, tổng hợp ý kiến, nguyện vọng chính đáng của cha mẹ học sinh để trao đổi, đối thoại với Hiệu trưởng.</li>
-          <li>Phối hợp tổ chức các hoạt động giáo dục có sự tham gia của cha mẹ học sinh; phối hợp quản lý học sinh rèn luyện hè tại địa phương.</li>
-        </ul>
-      </div>
-      <div class="panel rights">
-        <h3>✅ Quyền hạn</h3>
-        <ul>
-          <li>Quyết định triệu tập các cuộc họp Ban đại diện CMHS theo quy định sau khi thống nhất với Hiệu trưởng.</li>
-          <li>Đề xuất với Hiệu trưởng các giải pháp nâng cao chất lượng giáo dục và quản lý học sinh.</li>
-          <li>Đề nghị Hiệu trưởng tổ chức trao đổi, đối thoại về những vấn đề liên quan đến công tác chăm sóc, giáo dục học sinh.</li>
-        </ul>
-      </div>
-    </div>
-
-    <h3 class="block-title">Trách nhiệm &amp; quyền hạn của cha mẹ học sinh</h3>
-    <div class="two-col">
-      <div class="panel duties">
-        <h3>📌 Trách nhiệm</h3>
-        <ul>
-          <li>Nuôi dưỡng, quản lý, giáo dục và tạo điều kiện tốt nhất cho con em học tập, rèn luyện.</li>
-          <li>Tôn trọng nhà giáo, cán bộ, nhân viên nhà trường; chủ động trao đổi thông tin cần thiết, chính xác, kịp thời về tình hình của con em.</li>
-          <li>Thường xuyên theo dõi kết quả học tập, rèn luyện; <b>tham gia đầy đủ</b> các cuộc họp cha mẹ học sinh.</li>
-          <li><b>Bồi thường thiệt hại</b> theo quy định pháp luật nếu con em gây hư hỏng, mất mát tài sản của Nhà trường hoặc của người khác.</li>
-        </ul>
-      </div>
-      <div class="panel rights">
-        <h3>✅ Quyền hạn</h3>
-        <ul>
-          <li>Được Nhà trường cung cấp đầy đủ, chính xác thông tin liên quan trực tiếp đến việc học tập, rèn luyện và phát triển của con em.</li>
-          <li>Tự do <b>ứng cử, đề cử</b> vào Ban đại diện cha mẹ học sinh lớp.</li>
-          <li><b>Tự nguyện</b> quyết định việc tham gia hoặc không tham gia các hoạt động hỗ trợ; có quyền <b>từ chối</b> mọi khoản đóng góp, ủng hộ không tự nguyện hoặc trái quy định.</li>
-          <li>Đóng góp ý kiến, phản ánh, kiến nghị trực tiếp với nhà trường hoặc qua Ban đại diện CMHS về công tác giáo dục của Nhà trường.</li>
-        </ul>
-      </div>
-    </div>
-  </section>
-
-  <!-- 4. 7 VIỆC KHÔNG ĐƯỢC LÀM -->
-  <section class="c4 alt" id="cam-lam">
-    <div class="sec-head">
-      <div class="sec-num">⛔</div>
-      <div><h2>7 việc Ban đại diện CMHS không được làm</h2><p>Chương III — Điều 13</p></div>
-    </div>
-    <div class="nlist">
-      <div class="nitem red"><div class="n">1</div><p>Can thiệp vào tổ chức bộ máy, quản trị, điều hành, hoạt động chuyên môn, kế hoạch giảng dạy, kiểm tra, đánh giá học sinh và công tác nhân sự của Nhà trường.</p></div>
-      <div class="nitem red"><div class="n">2</div><p>Lợi dụng danh nghĩa Ban đại diện cha mẹ học sinh để thực hiện hành vi trái pháp luật, cản trở hoạt động giáo dục hoặc xâm phạm quyền, lợi ích hợp pháp của tổ chức, cá nhân.</p></div>
-      <div class="nitem red"><div class="n">3</div><p>Thành lập các loại quỹ trái quy định như “Quỹ trường”, “Quỹ lớp”, “Quỹ phụ huynh”; không đứng ra thu, tiếp nhận hoặc quản lý tiền hỗ trợ (tiền quỹ) từ cha mẹ học sinh dưới mọi hình thức.</p></div>
-      <div class="nitem red"><div class="n">4</div><p>Đặt ra các khoản đóng góp bắt buộc, ấn định hoặc phân bổ mức hỗ trợ bình quân, mức hỗ trợ tối thiểu, thời hạn phải đóng đối với cha mẹ học sinh.</p></div>
-      <div class="nitem red"><div class="n">5</div><p>Sử dụng danh nghĩa Ban đại diện cha mẹ học sinh để vận động tài trợ cho Nhà trường; thu, tiếp nhận, quản lý hoặc sử dụng kinh phí tài trợ dành cho Nhà trường.</p></div>
-      <div class="nitem red"><div class="n">6</div><p>Phân biệt đối xử hoặc gây bất lợi đối với học sinh và cha mẹ học sinh vì lý do tham gia hay không tham gia đóng góp, hỗ trợ.</p></div>
-      <div class="nitem red"><div class="n">7</div><p>Thu thập, cung cấp, sử dụng hoặc công khai trái quy định pháp luật thông tin cá nhân, bí mật đời tư của học sinh và gia đình học sinh.</p></div>
-    </div>
-  </section>
-
-  <!-- 5. TÀI CHÍNH -->
-  <section class="c5" id="tai-chinh">
-    <div class="sec-head">
-      <div class="sec-num">💰</div>
-      <div><h2>Tài chính minh bạch</h2><p>Chương IV — Điều 14, 15, 16 · theo TT 55/2011 &amp; CV 7608/SGDĐT-KHTC</p></div>
-    </div>
-
-    <div class="highlight">
-      <h3>💵 Phương thức hỗ trợ — không dùng tiền mặt qua Ban đại diện</h3>
-      <ul>
-        <li>Ngay từ đầu năm học 2026–2027, Ban đại diện CMHS <b>không tổ chức lập quỹ tiền mặt hay tài khoản thu tiền</b> đóng góp.</li>
-        <li>Khi phát sinh nhu cầu hỗ trợ cho hoạt động cụ thể: BĐD <b>thông tin công khai</b> với cha mẹ về mục đích, nội dung hoạt động, nhu cầu hỗ trợ và phương thức thực hiện.</li>
-        <li>Cha mẹ học sinh <b>tự nguyện</b> quyết định việc hỗ trợ thông qua 02 hình thức <b>phi tiền mặt trực tiếp</b>:
-          <br>① Cung cấp trực tiếp hàng hóa, dịch vụ cần thiết cho hoạt động
-          <br>② Thanh toán trực tiếp cho tổ chức, cá nhân cung cấp hàng hóa, dịch vụ</li>
-        <li>Ban đại diện CMHS <b>tuyệt đối không</b> thu, tiếp nhận hoặc quản lý tiền hỗ trợ.</li>
-      </ul>
-    </div>
-
-    <h3 class="block-title">🚫 5 nội dung cấm đề nghị / sử dụng nguồn hỗ trợ (Điều 15)</h3>
-    <div class="nlist">
-      <div class="nitem amber"><div class="n">1</div><p>Xây dựng, cải tạo, nâng cấp, sửa chữa cơ sở vật chất, công trình kiến trúc của Nhà trường; bảo vệ cơ sở vật chất, bảo đảm an ninh nhà trường.</p></div>
-      <div class="nitem amber"><div class="n">2</div><p>Mua sắm, thuê, lắp đặt, sửa chữa, bảo dưỡng máy móc, trang thiết bị, đồ dùng phục vụ hoạt động dạy học của trường, lớp học hoặc cho cán bộ, giáo viên, nhân viên.</p></div>
-      <div class="nitem amber"><div class="n">3</div><p>Hoạt động quản trị, điều hành, chuyên môn, tổ chức thực hiện chương trình, kế hoạch giáo dục thuộc trách nhiệm của Nhà trường.</p></div>
-      <div class="nitem amber"><div class="n">4</div><p>Chi trả thù lao, tiền công, tiền thưởng, quà tặng hoặc các khoản hỗ trợ khác cho cán bộ quản lý, giáo viên, nhân viên nhà trường.</p></div>
-      <div class="nitem amber"><div class="n">5</div><p>Chi trả dịch vụ phục vụ hoạt động thường xuyên của Nhà trường (vệ sinh trường lớp, trông giữ phương tiện giao thông của học sinh, dịch vụ bảo vệ…).</p></div>
-    </div>
-
-    <h3 class="block-title">🧾 Khoản thu dịch vụ &amp; cấm giao thu hộ (Điều 16)</h3>
-    <div class="card">
-      <ul>
-        <li>Chỉ tổ chức thu các khoản dịch vụ phục vụ <b>trực tiếp cá nhân học sinh</b> (đồng phục, học phẩm, tiền ăn bán trú, nước uống…) khi có sự <b>thống nhất, tự nguyện</b> của cha mẹ — trên tinh thần công khai, đúng giá thực tế, không phát sinh chênh lệch và không ép buộc; thực hiện nghiêm công khai tài chính theo TT 09/2024.</li>
-        <li><b>Nghiêm cấm giao Ban đại diện CMHS thu hộ</b> các khoản thu dịch vụ, học phí hay bất kỳ khoản thu nào thuộc trách nhiệm quản lý của Nhà trường.</li>
-        <li>Mọi khoản thu của Nhà trường phải do <b>bộ phận tài vụ</b> thực hiện qua hình thức <b>thanh toán không dùng tiền mặt</b> và xuất hóa đơn / chứng từ điện tử theo quy định pháp luật.</li>
-      </ul>
-    </div>
-  </section>
-
-  <!-- 6. PHẢN ÁNH & ĐỐI THOẠI -->
-  <section class="c6 alt" id="phan-anh">
-    <div class="sec-head">
-      <div class="sec-num">📞</div>
-      <div><h2>Tiếp nhận phản ánh &amp; tổ chức đối thoại</h2><p>Chương V — Điều 17, 18</p></div>
-    </div>
-    <div class="grid g2">
-      <div class="card">
-        <h3>📥 Kênh tiếp nhận phản ánh, kiến nghị</h3>
-        <ul>
-          <li>Hộp thư góp ý trực tiếp tại cổng trường và văn phòng.</li>
-          <li>Đường dây nóng, hộp thư điện tử chính thức và ứng dụng kết nối chuyển đổi số của nhà trường.</li>
-		  	  <h4 class="block-title">📞Số điện thoại Hiệu trưởng: 0909.817.794</h4>
-			  <h4 class="block-title">📞Số điện thoại Phó hiệu trưởng: 0933.100.727</h4>
-          <li>Buổi tiếp dân trực tiếp của Ban Giám hiệu.</li>
-          <li>Ban đại diện CMHS có trách nhiệm tiếp nhận, tổng hợp, phản ánh ý kiến, nguyện vọng chính đáng của cha mẹ với Nhà trường — <b>không thay cha mẹ thực hiện quyền khiếu nại, tố cáo</b>.</li>
-        </ul>
-      </div>
-      <div class="card">
-        <h3>⏱️ Thời hạn xử lý</h3>
-        <ul>
-          <li>Ý kiến thuộc thẩm quyền <b>Giáo viên chủ nhiệm</b>: xử lý và phản hồi trực tiếp cho cha mẹ trong vòng <b>03 ngày làm việc</b>.</li>
-          <li>Ý kiến thuộc thẩm quyền <b>Hiệu trưởng</b>: giải quyết và thông báo kết quả trong vòng <b>07 ngày làm việc</b>; trường hợp không thuộc thẩm quyền, Hiệu trưởng hướng dẫn hoặc chuyển phản ánh đến cơ quan có thẩm quyền.</li>
-        </ul>
-      </div>
-    </div>
-    <div class="highlight blue" style="margin-top:16px;">
-      <h3>💬 Đối thoại định kỳ</h3>
-      <p>Mỗi năm học, Hiệu trưởng tổ chức <b>tối thiểu 02 buổi đối thoại</b> trực tiếp với Ban đại diện CMHS trường và đại diện cha mẹ học sinh các lớp (<b>vào đầu năm học và giữa năm học</b>) để công khai tình hình hoạt động giáo dục, giải đáp thắc mắc và tiếp thu ý kiến đóng góp xây dựng Nhà trường. Việc tiếp nhận, xử lý phản ánh và tổ chức đối thoại <b>không làm phát sinh thủ tục, hồ sơ phức tạp</b>; bảo đảm dân chủ, khách quan, không phân biệt đối xử hoặc gây bất lợi đối với người phản ánh.</p>
-    </div>
-  </section>
-
-  <!-- 7. KHEN THƯỞNG & THI HÀNH -->
-  <section class="c7" id="khen-thuong">
-    <div class="sec-head">
-      <div class="sec-num">🏅</div>
-      <div><h2>Khen thưởng, xử lý vi phạm &amp; thi hành</h2><p>Chương VI — Điều 19, 20, 21</p></div>
-    </div>
-    <div class="grid g2">
-      <div class="card icon-top">
-        <div class="big">🌟</div>
-        <h3>Khen thưởng và thi đua</h3>
-        <ul>
-          <li>Kế hoạch và kết quả phối hợp giữa Nhà trường với Ban đại diện CMHS là một trong những <b>tiêu chí xét thi đua khen thưởng</b> cuối năm học đối với tập thể lớp, Giáo viên chủ nhiệm và Nhà trường.</li>
-          <li>Tập thể BĐD trường, BĐD lớp và các cá nhân cha mẹ có nhiều đóng góp xuất sắc cho công tác giáo dục học sinh sẽ được Hiệu trưởng <b>biểu dương, tặng Giấy khen</b> hoặc đề xuất các cấp quản lý giáo dục khen thưởng theo Luật Thi đua, Khen thưởng.</li>
-        </ul>
-      </div>
-      <div class="card icon-top">
-        <div class="big">⚖️</div>
-        <h3>Xử lý vi phạm</h3>
-        <ul>
-          <li><b>Cán bộ, giáo viên, nhân viên</b> vi phạm Quy chế — đặc biệt vi phạm quy định về thu chi, lạm thu, giao BĐD CMHS thu hộ hoặc ép buộc đóng góp — tùy mức độ sẽ bị <b>xử lý kỷ luật nghiêm khắc</b>.</li>
-          <li><b>Thành viên BĐD CMHS</b> lợi dụng danh nghĩa để thực hiện hành vi trái quy định, tự ý đặt ra các khoản thu trái phép hoặc gây mất đoàn kết — sẽ bị <b>xem xét bãi nhiệm</b> và xử lý theo quy định pháp luật.</li>
-        </ul>
-      </div>
-    </div>
-    <div class="highlight" style="margin-top:16px;">
-      <h3>📜 Hiệu lực &amp; điều khoản chuyển tiếp</h3>
-      <ul>
-        <li>Quy chế có hiệu lực thi hành <b>kể từ ngày ký</b> Quyết định ban hành và áp dụng cho năm học 2026–2027.</li>
-        <li><b>Chuyển tiếp:</b> thực hiện theo <b>Thông tư 55/2011</b> từ đầu năm học 2026–2027 đến hết <b>ngày 14/11/2026</b>; kể từ <b>ngày 15/11/2026</b>, các nội dung quản lý và hoạt động của BĐD CMHS tự động cập nhật và thực hiện theo các quy định mới tương ứng của <b>Thông tư 81/2026</b> (thay thế TT 55/2011). BĐD đã thành lập đầu năm học tiếp tục hoạt động đến hết nhiệm kỳ; việc kiện toàn (nếu có) thực hiện theo TT 81/2026.</li>
-        <li>Ban Giám hiệu, đoàn thể, GVCN, GV bộ môn, nhân viên có trách nhiệm phổ biến, quán triệt và thực hiện nghiêm túc; BĐD trường và các lớp triển khai Quy chế đến toàn thể cha mẹ học sinh toàn trường.</li>
-      </ul>
-    </div>
-  </section>
-
-  <!-- FOOTER -->
-  <footer class="foot">
-    <div class="cols">
-      <div class="col">
-        <h4>📌 Thông tin văn bản</h4>
-        <ul>
-          <li>Dự thảo Quyết định ban hành Quy chế phối hợp Nhà trường – BĐD CMHS.</li>
-          <li>Trường THCS Văn Lương — UBND xã Long Điền.</li>
-          <li>Năm học 2026–2027 · Hiệu lực thi hành kể từ ngày ký.</li>
-          <li>Ký bởi: Hiệu trưởng <b>Lê Trần Mộng Thành</b>.</li>
-        </ul>
-      </div>
-      <div class="col">
-        <h4>⚖️ Căn cứ pháp lý</h4>
-        <ul>
-          <li>Luật Giáo dục 2019 (sửa đổi, bổ sung 2025).</li>
-          <li>TT 55/2011 (Điều lệ BĐD CMHS) → TT 81/2026 từ 15/11/2026.</li>
-          <li>TT 15/2026 (Điều lệ trường), TT 19/2025 (khen thưởng–kỷ luật).</li>
-          <li>TT 22/2021 (đánh giá HS), CV 7608/SGDĐT-KHTC (học phí, khoản thu).</li>
-        </ul>
-      </div>
-    </div>
-    <div class="credit">Thiết kế và xây dựng webapp bởi Lê Trần Mộng Thành — Nội dung thuộc về Trường THCS Văn Lương.</div>
-  </footer>
-
+  </div>
 </div>
 
-<button id="toTop" aria-label="Về đầu trang">⬆️</button>
+<!-- finish confirm modal -->
+<div class="overlay modal" id="confirmOverlay">
+  <div class="box">
+    <h3 id="cfTitle">Kết thúc bài làm?</h3>
+    <p id="cfText"></p>
+    <div class="row">
+      <button class="btn ghost" id="btnCfBack">Làm tiếp câu còn lại</button>
+      <button class="btn pri" id="btnCfSubmit">Xem kết quả</button>
+    </div>
+    <button class="btn soft block" id="btnCfCancel" style="margin-top:8px">Ở lại câu hiện tại</button>
+  </div>
+</div>
+
+<div class="toast" id="toast"></div>
+
 <script>
-  var btn = document.getElementById('toTop');
-  window.addEventListener('scroll', function(){
-    btn.classList.toggle('show', window.scrollY > 600);
-  }, { passive:true });
-  btn.addEventListener('click', function(){
-    window.scrollTo({ top:0, behavior:'smooth' });
+"use strict";
+const DATA = {"title": "BỘ ĐỀ 100 CÂU HỎI VỀ CÔNG TÁC TẬP HUẤN ĐL, QS, VT NĂM 2026", "questions": [{"n": 1, "q": "Phạm vi điều chỉnh của Thông tư số 34 ngày 18/9/2019 của Bộ quy định về Điều lệnh nội vụ CAND quy định những vấn đề gì?", "options": ["Quy định chức trách, nhiệm vụ chung của Công an nhân dân Việt Nam, Công an nhân dân là lực lượng vũ trang trọng yếu, tin cậy của Đảng Cộng sản Việt Nam và Nhà nước Cộng hòa xã hội chủ nghĩa Việt Nam.", "Quy định chức trách, nhiệm vụ và mối quan hệ công tác; chế độ làm việc, công tác, chiến đấu, hội họp, huấn luyện, học tập, bảo mật, nghỉ ngơi; quản lý tài liệu, vũ khí, công cụ hỗ trợ, vật chứng, phương tiện nghiệp vụ, tài chính, tài sản; sử dụng trang phục; tư thế, lễ tiết, tác phong; nội vụ, vệ sinh công sở của công an các đơn vị, địa phương và cán bộ, chiến sĩ CAND.", "Quy định lực lượng CAND khi thực hiện nhiệm vụ phải theo quy trình, quy chế, chế độ công tác, lề lối làm việc, tác phong chính quy."], "answer": 1, "answerLetter": "B"}, {"n": 2, "q": "Điều lệnh nội vụ CAND gồm có bao nhiêu chương, bao nhiêu điều?", "options": ["Có 5 chương, 62 điều", "Có 12 chương, 53 điều", "Có 8 chương, 50 điều."], "answer": 2, "answerLetter": "C"}, {"n": 3, "q": "Điều lệnh nội vụ CAND quy định có mấy chức trách, nhiệm vụ của lãnh đạo chỉ huy Công an các cấp?", "options": ["Có 03 chức trách, nhiệm vụ.", "Có 05 chức trách, nhiệm vụ.", "Có 07 chức trách, nhiệm vụ."], "answer": 1, "answerLetter": "B"}, {"n": 4, "q": "Điều lệnh nội vụ CAND quy định có mấy chức trách, nhiệm vụ của CBCS CAND?", "options": ["Có 03 chức trách, nhiệm vụ.", "Có 05 chức trách, nhiệm vụ.", "Có 07 chức trách, nhiệm vụ."], "answer": 2, "answerLetter": "C"}, {"n": 5, "q": "Phương án nào sau đây chỉ rõ chức trách, nhiệm vụ của lãnh đạo chỉ huy Công an các cấp về công tác xây dựng lực lượng CAND?", "options": ["Thực hiện nguyên tắc tập trung dân chủ, tập thể lãnh đạo, cá nhân phụ trách, chế độ một người chỉ huy và quy chế hoạt động của cấp ủy đảng cấp trên; duy trì thực hiện nghiêm túc chế độ làm việc của lãnh đạo, chỉ huy và đơn vị.", "Thực hiện công tác giáo dục chính trị tư tưởng; xây dựng và kiện toàn tổ chức bộ máy; quy hoạch, đào tạo và bồi dưỡng cán bộ, thực hiện nghiêm túc chế độ quản lý cán bộ; chăm lo xây dựng, củng cố và tăng cường đoàn kết nội bộ; động viên, khen thưởng kịp thời và xử lý kỷ luật nghiêm theo đúng quy định của Nhà nước và của Bộ Công an.", "Quản lý tài chính, kinh phí hậu cần, phương tiện, trang thiết bị kỹ thuật nghiệp vụ của đơn vị đúng quy định, bảo đảm yêu cầu công tác, chiến đấu."], "answer": 1, "answerLetter": "B"}, {"n": 6, "q": "Quan hệ giữa cấp ủy đảng và thủ trưởng Công an cùng cấp là mối quan hệ như thế nào?", "options": ["Quan hệ lãnh đạo và chấp hành.", "Quan hệ đồng cấp.", "Quan hệ cấp trên, cấp dưới."], "answer": 0, "answerLetter": "A"}, {"n": 7, "q": "Quan hệ giữa thủ trưởng với các phó thủ trưởng là mối quan hệ như thế nào?", "options": ["Là quan hệ cấp trên với cấp dưới theo nguyên tắc cấp dưới phục tùng cấp trên.", "Là quan hệ giữa người chỉ huy cao nhất của đơn vị với cấp phó cùng cấp.", "Là quan hệ bình đẳng trong tập thể lãnh đạo, chỉ huy, thực hiện theo phân công nhiệm vụ được giao."], "answer": 1, "answerLetter": "B"}, {"n": 8, "q": "Quan hệ giữa lãnh đạo, chỉ huy với CBCS thuộc quyền, khi thi hành nhiệm vụ, cấp dưới phải tuân thủ điều gì?", "options": ["Phải tuyệt đối chấp hành mệnh lệnh cấp trên trong khi thi hành nhiệm vụ.", "Phải tôn trọng, lắng nghe ý kiến của cấp trên.", "Phải nghiêm chỉnh chấp hành nhiệm vụ được giao."], "answer": 0, "answerLetter": "A"}, {"n": 9, "q": "Quan hệ giữa CBCS CAND là mối quan hệ như thế nào?", "options": ["Là quan hệ bình đẳng, tôn trọng lẫn nhau, cùng thực hiện nhiệm vụ được cấp trên giao.", "Là quan hệ xã hội trong cùng cơ quan, đơn vị, giúp đỡ nhau thực hiện nhiệm vụ được giao.", "Là quan hệ đồng chí, đồng đội, đồng nghiệp, tôn trọng, đoàn kết, thương yêu, giúp đỡ nhau hoàn thành nhiệm vụ."], "answer": 2, "answerLetter": "C"}, {"n": 10, "q": "Khi thủ trưởng đi công tác vắng thì phải chỉ định ai là người thay thế mình?", "options": ["Chỉ định một phó thủ trưởng thay mình phụ trách đơn vị.", "Chỉ định một đồng chí trong cấp ủy thay thế mình điều hành công việc.", "Chỉ định đồng chí sĩ quan trực ban đơn vị thay thế mình điều hành công việc."], "answer": 0, "answerLetter": "A"}, {"n": 11, "q": "Điều lệnh nội vụ CAND quy định khi làm nhiệm vụ, quan hệ tiếp xúc với tổ chức, cá nhân nước ngoài, CBCS CAND phải chấp hành những quy định nào?", "options": ["Phải chấp hành nghiêm chỉnh pháp luật của Nhà nước, các điều ước quốc tế mà Việt Nam và nước đó đã ký kết hoặc cùng gia nhập, phê chuẩn, các quy định của Bộ trưởng Bộ Công an và quy chế ngoại giao; phải tôn trọng pháp luật, phong tục tập quán của nước sở tại; không làm điều gì tổn hại đến danh dự của Tổ quốc, của Đảng và lực lượng CAND Việt Nam.", "Phải có thái độ đúng mực tôn trọng mọi người, không làm điều gì tổn hại đến danh dự của Tổ quốc và lực lượng CAND.", "Phải chấp hành nghiêm chỉnh pháp luật của Nhà nước, thẳng thắn trao đổi công việc với tổ chức, cá nhân nước ngoài khi họ có ý kiến đề xuất, kiến nghị."], "answer": 0, "answerLetter": "A"}, {"n": 12, "q": "Cấp trên ra chỉ thị, mệnh lệnh như thế nào cho đúng với quy định Điều lệnh nội vụ CAND?", "options": ["Tùy tình hình thực tế công việc để ra chỉ thị, mệnh lệnh đối với CBCS.", "Ra chỉ thị, mệnh lệnh thông qua CBCS có trình độ chuyên môn khác.", "Cấp trên ra chỉ thị, mệnh lệnh phải qua từng cấp, từ trên xuống dưới theo hệ thống tổ chức của lực lượng CAND."], "answer": 2, "answerLetter": "C"}, {"n": 13, "q": "Theo Điều lệnh nội vụ CAND, khi cần thiết, cấp trên có được ra chỉ thị, mệnh lệnh trực tiếp không?", "options": ["Không được ra chỉ thị, mệnh lệnh trực tiếp, phải qua từng cấp.", "Được ra chỉ thị, mệnh lệnh trực tiếp không qua thủ trưởng quản lý CBCS.", "Thực hiện theo quy chế làm việc của đơn vị."], "answer": 1, "answerLetter": "B"}, {"n": 14, "q": "Người nhận chỉ thị, mệnh lệnh trực tiếp của cấp trên phải thực hiện thế nào cho đúng với quy định của Điều lệnh nội vụ CAND?", "options": ["Phải thi hành ngay với tinh thần trách nhiệm, khẩn trương, nghiêm túc.", "Báo cáo với thủ trưởng trực tiếp của mình biết nội dung công việc cấp trên giao, để xin ý kiến chỉ đạo", "Phải thi hành ngay, đồng thời phải báo cáo với thủ trưởng trực tiếp của mình biết nội dung công việc cấp trên giao (trừ trường hợp cấp trên ra chỉ thị, mệnh lệnh yêu cầu không báo cáo nội dung với thủ trưởng trực tiếp)."], "answer": 2, "answerLetter": "C"}, {"n": 15, "q": "Khi cấp trên ra chỉ thị, mệnh lệnh, nếu thấy không phù hợp thì cấp dưới phải làm gì cho đúng với quy định của Điều lệnh nội vụ CAND.", "options": ["Báo cáo lý do và không thực hiện chỉ thị, mệnh lệnh.", "Thực hiện ngay với tinh thần trách nhiệm, khẩn trương, chủ động, sáng tạo, sau khi xong việc sẽ đề đạt ý kiến với người ra chỉ thị, mệnh lệnh.", "Đề đạt ý kiến với người ra chỉ thị, mệnh lệnh; nếu người ra chỉ thị, mệnh lệnh chưa thay đổi ý kiến, thì vẫn phải nghiêm chỉnh chấp hành."], "answer": 2, "answerLetter": "C"}, {"n": 16, "q": "Khi người thi hành chỉ thị, mệnh lệnh có ý kiến đề đạt, thì người ra chỉ thị, mệnh lệnh cần xử lý như thế nào cho đúng với quy định Điều lệnh nội vụ CAND?", "options": ["Không chấp nhận và yêu cầu người nhận chỉ thị, mệnh lệnh phải thực hiện ngay.", "Người ra chỉ thị, mệnh lệnh phải nghiên cứu xem xét; nếu thấy chỉ thị, mệnh lệnh chưa đúng, phải kịp thời điều chỉnh, bổ sung, sửa đổi.", "Yêu cầu người nhận chỉ thị, mệnh lệnh phải làm ngay; ý kiến đề đạt sẽ được nghiên cứu, xem xét, giải quyết sau."], "answer": 1, "answerLetter": "B"}, {"n": 17, "q": "Cấp dưới sau khi thực hiện xong chỉ thị, mệnh lệnh của cấp trên thì phải có trách nhiệm gì theo đúng quy định của Điều lệnh nội vụ CAND?", "options": ["Báo cáo chính xác, đầy đủ, kịp thời kết quả thực hiện với lãnh đạo trực tiếp phụ trách.", "Báo cáo chính xác, đầy đủ, kịp thời kết quả thực hiện với lãnh đạo đơn vị, không nhất thiết phải báo cáo lãnh đạo trực tiếp.", "Báo cáo chính xác, đầy đủ, kịp thời kết quả thực hiện với người ra chỉ thị, mệnh lệnh."], "answer": 2, "answerLetter": "C"}, {"n": 18, "q": "Điều lệnh nội vụ CAND quy định CBCS phải chấp hành kỷ luật công tác như thế nào?", "options": ["CBCS phải có mặt tại nơi làm việc trước 05 phút và nghỉ đúng giờ quy định.", "CBCS có mặt tại nơi làm việc trước 10 phút và nghỉ đúng giờ quy định.", "Có mặt tại nơi làm việc trước 15 phút và nghỉ đúng giờ quy định."], "answer": 0, "answerLetter": "A"}, {"n": 19, "q": "Điều lệnh nội vụ CAND quy định trong chiến đấu, CBCS CAND phải thực hiện yêu cầu nào?", "options": ["Phải nêu cao chủ nghĩa anh hùng cách mạng, mưu trí, dũng cảm, sẵn sàng hy sinh để bảo vệ Tổ quốc, bảo vệ Đảng, Nhà nước, Nhân dân và chế độ xã hội chủ nghĩa; trong bất kỳ hoàn cảnh nào cũng phải kiên quyết bảo vệ đồng đội, bảo vệ nhân dân, bảo vệ vũ khí, phương tiện chiến đấu, hồ sơ, tài liệu; giữ vững khí tiết của người Công an cách mạng.", "Chấp hành nghiêm kỷ luật, mệnh lệnh, sẵn sàng nhận nhiệm vụ được giao.", "Thực hiện nghiêm các quy định về phương án chiến đấu, tuyệt đối bảo vệ bí mật."], "answer": 0, "answerLetter": "A"}, {"n": 20, "q": "Khi gặp tình huống khẩn cấp, đột xuất, bất ngờ nguy hại đến an ninh trật tự, CBCS phải làm gì cho đúng với Điều lệnh nội vụ CAND?", "options": ["Thông báo cho đơn vị Công an gần nhất biết để giải quyết.", "Tham gia giải quyết và tìm mọi cách ngăn chặn hậu quả xảy ra và báo ngay cho đơn vị Công an hoặc chính quyền địa phương nơi gần nhất để giải quyết.", "Xác định không phải nhiệm vụ của mình nên không cần giải quyết."], "answer": 1, "answerLetter": "B"}, {"n": 21, "q": "Điều lệnh nội vụ CAND quy định CBCS phải chấp hành kỷ luật khi biệt phái, xã hội hóa như thế nào?", "options": ["Chấp hành nghiêm túc nội quy của đơn vị, không gây ảnh hưởng đến người khác.", "Nêu cao tinh thần trách nhiệm, tư thế, lễ tiết tác phong nghiêm túc, giữ gìn phẩm chất, tư cách người Công an cách mệnh.", "Chấp hành nghiêm các nguyên tắc, chế độ công tác do Bộ trưởng Bộ Công an quy định; luôn giữ gìn phẩm chất, tư cách người Công an cách mạng."], "answer": 2, "answerLetter": "C"}, {"n": 22, "q": "CBCS khi tham gia huấn luyện điều lệnh, quân sự, võ thuật phải chấp hành quy định nào cho đúng?", "options": ["Chấp hành nghiêm nội quy kỷ luật nơi luyện tập, thao trường và mệnh lệnh của người chỉ huy.", "Chấp hành nghiêm nội quy, giữ đúng tư thế, lễ tiết tác phong, kỷ luật nơi tập luyện.", "Mang trang bị đầy đủ phương tiện phục vụ công tác huấn luyện."], "answer": 0, "answerLetter": "A"}, {"n": 23, "q": "Theo Điều lệnh nội vụ CAND, khi tổ chức hội họp, buổi lễ, người dự hội họp, buổi lễ có được ủy quyền cho người khác đi thay không?", "options": ["Được ủy quyền cho người khác đi thay", "Không được ủy quyền cho người khác đi thay.", "Được ủy quyền nhưng người đi dự thay phải được cấp triệu tập đồng ý."], "answer": 2, "answerLetter": "C"}, {"n": 24, "q": "Theo Điều lệnh nội vụ CAND việc tổ chức hội họp, học tập người chủ trì có phải chuẩn bị nội dung và thông báo cuộc họp không?", "options": ["Phải chuẩn bị nội dung và thông báo trước ít nhất 01 ngày (trừ trường hợp đột xuất hoặc để đảm bảo yêu cầu bí mật).", "Không phải thông báo cho CBCS vì hàng ngày CBCS đều phải đến đơn vị làm việc theo đúng giờ quy định, chỉ cần thông báo triệu tập họp.", "Thông báo trước hai giờ để đảm bảo thời gian chuẩn bị."], "answer": 0, "answerLetter": "A"}, {"n": 25, "q": "Điều lệnh nội vụ CAND quy định, khi cấp trên tổ chức hội nghị, buổi lễ, CBCS dự rời khỏi nơi hội nghị, buổi lễ như thế nào?", "options": ["Rời khỏi nơi hội nghị, buổi lễ ngay sau khi người chủ trì tuyên bố kết thúc.", "Rời khỏi nơi hội nghị, buổi lễ cùng với lãnh đạo cấp trên.", "Rời khỏi nơi hội họp, buổi lễ, học tập sau khi người chủ trì tuyên bố kết thúc, lãnh đạo cấp trên ra về."], "answer": 2, "answerLetter": "C"}, {"n": 26, "q": "Theo Điều lệnh nội vụ CAND: Thủ trưởng đơn vị quyết định tổ chức giao ban đột xuất, giao ban chuyên đề, giao ban theo cụm công tác phải căn cứ vào đâu?", "options": ["Căn cứ theo chương trình, kế hoạch công tác của đơn vị.", "Căn cứ theo ý kiến đề xuất của một phó thủ trưởng.", "Căn cứ tình hình và tính chất công tác."], "answer": 2, "answerLetter": "C"}, {"n": 27, "q": "Điều lệnh nội vụ CAND quy định nhiệm vụ của lãnh đạo trực chỉ huy như thế nào?", "options": ["Phải nắm vững tình hình mọi mặt của đơn vị để xử lý và giải quyết các công việc theo đúng chức trách, nhiệm vụ, quyền hạn được giao.", "Nắm vững tình hình về công tác xây dựng lực lượng để xử lý và giải quyết.", "Nắm vững quân số đơn vị, xử lý và giải quyết các yêu cầu công tác khác được giao."], "answer": 0, "answerLetter": "A"}, {"n": 28, "q": "Đồng chí cho biết nhiệm vụ của trực ban đơn vị?", "options": ["Giúp thủ trưởng nắm vững quân số, vũ khí, trang bị phương tiện; đề xuất xử lý và giải quyết các yêu cầu công tác, chiến đấu, xây dựng lực lượng, hậu cần kỹ thuật; phải đeo băng trực ban; ghi chép đầy đủ tình hình ca trực và các phương tiện cần thiết phục vụ công tác vào sổ trực ban, hết ca trực phải ký bàn giao cho ca sau.", "Nắm tình hình của đơn vị về công tác chính trị tư tưởng.", "Đôn đốc CBCS thực hiện nhiệm vụ trong ngày."], "answer": 0, "answerLetter": "A"}, {"n": 29, "q": "Đồng chí hiểu thế nào là thường trực chiến đấu?", "options": ["Có thể ra khỏi cơ quan nhưng khi triệu tập phải có mặt.", "Chỉ làm việc theo giờ hành chính, hoàn thành các nhiệm vụ được giao xong thì về gia đình.", "Phải có mặt tại đơn vị để sẵn sàng giải quyết công việc khi có yêu cầu."], "answer": 2, "answerLetter": "C"}, {"n": 30, "q": "CBCS thường trực chiến đấu phải thực hiện những yêu cầu nào cho đúng với Điều lệnh nội vụ CAND?", "options": ["Trực tại nhà, khi nào lãnh đạo cấp trên triệu tập thì có mặt.", "Giờ hành chính trực tại đơn vị, hết giờ thì trực tại nhà khi cần liên lạc qua điện thoại.", "Phải có mặt tại đơn vị, mặc trang phục CAND đúng quy định, sẵn sàng giải quyết công việc khi có yêu cầu."], "answer": 2, "answerLetter": "C"}, {"n": 31, "q": "Điều lệnh nội vụ CAND quy định Công an đơn vị, địa phương, CBCS chấp hành chế độ bảo mật như thế nào?", "options": ["Phải chấp hành nghiêm các quy định về bảo vệ bí mật của Đảng, Nhà nước và của Bộ trưởng Bộ Công an.", "Phải chấp hành nghiêm các quy định về bảo vệ bí mật của cơ quan bảo vệ bí mật.", "Phải chấp hành nghiêm các quy định về quy chế, chế độ công tác bảo mật của Bộ Công an và các Bộ ngành khác."], "answer": 0, "answerLetter": "A"}, {"n": 32, "q": "Khi phát hiện có dấu hiệu lộ, lọt, mất bí mật nhà nước, CBCS phải làm gì cho đúng với quy định của Điều lệnh nội vụ CAND?", "options": ["Nhắc nhở người để lộ, lọt bí mật và yêu cầu người đó phải rút kinh nghiệm để sửa chữa.", "Kịp thời có biện pháp ngăn chặn và báo cáo ngay cấp có thẩm quyền xem xét, xử lý.", "Đề xuất lãnh đạo cấp trên có hình thức kỷ luật người để lộ, lọt bí mật."], "answer": 1, "answerLetter": "B"}, {"n": 33, "q": "Điều lệnh nội vụ CAND quy định việc quản lý tài liệu được thực hiện như thế nào?", "options": ["Phải phân loại, quản lý, sử dụng theo đúng quy định của pháp luật về bảo vệ bí mật Nhà nước; hết giờ làm việc, hồ sơ, tài liệu phải sắp xếp gọn gàng và bảo quản theo quy định của pháp luật và của Bộ Công an; làm việc ngoài giờ tại cơ quan, đơn vị hoặc mang theo tài liệu nghiệp vụ khi đi công tác phải được sự đồng ý của thủ trưởng đơn vị và có trách nhiệm bảo vệ an toàn tài liệu.", "Quản lý tài liệu theo nội quy đơn vị, quản lý, sử dụng theo quy định bảo mật.", "Quản lý tài liệu theo yêu cầu của thủ trưởng đơn vị và có trách nhiệm bảo vệ an toàn."], "answer": 0, "answerLetter": "A"}, {"n": 34, "q": "Theo Điều lệnh nội vụ CAND công tác quản lý vũ khí, công cụ hỗ trợ, phương tiện nghiệp vụ thực hiện như thế nào?", "options": ["Quản lý chặt chẽ theo quy định, bảo đảm an toàn; có giấy phép sử dụng và sổ theo dõi; phân công cán bộ quản lý phải có chuyên môn về quản lý vũ khí, vật liệu nổ, công cụ hỗ trợ và ghi chép, giao nhận, bảo dưỡng theo quy định, bảo đảm yêu cầu sẵn sàng chiến đấu; phải chấp hành yêu cầu khi kiểm tra.", "Giao cho cán bộ trực ban quản lý", "Thường xuyên kiểm tra công tác quản lý vũ khí."], "answer": 0, "answerLetter": "A"}, {"n": 35, "q": "Khi ra, vào cổng trụ sở cơ quan, doanh trại, chiến sĩ bảo vệ tại cổng yêu cầu xuất trình giấy tờ để kiểm tra, đ/c phải làm gì cho đúng với quy định của Điều lệnh nội vụ CAND?", "options": ["Không xuất trình giấy tờ, cho rằng chiến sĩ bảo vệ không nắm vững được cán bộ thường xuyên ra, vào cơ quan, đơn vị.", "Phải xuất trình giấy tờ khi có yêu cầu.", "Giải thích với chiến sĩ bảo vệ biết mình làm cùng cơ quan."], "answer": 1, "answerLetter": "B"}, {"n": 36, "q": "Trong cơ quan, doanh trại, nơi ngủ, nghỉ của CBCS sắp xếp như thế nào cho đúng với Điều lệnh nội vụ CAND?", "options": ["Phải trang trí đẹp, gọn gàng, giữ gìn vệ sinh chung", "Phải gọn gàng ngăn nắp theo quy định của đơn vị.", "Phải sắp xếp gọn gàng, ngăn nắp, vệ sinh sạch sẽ."], "answer": 2, "answerLetter": "C"}, {"n": 37, "q": "Khi được giới thiệu là đại biểu đến dự trong hội nghị, hội thi, hội thao, buổi lễ, sinh hoạt, học tập, trường hợp đồng chí đang ngồi ở vị trí trên lễ đài thì phải thực hiện chào như thế nào?", "options": ["Đứng dậy đi về giữa lễ đài thực hiện động tác chào.", "Đứng dậy hướng về phía đơn vị thực hiện động tác chào.", "Đứng dậy đi về đứng trên bục thực hiện động tác chào."], "answer": 1, "answerLetter": "B"}, {"n": 38, "q": "Khi có đoàn kiểm tra hoặc cấp trên đến thăm, làm việc với đơn vị, nếu đơn vị không đứng thành hàng ngũ, đồng chí chỉ huy hoặc trực ban đơn vị phải làm gì?", "options": ["Hô “nghiêm”, chào báo cáo cấp trên.", "Cho đội hình giải tán, nhanh chóng mời cấp trên hoặc trưởng đoàn vào phòng làm việc để tiếp đón.", "Tập hợp đơn vị, chỉnh đốn hàng ngũ, hô nghiêm, chào báo cáo cấp trên."], "answer": 0, "answerLetter": "A"}, {"n": 39, "q": "Khi có đoàn kiểm tra hoặc cấp trên đến thăm, làm việc với đơn vị, nếu đơn vị đang đứng thành hàng ngũ, là chỉ huy hoặc trực ban đơn vị, đồng chí làm như thế nào cho đúng Điều lệnh nội vụ CAND?", "options": ["Chỉnh đốn đội hình rồi chờ cấp trên hoặc trưởng đoàn ra chỉ thị, mệnh lệnh, xong cán bộ, chiến sĩ vỗ tay chào mừng (nếu trong tay không giữ phương tiện dụng cụ gì).", "Chỉnh đốn đội hình, chào báo cáo cấp trên hoặc trưởng đoàn theo điều lệnh đội ngũ.", "Cho đội hình giải tán, nhanh chóng mời cấp trên hoặc trưởng đoàn vào phòng làm việc để tiếp đón."], "answer": 1, "answerLetter": "B"}, {"n": 40, "q": "Khi có đoàn kiểm tra hoặc cấp trên đến thăm, làm việc, nếu đơn vị đang làm việc, hội họp, học tập hoặc sinh hoạt tập trung thì đồng chí chỉ huy hoặc trực ban đơn vị phải làm gì?", "options": ["Hô “nghiêm”, chào báo cáo cấp trên.", "Hô “ nghiêm” (nếu cán bộ, chiến sĩ đơn vị đang đứng) hoặc hô “ đơn vị chú ý”, “đứng dậy” (nếu cán bộ, chiến sĩ đơn vị đang ngồi), hô “nghiêm”, sau đó chào báo cáo cấp trên theo Điều lệnh đội ngũ.", "Cho đội hình giải tán, nhanh chóng mời cấp trên hoặc trưởng đoàn vào phòng làm việc để tiếp đón."], "answer": 1, "answerLetter": "B"}, {"n": 41, "q": "Khi có đoàn kiểm tra hoặc cấp trên đến thăm, làm việc với đơn vị, trước khi cấp trên ra về, chỉ huy hay trực ban đơn vị phải làm gì?", "options": ["Cho đơn vị giải tán, đợi cấp trên hoặc đoàn kiểm tra ra về mới cho đơn vị tiếp tục làm việc.", "Hô “nghiêm” (nếu cán bộ, chiến sĩ đơn vị đang đứng) hoặc hô “đơn vị đứng dậy” (nếu cán bộ, chiến sĩ đơn vị đang ngồi), hô “nghiêm”, chờ cấp trên ra về rồi mới cho đơn vị tiếp tục làm việc hoặc giải tán.", "Cho đơn vị tiếp tục làm việc bình thường, đồng chí chỉ huy tiễn đoàn kiểm tra hoặc cấp trên ra về."], "answer": 1, "answerLetter": "B"}, {"n": 42, "q": "Điều lệnh nội vụ CAND quy định: Khi giao tiếp với cá nhân thuộc đoàn khách của quốc gia, tổ chức quốc tế đến thăm, CBCS CAND xưng hô thế nào cho đúng với quy định?", "options": ["Tùy theo quan hệ ngoại giao của Việt Nam với quốc gia, tổ chức quốc tế đó có thể gọi là “đồng chí” hoặc “ngài”, “ông”, “bà”, “vương hiệu”, “tước hiệu” hoặc theo thông lệ ngoại giao, xưng “tôi” cho phù hợp.", "Tùy theo quan hệ ngoại giao với quốc gia, tổ chức quốc tế khách đến thăm để xưng hô cho phù hợp.", "Tùy theo khách đến thăm để xưng hô cho phù hợp."], "answer": 0, "answerLetter": "A"}, {"n": 43, "q": "Điều lệnh nội vụ CAND quy định: Khi làm nhiệm vụ phải ăn ở, sinh hoạt tại nhà dân, CBCS cần thực hiện những yêu cầu gì?", "options": ["Phải tôn trọng nếp sống của gia đình và địa phương; tích cực tham gia lao động sản xuất, giúp dân phát triến kinh tế, xóa đói giảm nghèo.", "Phải tích cực tuyên truyền, vận động xóa bỏ việc trồng cây thuốc phiện.", "Phải giữ đúng tư thế, lễ tết, tác phong; tôn trọng nếp sống của gia đình, phong tục, tập quán của địa phương và làm tốt công tác dân vận."], "answer": 2, "answerLetter": "C"}, {"n": 44, "q": "Điều lệnh nội vụ CAND quy định CBCS CAND khi sinh hoạt ở gia đình, nơi cư trú và những nơi khác phải thực hiện những yêu cầu gì?", "options": ["Phải tích cực lao động sản xuất, phát triển kinh tế gia đình vững mạnh.", "Phải tích cực trong đấu tranh phòng, chống tội phạm, đảm bảo an ninh trật tự.", "Phải gương mẫu chấp hành chủ trương, đường lối, chính sách của Đảng, pháp luật của Nhà nước, quy định của địa phương; đoàn kết với Nhân dân nơi cư trú; trong quan hệ gia đình phải hiếu thảo, bình đẳng, hòa thuận, giúp đỡ nhau cùng tiến bộ, thực hiện nếp sống văn minh, gia đình văn hóa."], "answer": 2, "answerLetter": "C"}, {"n": 45, "q": "Khi tiếp xúc với người có hành vi vi phạm pháp luật, CBCS ứng xử như thế nào cho đúng với Điều lệnh nội vụ CAND?", "options": ["Phải giữ đúng tư thế, lễ tiết, tác phong, có thái độ ứng xử đúng mực; không có lời nói, cử chỉ, hành vi xúc phạm, phân biệt đối xử.", "Có thái độ bình tĩnh, khôn khéo để xử lý tình huống.", "Phải bình tĩnh, giữ đúng tư thế, tác phong; không phân biệt đối xử."], "answer": 0, "answerLetter": "A"}, {"n": 46, "q": "Điều lệnh nội vụ CAND quy định: Ứng xử khi giao tiếp với Nhân dân như thế nào?", "options": ["Phải thể hiện thái độ ứng xử có văn hóa, tôn trọng, khiêm tốn, bình tĩnh, tận tình, chu đáo; thực hiện theo đúng quy định của pháp luật và của Bộ Công an; luôn nêu cao tinh thần trách nhiệm, không sách nhiễu, gây phiền hà với Nhân dân.", "Nêu cao tinh thần trách nhiệm thực hiện nhiệm vụ được giao, không gây khó khăn phiền hà với Nhân dân.", "Thực hiện đúng quy trình công tác."], "answer": 0, "answerLetter": "A"}, {"n": 47, "q": "Điều lệnh nội vụ CAND quy định: CBCS CAND khi giao tiếp qua các phương tiện thông tin cần đảm bảo những yêu cầu gì?", "options": ["Phải giới thiệu tên và đơn vị của mình; ngôn ngữ giao tiếp phải đúng mực, lịch sự, rõ ràng, mạch lạc; Nội dung trao đổi ngắn gọn, tập trung vào công việc; không tiện trả lời thì xin lỗi, không đột ngột ngắt cuộc trao đổi; thực hiện đúng quy định của pháp luật về bảo vệ bí mật nhà nước trong quá trình trao đổi thông tin, kết thúc cuộc trao đổi bằng lời chào hoặc cảm ơn.", "Cần trao đổi cụ thể, ngắn gọn, rõ ràng, dứt khoát, tập trung vào công việc đáp ứng được yêu cầu cuộc gọi.", "Phản ánh được nội dung cuộc trao đổi, giao tiếp, không phụ thuộc thời gian."], "answer": 0, "answerLetter": "A"}, {"n": 48, "q": "Trường hợp người nhận thưởng có chức vụ, cấp bậc cao hơn người trao thưởng thì ai phải chào trước?", "options": ["Người nhận thưởng phải chào trước", "Người trao thưởng và người nhận thưởng cùng thực hiện động tác chào", "Người trao thưởng phải chào trước."], "answer": 2, "answerLetter": "C"}, {"n": 49, "q": "Nghi lễ CAND quy định, trường hợp nhận phần thưởng nào phải có tổ Công an kỳ?", "options": ["Nhận huy chương.", "Nhận huy hiệu Đảng.", "Huân chương, danh hiệu vinh dự nhà nước."], "answer": 2, "answerLetter": "C"}, {"n": 50, "q": "Khi lãnh đạo cấp trên trao Huân chương, Huy chương hoặc Bằng khen, Giấy khen, trước khi nhận, CBCS phải thực hiện những động tác nào?", "options": ["Tiến 1 bước, đứng nghiêm thực hiện động tác chào.", "Tiến 1 bước, đứng nghiêm thực hiện động tác chào, cấp trên chào đáp lại (nếu thuộc lực lượng vũ trang), bắt tay.", "Tiến 1 bước, thực hiện động tác chào và chủ động đưa tay ra bắt tay cấp trên."], "answer": 1, "answerLetter": "B"}, {"n": 51, "q": "Chào cờ Tổ quốc định kỳ hàng tháng được tổ chức thời gian nào?", "options": ["Giờ làm việc buổi sáng, ngày thứ hai của tuần đầu tháng.", "Đầu giờ làm việc buổi sáng trong ngày làm việc đầu tiên của tuần đầu tháng (tuần đầu tháng được xác định là tuần làm việc đầu tiên của tháng không có ngày của tháng trước).", "Đầu giờ làm việc buổi sáng của ngày đầu tháng."], "answer": 1, "answerLetter": "B"}, {"n": 52, "q": "Khi chào cờ Tổ quốc ngoài trời, đ/c đọc 5 lời thề danh dự đứng ở vị trí nào?", "options": ["Đứng bên phải, ngang hàng và cách chủ lễ 01 mét.", "Đứng bên trái, ngang hàng và cách chủ lễ 01 mét.", "Đứng bên trái, ngang hàng và cách chủ lễ 1,5 mét."], "answer": 1, "answerLetter": "B"}, {"n": 53, "q": "Những đơn vị có trụ sở độc lập chào cờ Tổ quốc ngoài trời, khi nghe dứt khẩu lệnh \"Chào cờ - chào\", những đồng chí nào phải thực hiện động tác chào?", "options": ["Chủ lễ, trực ban buổi lễ và toàn thể cán bộ, chiến sĩ thực hiện động tác chào.", "Cán bộ, chiến sĩ đứng hàng trên cùng thực hiện động tác chào.", "Đồng chí chủ lễ và trực ban buổi lễ."], "answer": 0, "answerLetter": "A"}, {"n": 54, "q": "Đồng chí cho biết vị trí của lãnh đạo và cán bộ, chiến sĩ khi dự lễ chào cờ Tổ quốc ở trong nhà có bàn, ghế ngồi?", "options": ["Thực hiện theo phân công của chủ lễ, theo nguyên tắc từ trên xuống dưới, cấp trên ngồi trước, cấp dưới ngồi sau, người có cấp bậc hàm cao hơn ngồi trước, người có cấp bậc hàm thấp hơn ngồi sau.", "Lãnh đạo đơn vị tham gia lễ chào cờ, lãnh đạo đơn vị trực thuộc đứng hàng ngang thứ nhất và hàng thứ 2, các hàng tiếp theo là cán bộ, chiến sĩ.", "Lãnh đạo đơn vị và lãnh đạo đơn vị trực thuộc đứng hàng ngang thứ nhất, các hàng ngang thứ hai trở xuống là CBCS."], "answer": 0, "answerLetter": "A"}, {"n": 55, "q": "Khi chào cờ Tổ quốc trong nhà có bàn ghế ngồi, trực ban buổi lễ đứng ở vị trí nào?", "options": ["Đứng phía trên, bên phải và cách đội hình đơn vị một khoảng cách thích hợp.", "Đứng phía trên, bên trái và cách đội hình một khoảng cách thích hợp.", "Đứng ngang với hàng ghế đầu hướng về phía cờ Tổ quốc."], "answer": 0, "answerLetter": "A"}, {"n": 56, "q": "Chào cờ Tổ quốc ở trong nhà có bàn ghế ngồi, khi nghe dứt khẩu lệnh \"Chào cờ - chào\", những đồng chí nào phải thực hiện động tác chào?", "options": ["Chủ lễ, trực ban buổi lễ và toàn thể cán bộ, chiến sĩ thực hiện động tác chào.", "Đồng chí chủ lễ, trực ban lễ chào cờ, đồng chí đọc 5 lời thề danh dự và cán bộ, chiến sĩ đứng hàng thứ nhất.", "Đồng chí chủ lễ và trực ban buổi lễ."], "answer": 0, "answerLetter": "A"}, {"n": 57, "q": "Trong các trường hợp sau, trường hợp nào cán bộ, chiến sĩ mặc trang phục CAND phải đeo dây chéo?", "options": ["Khi làm việc tại phòng làm việc tại các đơn vị Cảnh sát giao thông, trại tạm giam, phòng Cảnh sát cơ động, đội Cảnh sát giao thông trật tự Công an các đơn vị, địa phương.", "Khi làm nhiệm vụ cứu nạn, cứu hộ có sử dụng trang phục chuyên dùng.", "Trực tiếp làm nhiệm vụ giữ gìn trật tự an toàn giao thông, trật tự công cộng; tuần tra, kiểm soát, canh gác, bảo vệ mục tiêu; dẫn giải phạm nhân, trại viên, bị can, bị cáo; mặc trang phục chuyên dùng khi làm nhiệm vụ trong đội danh dự, nhạc lễ, tiêu binh, hộ tống danh dự…"], "answer": 2, "answerLetter": "C"}, {"n": 58, "q": "Theo điều lệnh nội vụ CAND: Trong trường hợp do yêu cầu công tác, chiến đấu phải cùng nhau thực hiện một nhiệm vụ, lãnh đạo cấp trên chưa chỉ định người chỉ huy thì phải căn cứ vào đâu để chỉ định người chỉ huy?", "options": ["Căn cứ vào cấp bậc hàm, chức vụ, thâm niên công tác, tuổi đời.", "Căn cứ vào chức vụ, cấp bậc hàm, tuổi đời, thâm niên công tác.", "Căn cứ vào chức vụ, cấp bậc hàm, thâm niên công tác, tuổi đời."], "answer": 2, "answerLetter": "C"}, {"n": 59, "q": "Phạm vi điều chỉnh của Thông tư số 09/2021/TT-BCA ngày 20/01/2021 là gì?", "options": ["Quy định về Nghi lễ Công an nhân dân", "Quy định về Tập huấn và tổ chức hội thi Điều lệnh, quân sự, võ thuật trong Công an nhân dân..", "Quy định về Kiểm tra điều lệnh, quân sự, võ thuật Công an nhân dân."], "answer": 2, "answerLetter": "C"}, {"n": 60, "q": "Thông tư 09/2021/TT-BCA ngày 20/01/2021 của Bộ Công an quy định bố trí lực lượng kiểm tra điều lệnh CAND như thế nào?", "options": ["Việc kiểm tra điều lệnh Công an nhân dân phải thành lập Tổ kiểm tra. Mỗi tổ kiểm tra có từ 05 đến 07 đồng chí, do 01 đồng chí làm tổ trưởng. Trường hợp cần nhiều cán bộ hơn do Thủ trưởng đơn vị quyết định.", "Việc kiểm tra điều lệnh Công an nhân dân phải thành lập Tổ kiểm tra. Mỗi tổ kiểm tra có từ 02 đến 04 đồng chí, do 01 đồng chí làm Tổ trưởng. Trường hợp cần nhiều cán bộ hơn do Thủ trưởng đơn vị quyết định.", "Việc kiểm tra điều lệnh Công an nhân dân phải thành lập Tổ kiểm tra. Mỗi tổ kiểm tra có từ 02 đến 04 đồng chí. Trường hợp cần nhiều cán bộ hơn do Thủ trưởng đơn vị quyết định."], "answer": 1, "answerLetter": "B"}, {"n": 61, "q": "Có bao nhiêu hình thức, biện pháp kiểm tra điều lệnh CAND; gồm những hình thức, biện pháp nào theo Thông tư số 09/2021/TT-BCA ngày 20/01/2021 của Bộ Công an?", "options": ["Có 02 hình thức, biện pháp; gồm:\n- Kiểm tra đột xuất.\n- Kiểm tra bí mật kết hợp với công khai.", "Có 03 hình thức, biện pháp; gồm:\n- Kiểm tra đột xuất.\n- Kiểm tra bí mất kết hợp với công khai.\n- Kiểm tra bí mật.", "Có 04 hình thức, biện pháp; gồm:\n- Kiểm tra thường xuyên.\n- Kiểm tra đột xuất.\n- Kiểm tra bí mật kết hợp với công khai.\n- Kiểm tra bí mật."], "answer": 2, "answerLetter": "C"}, {"n": 62, "q": "Đ/c cho biết việc đeo huân chương, huy chương, kỷ niệm chương, danh hiệu vinh dự Nhà nước ở vị trí nào trên ngực áo cho đúng với quy định của điều lệnh CAND?", "options": ["Đeo ở ngực áo bên phải.", "Đeo ở ngực áo bên trái.", "Tuỳ tình huống đeo cho phù hợp."], "answer": 1, "answerLetter": "B"}, {"n": 63, "q": "Đồng chí cho biết cách nhận bằng huân chương, huy chương, bằng khen, giấy khen có khung, cách nào đúng quy định của nghi lễ CAND?", "options": ["Hai cánh tay trên khép sát sườn, hai cánh tay dưới hơi co lên tạo với cánh tay trên một góc 135 độ, hai bàn tay ngửa nắm cạnh dưới khung, 4 ngón con khép lại bên ngoài, ngón cái ôm choàng cạnh bên của khung bằng.", "Hai cánh tay trên khép sát sườn, hai cánh tay dưới hơi co lên tạo với cánh tay trên một góc 150 độ, hai bàn tay ngửa nắm cạnh dưới khung, 4 ngón con khép lại bên ngoài, ngón cái ôm choàng cạnh bên của khung bằng.", "Hai cánh tay trên khép sát sườn, hai cánh tay dưới hơi co lên tạo với cánh tay trên một góc 140 độ, hai bàn tay ngửa nắm cạnh dưới khung, 4 ngón con khép lại bên ngoài, ngón cái ôm choàng cạnh bên của khung, mặt trước hướng về phía đơn vị"], "answer": 1, "answerLetter": "B"}, {"n": 64, "q": "Đồng chí cho biết trách nhiệm của chỉ huy khi chỉ huy đội ngũ?", "options": ["Giao cho trực ban điều hành, chỉ huy giám sát việc thực hiện.", "Trực tiếp chỉ huy đơn vị, vắng mặt phải ủy quyền cho cấp dưới. Kiểm tra quân số, vũ khí, khí tài, trang bị kỹ thuật trước và sau khi học tập, huấn luyện, kiểm tra trang phục và cách mang trang bị của từng người theo quy định.", "Cho đơn vị thực hiện từng phần việc, nhận xét kết quả thực hiện trong buổi giao ban đơn vị."], "answer": 1, "answerLetter": "B"}, {"n": 65, "q": "Đồng chí cho biết trách nhiệm của cán bộ, chiến sĩ trong hàng ngũ?", "options": ["Tuyệt đổi phục tùng mệnh lệnh của người chỉ huy. Kiểm tra vũ khí, trang bị được giao nếu phát hiện sai sót phải báo cáo ngay cho người chỉ huy trực tiếp. Chỉnh đốn trang phục, trang bị và giúp đồng đội chỉnh sửa cách mang trang phục, trang bị. Đứng đúng vị trí theo số thứ tự, thực hiện đúng chức trách nhiệm vụ.", "Chuẩn bị tài liệu phục vụ học tập.", "Giữ đúng tư thế tác phong, tham gia ý kiến với chỉ huy huấn luyện khi cần."], "answer": 0, "answerLetter": "A"}, {"n": 66, "q": "Theo quy định về Điều lệnh đội ngũ CAND hiện hành, động tác chào thực hiện như thế nào?", "options": ["Cánh tay trên nâng lên ngang với thân người, tạo với thân người một góc 85°", "Cánh tay trên nâng lên ngang với thân người, tạo với thân người một góc 70°", "Cánh tay trên nâng lên ngang với thân người, tạo với thân người một góc 80°."], "answer": 2, "answerLetter": "C"}, {"n": 67, "q": "Đồng chí cho biết giãn cách giữa hai cán bộ, chiến sĩ đứng cạnh nhau trên 1 hàng ngang là bao nhiêu?", "options": ["70 cen-ti-mét.", "75 cen-ti-mét.", "80 cen-ti-mét."], "answer": 0, "answerLetter": "A"}, {"n": 68, "q": "Đồng chí cho biết cự ly giữa hai cán bộ, chiến sĩ đứng liền trước sau nhau là bao nhiêu?", "options": ["75 cen-ti-mét", "85 cen-ti-mét", "100 cen-ti-mét."], "answer": 2, "answerLetter": "C"}, {"n": 69, "q": "Đồng chí cho biết độ dài bước tiến, bước lùi là bao nhiêu?", "options": ["70 cen-ti-mét.", "75 cen-ti-mét.", "85 cen-ti-mét"], "answer": 1, "answerLetter": "B"}, {"n": 70, "q": "Đồng chí cho biết độ dài bước đi đều, đi nghiêm là bao nhiêu?", "options": ["70 cen-ti-mét.", "75 cen-ti-mét.", "85 cen-ti-mét"], "answer": 1, "answerLetter": "B"}, {"n": 71, "q": "Đồng chí cho biết độ dài bước chạy là bao nhiêu?", "options": ["70 cen-ti-mét.", "75 cen-ti-mét.", "85 cen-ti-mét."], "answer": 2, "answerLetter": "C"}, {"n": 72, "q": "Điều lệnh đội ngũ CAND quy định độ dài bước qua phải, qua trái là bao nhiêu?", "options": ["70 cen-ti-mét.", "35 cen-ti-mét.", "Rộng bằng vai."], "answer": 1, "answerLetter": "B"}, {"n": 73, "q": "Đồng chí cho biết tốc độ đi đều, đi nghiêm là bao nhiêu?", "options": ["100 bước / 1 phút.", "106 bước / 1 phút.", "110 bước / 1 phút."], "answer": 1, "answerLetter": "B"}, {"n": 74, "q": "Đồng chí cho biết tốc độ chạy là bao nhiêu?", "options": ["160 bước/phút.", "170 bước/phút.", "180 bước/phút."], "answer": 1, "answerLetter": "B"}, {"n": 75, "q": "Vị trí đôn đốc và truyền đạt mệnh lệnh đối với đội hình tiểu đội hàng ngang cách đội hình đơn vị mấy bước?", "options": ["Từ 3 đến 5 bước.", "Từ 5 đến 8 bước.", "Từ 8 đến 10 bước."], "answer": 0, "answerLetter": "A"}, {"n": 76, "q": "Đồng chí cho biết khi chỉnh hàng dọc đội hình tiểu đội, người chỉ huy đứng ở vị trí nào?", "options": ["Phía trước bên phải đội hình chếch 45 độ.", "Phía chính giữa đội hình, cách đội hình từ 2 đến 3 bước.", "Phía trước bên trái đội hình chếch 45 độ."], "answer": 1, "answerLetter": "B"}, {"n": 77, "q": "CBCS khi di chuyển trên 5 bước thì phải thực hiện động tác di chuyển nào?", "options": ["Đi thường theo số bước quy định.", "Đi nghiêm.", "Đi đều hoặc chạy đều."], "answer": 2, "answerLetter": "C"}, {"n": 78, "q": "Vị trí đôn đốc và truyền đạt mệnh lệnh đối với đội hình trung đội hàng ngang cách đội hình đơn vị mấy bước?", "options": ["Từ 3 đến 5 bước.", "Từ 5 đến 8 bước.", "Từ 8 đến 10 bước."], "answer": 1, "answerLetter": "B"}, {"n": 79, "q": "Đối với CBCS vi phạm điều lệnh bị xử lý bằng hình thức Không xét tặng danh hiệu thi đua năm đến xếp loại Không hoàn thành nhiện vụ năm thì Thủ trưởng đơn vị, lãnh đạo, chỉ huy phụ trách trực tiếp bị xử lý bằng hình thức gì?", "options": ["Phê bình.", "Hạ một bậc danh hiệu thi đua năm.", "Không xét tặng danh hiệu thi đua năm."], "answer": 1, "answerLetter": "B"}, {"n": 80, "q": "Nguyễn tắc xử lý vi phạm điều lệnh CAND nào sau đây là đúng?", "options": ["Mỗi hành vi vi phạm chỉ xử lý một lần. Trong cùng một vụ việc có nhiều cán bộ chiến sĩ vi phạm thì mỗi cán bộ, chiến sĩ đều bị xử lý về hành vi vi phạm của mình.", "Mỗi hành vi vi phạm chỉ xử lý một lần. Trong cùng một vụ việc có nhiều cán bộ, chiến sĩ vi phạm thì xử lý chung tất cả cán bộ, chiến sĩ vi phạm bằng một hình thức xử lý.", "Mỗi hành vi vi phạm chỉ xử lý một lần. Trong cùng một vụ việc có nhiều cán bộ, chiến sĩ vi phạm thì xử lý tập thể đó."], "answer": 0, "answerLetter": "A"}, {"n": 81, "q": "Quy định về xử lý trách nhiệm liên đới nào sau đây là đúng?", "options": ["Đơn vị vi phạm bị xử lý bằng hình thức hạ một bậc danh hiệu thi đua năm, thủ trưởng đơn vị bị xử lý bằng hình thức phê bình.", "Đơn vị vi phạm bị xử lý bằng hình thức hạ một bậc danh hiệu thi đua năm, thủ trưởng đơn vị bị xử lý bằng hình thức hạ một bậc thi đua năm.", "Đơn vị vi phạm bị xử lý bằng hình thức hạ một bặc danh hiệu thi đua năm, thủ trưởng đơn vị bị xử lý bằng hình thức hạ hai bậc thi đua năm."], "answer": 0, "answerLetter": "A"}, {"n": 82, "q": "Cán bộ, chiến sĩ vi phạm điều lệnh CAND bị xử lý bằng hình thức hạ hai bậc danh hiệu thi đua năm đến hạ hai bậc xếp loại cán bộ trong năm thì xử lý trách nhiệm liên đới của lãnh đạo, chỉ huy trực tiếp quản lý cán bộ tại thời điểm cán bộ, chiến sĩ vi phạm nào sau đây là đúng quy định?", "options": ["Lãnh đạo, chỉ huy trực tiếp quản lý cán bộ tại thời điểm cán bộ, chiến sĩ vi phạm bị xử lý bằng hình thức phê bình.", "Lãnh đạo, chỉ huy trực tiếp quản lý cán bộ tại thời điểm cán bộ, chiến sĩ vi phạm bị xử lý bằng hình thức hạ một bậc danh hiệu thi đua năm.", "Lãnh đạo, chỉ huy trực tiếp quản lý cán bộ tại thời điểm cán bộ, chiến sĩ vi phạm bị xử lý bằng hình thức hạ một bậc xếp loại cán bộ trong năm."], "answer": 1, "answerLetter": "B"}, {"n": 83, "q": "Trường hợp nào sau đây cán bộ, chiến sĩ vi phạm điều lệnh bị xử lý kỷ luật mà thủ trưởng đơn vị, lãnh đạo, chỉ huy phụ trách trực tiếp cán bộ, chiến sĩ không bị xử lý trách nhiệm liên đới.", "options": ["Cán bộ, chiến sĩ vi phạm điều lệnh mà trước đó thủ trưởng đơn vị, lãnh đạo, chỉ huy phụ trách trực tiếp đã nhắc nhở, chấn chỉnh bằng văn bản.", "Cán bộ, chiến sĩ vi phạm điều lệnh mà trước đó thủ trưởng đơn vị, lãnh đạo, chỉ huy phụ trách trực tiếp đã nhắc nhở, chấn chỉnh trong cuộc họp, giao ban của đơn vị (nội dung chấn chỉnh, nhắc nhở được ghi trong biên bản họp, giao ban của đơn vị).", "Cả 02 trường hợp trên."], "answer": 2, "answerLetter": "C"}, {"n": 84, "q": "Cán bộ, chiến sĩ không tham gia chào cờ Tổ quốc theo quy định bị áp dụng hình thức xử lý nào là đúng quy định?", "options": ["Phê bình", "Hạ một bậc danh hiệu thi đua năm.", "Hạ một bậc xếp loại cán bộ trong năm."], "answer": 1, "answerLetter": "B"}, {"n": 85, "q": "Cán bộ, chiến sĩ tham gia tập huấn điều lệnh, quân sự, võ thuật Công an nhân dân trong năm mà kết quả không đạt yêu cầu bị xử lý như thế nào là đúng quy định?", "options": ["Hạ một bậc danh hiệu thi đua năm.", "Hạ hai bậc danh hiệu thi đua năm.", "Hạ một bậc xếp loại cán bộ trong năm."], "answer": 0, "answerLetter": "A"}, {"n": 86, "q": "Cán bộ, chiến sĩ vi phạm: Làm việc không có chương trình, kế hoạch; không xây dựng chương trình, kế hoạch công tác tuần bị áp dụng hình thức xử lý nào là đúng quy định?", "options": ["Hạ một bậc danh hiệu thi đua năm.", "Hạ hai bậc danh hiệu thi đua năm.", "Hạ một bậc xếp loại cán bộ trong năm."], "answer": 2, "answerLetter": "C"}, {"n": 87, "q": "Cán bộ, chiến sĩ vi phạm quy định nào sau đây, bị áp dụng hình thức xử lý hạ hai bậc xếp loại cán bộ trong năm.", "options": ["Gây mất đoàn kết nội bộ, ảnh hưởng đến việc thực hiện nhiệm vụ chính trị và uy tín của lực lượng Công an nhân dân.", "Bao che, không xử lý vi phạm điều lệnh hoặc áp dụng các hình thức xử lý vi phạm không đúng quy định, kéo dài thời hạn hoặc trì hoãn việc xử lý vi phạm điều lệnh.", "Cả hai đáp án trên."], "answer": 2, "answerLetter": "C"}, {"n": 88, "q": "Cán bộ, chiến sĩ vi phạm các quy định về trật tự an toàn giao thông bị xử lý như thế nào theo quy định hiện hành?", "options": ["Hạ một bậc danh hiệu thi đua năm.", "Hạ hai bậc danh hiệu thi đua năm.", "Hạ một bậc xếp loại cán bộ trong năm."], "answer": 1, "answerLetter": "B"}, {"n": 89, "q": "Cán bộ, chiến sĩ giao phương tiện, thiết bị kỹ thuật nghiệp vụ phục vụ công tác cho người không có đủ thẩm quyền và điều kiện sử dụng bị xử lý như thế nào theo quy định hiện hành?", "options": ["Phê bình.", "Khiển trách.", "Cảnh cáo."], "answer": 1, "answerLetter": "B"}, {"n": 90, "q": "Cán bộ, chiến sĩ có 02 năm liên tiếp không hoàn thành cùng một nội dung thực hành điều lệnh, quân sự, võ thuật thì bị xử lý như thế nào theo quy định hiện hành?", "options": ["Xem xét hạ một bậc danh hiệu thi đua vào năm thứ 2 không đạt yêu cầu.", "Xem xét hạ một bậc xếp loại cán bộ vào năm thứ 2 không đạt yêu cầu.", "Xem xét hạ hai bậc danh hiệu thi đua vào năm thứ 2 không đạt yêu cầu."], "answer": 0, "answerLetter": "A"}, {"n": 91, "q": "Cán bộ, chiến sĩ đi học tập trung, vừa làm vừa học tại các trường trong Công an nhân dân, không tham gia tập huấn tại đơn vị mà không có xác nhận kết quả tập huấn điều lệnh, quân sự, võ thuật trong năm gửi về đơn vị cử đi học thì bị xử lý như thế nào theo quy định hiện hành?", "options": ["Bỏ tập huấn không có lý do, xếp loại không hoàn thành nhiệm vụ trong năm.", "Bỏ tập huấn không có lý do, xử lý kỷ luật khiển trách.", "Bỏ tập huấn không có lý do, xử lý kỷ luật cảnh cáo."], "answer": 1, "answerLetter": "B"}, {"n": 92, "q": "Trong ngày làm việc, giờ trực, giờ nghỉ trưa của ngày làm việc, ngày trực lãnh đạo, chỉ huy Công an từ cấp đội, cấp xã, cấp đại đội trực thuộc trở lên mà trong máu hoặc hơi thở có nồng độ cồn thì xử lý bằng hình thức nào theo quy định hiện hành?", "options": ["Khiển trách.", "Không xét tặng danh hiệu thi đua năm.", "Cảnh cáo."], "answer": 2, "answerLetter": "C"}, {"n": 93, "q": "Đơn vị có tổng số lượt cán bộ, chiến sĩ vi phạm điều lệnh trong năm có từ 5% đến dưới 10% thì bị xử lý bằng hình thức nào theo quy định hiện hành?", "options": ["Phê bình.", "Hạ một bậc danh hiệu thi đua năm.", "Hạ hai bậc danh hiệu thi đua năm."], "answer": 1, "answerLetter": "B"}, {"n": 94, "q": "Đơn vị vi phạm việc thực hiện không đúng quy định của Bộ trưởng Bộ Công an về nội vụ, vệ sinh trụ sở cơ quan, doanh trại; nơi ăn, ngủ, nghỉ của cán bộ, chiến sĩ; nơi sinh hoạt văn hoá, các trung tâm, cơ sở tập luyện, thi đấu điều lệnh, quân sự, võ thuật, thể dục, thể thao; nơi tiếp khách; nơi tiếp nhận, giải quyết thủ tục hành chính; công tác phòng, chống cháy nổ, thiên tai, dịch bệnh và bảo vệ môi trường bị áp dụng hình thức xử lý nào là đúng quy định?", "options": ["Phê bình.", "Hạ một bậc danh hiệu thi đua năm.", "Hạ một bậc xếp loại đơn vị trong năm."], "answer": 0, "answerLetter": "A"}, {"n": 95, "q": "Đơn vị vi phạm trong giờ làm việc, giờ trực, ngày trực tại đơn vị có từ 5% cán bộ, chiến sĩ trở lên không mặc trang phục Công an nhân dân hoặc mặc trang phục không đúng quy định của Bộ trưởng Bộ Công an trừ trường hợp Bộ có quy định khác; lập bàn thờ, để bát hương, thắp hương không đúng quy định trong phạm vi trụ sở đơn vị, trừ khi tổ chức lễ tang, lập bàn thờ Chủ tịch Hồ Chí Minh, thắp hương trong các ngày nghỉ Tết Nguyên đán theo quy định của Nhà nước, bị áp dụng hình thức xử lý nào là đúng quy định.", "options": ["Phê bình.", "Hạ một bậc danh hiệu thi đua năm.", "Hạ hai bậc danh hiệu thi đua năm."], "answer": 1, "answerLetter": "B"}, {"n": 96, "q": "Đơn vị quán triệt không đầy đủ, kịp thời các văn bản chỉ đạo của cấp trên về công tác điều lệnh, quân sự, võ thuật thì bị xử lý bằng hình thức nào thoe quy định hiện hành?", "options": ["Hạ một bậc danh hiệu thi đua năm.", "Hạ hai bậc danh hiệu thi đua năm.", "Hạ một bậc xếp loại đơn vị trong năm."], "answer": 2, "answerLetter": "C"}, {"n": 97, "q": "Đơn vị không phổ biến, không tổ chức thực hiện chỉ thị, mệnh lệnh, kế hoạch, quyết định, quy trình, quy chế, quy định của cấp trên; bao che, xử lý không đúng quy định hoặc không xử lý vi phạm điều lệnh thì bị xử lý bằng hình thức nào theo quy định hiện hành?", "options": ["Hạ hai bậc xếp loại đơn vị trong năm", "Hạ một bậc xếp loại đơn vị trong năm.", "Hạ hai bậc danh hiệu thi đua năm."], "answer": 0, "answerLetter": "A"}, {"n": 98, "q": "Không tổ chức tập huấn điều lệnh, quân sự, võ thuật trong năm thì Đơn vị, cấp trưởng và cấp phó trực tiếp phụ trách công tác điều lệnh, quân sự, võ thuật bị xử lý như thế nào theo quy định hiện hành?", "options": ["Đơn vị xem xét hạ một bậc thi đua trong năm, cấp trưởng và cấp phó trực tiếp phụ trách xem xét hạ một bậc thi đua trong năm.", "Đơn vị bị xếp loại không hoàn thành nhiệm vụ, cấp trưởng và cấp phó trực tiếp phụ trách xem xét hạ một bậc thi đua trong năm.", "Đơn vị bị xếp loại không hoàn thành nhiệm vụ, cấp trưởng và cấp phó trực tiếp phụ trách xem xét hạ hai bậc thi đua trong năm."], "answer": 2, "answerLetter": "C"}, {"n": 99, "q": "Đơn vị có tổng số lượt cán bộ, chiến sĩ vi phạm điều lệnh trong năm có tỉ lệ từ 15% đến dưới 20% so với biên chế của đơn vị, bị xử lý hình thức nào theo quy định hiện hành?", "options": ["Hạ một bậc danh hiệu thi đua năm.", "Hạ hai bậc danh hiệu thi đua năm.", "Hạ một bậc xếp loại đơn vị trong năm."], "answer": 2, "answerLetter": "C"}, {"n": 100, "q": "Thời gian xử lý vi phạm điều lệnh CAND (trường hợp thông thường) là bao nhiêu ngày (ngày làm việc), kể từ khi nhận được thông báo kết quả kiểm tra điều lệnh?", "options": ["15 ngày.", "20 ngày.", "30 ngày."], "answer": 1, "answerLetter": "B"}]};
+const LETTERS = ["A","B","C","D"];
+const LS_SET = "ontap100_settings_v1";
+const LS_SES = "ontap100_session_v1";
+
+/* ---------------- helpers ---------------- */
+const $ = (id) => document.getElementById(id);
+function esc(s){return String(s).replace(/&/g,"&amp;").replace(/</g,"&lt;").replace(/>/g,"&gt;").replace(/"/g,"&quot;");}
+function rich(s){return esc(s).replace(/\n/g,"<br>");}
+function shuffleArr(a){const r=a.slice(); for(let i=r.length-1;i>0;i--){const j=Math.floor(Math.random()*(i+1)); [r[i],r[j]]=[r[j],r[i]];} return r;}
+function fmtTime(sec){sec=Math.max(0,Math.floor(sec)); const m=String(Math.floor(sec/60)).padStart(2,"0"); const s=String(sec%60).padStart(2,"0"); return m+":"+s;}
+let toastTimer=null;
+function toast(msg){const t=$("toast"); t.textContent=msg; t.classList.add("on"); clearTimeout(toastTimer); toastTimer=setTimeout(()=>t.classList.remove("on"),2200);}
+
+/* ---------------- settings ---------------- */
+let settings = {shuffleQ:false, shuffleA:false, fontStep:1, theme:"", sound:true};
+try{ Object.assign(settings, JSON.parse(localStorage.getItem(LS_SET)||"{}")); }catch(e){}
+const FONT_STEPS = [15.5, 17, 18.5, 20];
+function applySettings(){
+  document.documentElement.style.setProperty("--fs", FONT_STEPS[settings.fontStep]+"px");
+  let th = settings.theme;
+  if(!th){ th = window.matchMedia && window.matchMedia("(prefers-color-scheme: dark)").matches ? "dark" : "light"; }
+  document.documentElement.setAttribute("data-theme", th);
+  $("btnTheme").textContent = th==="dark" ? "☀️" : "🌙";
+  $("btnSound").textContent = settings.sound === false ? "🔇" : "🔊";
+  $("swShuffleQ").checked = !!settings.shuffleQ;
+  $("swShuffleA").checked = !!settings.shuffleA;
+  const meta = document.querySelector('meta[name="theme-color"]');
+  if(meta) meta.setAttribute("content", th==="dark" ? "#221f1c" : "#8f1d22");
+}
+function saveSettings(){ try{ localStorage.setItem(LS_SET, JSON.stringify(settings)); }catch(e){} }
+
+/* ---------------- sound: Web Audio + WAV fallback, unlock on first touch ---------------- */
+let audioCtx = null;
+function ac(){
+  if(settings.sound === false) return null;
+  const AC = window.AudioContext || window.webkitAudioContext;
+  if(!AC) return null;
+  try{
+    if(!audioCtx) audioCtx = new AC();
+    return audioCtx;
+  }catch(e){ return null; }
+}
+function unlockAudio(){
+  if(settings.sound === false) return;
+  const c = ac();
+  if(c && c.state === "suspended"){ try{ const r = c.resume(); if(r && r.catch) r.catch(()=>{}); }catch(e){} }
+}
+document.addEventListener("pointerdown", unlockAudio, {passive:true});
+document.addEventListener("touchend", unlockAudio, {passive:true});
+function tone(ctx, freq, start, dur, type, vol){
+  const t0 = ctx.currentTime + start;
+  const o = ctx.createOscillator(), g = ctx.createGain();
+  o.type = type || "sine"; o.frequency.value = freq;
+  g.gain.setValueAtTime(0.0001, t0);
+  g.gain.exponentialRampToValueAtTime(vol || 0.16, t0 + 0.02);
+  g.gain.exponentialRampToValueAtTime(0.0001, t0 + dur);
+  o.connect(g); g.connect(ctx.destination);
+  o.start(t0); o.stop(t0 + dur + 0.05);
+}
+const JINGLES = {
+  correct: [[659.25, 0, 0.14], [987.77, 0.09, 0.26]],
+  wrong:   [[220, 0, 0.16, "triangle"], [155.56, 0.10, 0.30, "triangle"]],
+  finish:  [[523.25, 0, 0.24], [659.25, 0.09, 0.24], [783.99, 0.18, 0.24], [1046.5, 0.27, 0.36]]
+};
+function scheduleJingle(ctx, notes){
+  notes.forEach(n=>tone(ctx, n[0], n[1], n[2], n[3] || "sine", n[3] ? 0.22 : 0.18));
+}
+function makeWavUri(notes){
+  const sr = 22050;
+  let total = 0; notes.forEach(n=>{ total = Math.max(total, n[1] + n[2]); });
+  const len = Math.max(1, Math.ceil(total * sr));
+  const pcm = new Int16Array(len);
+  notes.forEach(n=>{
+    const f = n[0], start = Math.floor(n[1]*sr), dur = Math.floor(n[2]*sr);
+    for(let i=0;i<dur;i++){
+      const idx = start + i; if(idx >= len) break;
+      const env = Math.min(1, i/(0.008*sr)) * Math.exp(-2.0 * i/dur);
+      pcm[idx] += Math.round(Math.sin(2*Math.PI*f*(i/sr)) * env * 12000);
+    }
+  });
+  const buf = new ArrayBuffer(44 + len*2); const v = new DataView(buf);
+  const wstr = (off, str)=>{ for(let i=0;i<str.length;i++) v.setUint8(off+i, str.charCodeAt(i)); };
+  wstr(0,"RIFF"); v.setUint32(4, 36 + len*2, true); wstr(8,"WAVE"); wstr(12,"fmt ");
+  v.setUint32(16,16,true); v.setUint16(20,1,true); v.setUint16(22,1,true);
+  v.setUint32(24,sr,true); v.setUint32(28,sr*2,true); v.setUint16(32,2,true); v.setUint16(34,16,true);
+  wstr(36,"data"); v.setUint32(40, len*2, true);
+  for(let i=0;i<len;i++) v.setInt16(44 + i*2, Math.max(-32767, Math.min(32767, pcm[i])), true);
+  const bytes = new Uint8Array(buf); let bin = "";
+  for(let i=0;i<bytes.length;i+=8192){ bin += String.fromCharCode.apply(null, bytes.subarray(i, i+8192)); }
+  return "data:audio/wav;base64," + btoa(bin);
+}
+const wavCache = {};
+function wavPlay(kind){
+  try{
+    if(!wavCache[kind]) wavCache[kind] = makeWavUri(JINGLES[kind]);
+    const a = new Audio(wavCache[kind]);
+    a.volume = 1;
+    const pr = a.play();
+    if(pr && pr.catch) pr.catch(()=>{});
+  }catch(e){}
+}
+function playJingle(kind){
+  if(settings.sound === false) return;
+  const notes = JINGLES[kind]; if(!notes) return;
+  const c = ac();
+  if(!c){ wavPlay(kind); return; }
+  if(c.state === "running"){ scheduleJingle(c, notes); return; }
+  let done = false;
+  const fallback = ()=>{ if(!done){ done = true; wavPlay(kind); } };
+  try{
+    const r = c.resume();
+    if(r && r.then){ r.then(()=>{ if(!done){ done = true; scheduleJingle(c, notes); } }).catch(fallback); }
+    else { scheduleJingle(c, notes); return; }
+  }catch(e){ fallback(); return; }
+  setTimeout(fallback, 450);
+}
+function sndCorrect(){ playJingle("correct"); }
+function sndWrong(){ playJingle("wrong"); }
+function sndFinish(){ playJingle("finish"); }
+
+/* ---------------- session ---------------- */
+let S = null;        // session object
+let timerId = null;
+
+function newSession(mode){
+  const order = settings.shuffleQ ? shuffleArr(DATA.questions.map((_,i)=>i)) : DATA.questions.map((_,i)=>i);
+  const optOrder = {};
+  DATA.questions.forEach((q,i)=>{ optOrder[i] = settings.shuffleA ? shuffleArr(q.options.map((_,k)=>k)) : q.options.map((_,k)=>k); });
+  return {
+    mode, name: $("inpName").value.trim(),
+    order, optOrder, pos: 0,
+    rec: {},                       // qi -> {st:'c'|'w'|'s'|'r', pick: origOptionIdx|null}
+    startedAt: Date.now(), elapsedBase: 0, finished: false
+  };
+}
+function saveSession(){ if(S){ try{ localStorage.setItem(LS_SES, JSON.stringify(S)); }catch(e){} } }
+function loadSession(){ try{ const s = JSON.parse(localStorage.getItem(LS_SES)||"null"); return (s && s.order && s.rec) ? s : null; }catch(e){ return null; } }
+function clearSession(){ try{ localStorage.removeItem(LS_SES); }catch(e){} S=null; stopTimer(); }
+function elapsedSec(){ if(!S) return 0; return S.elapsedBase + (S.finished ? 0 : (Date.now()-S.startedAt)/1000); }
+function recOf(qi){ return (S && S.rec[qi]) || {st:"u", pick:null}; }
+function counts(){
+  let c={ok:0, bad:0, skip:0, rev:0, todo:0};
+  if(!S) return c;
+  DATA.questions.forEach((_,qi)=>{ const st=recOf(qi).st;
+    if(st==="c") c.ok++; else if(st==="w") c.bad++; else if(st==="s") c.skip++; else if(st==="r") c.rev++; else c.todo++; });
+  c.done = c.ok + c.bad + c.skip + c.rev;
+  return c;
+}
+
+/* ---------------- view switching ---------------- */
+function show(view){
+  ["home","quiz","result"].forEach(v=>$("view-"+v).classList.toggle("on", v===view));
+  $("bottomNav").classList.toggle("on", view==="quiz");
+  document.body.classList.toggle("quizlock", view==="quiz");
+  window.scrollTo({top:0});
+  setQuizHeight();
+  if(view==="quiz") requestAnimationFrame(fitQuestion);
+  refreshResume();
+}
+function setQuizHeight(){
+  const app = document.querySelector(".appbar");
+  const nav = $("bottomNav");
+  const appH = app ? app.offsetHeight : 48;
+  const navH = nav && nav.classList.contains("on") ? nav.offsetHeight : 0;
+  const h = window.innerHeight - appH - navH - 8;
+  document.documentElement.style.setProperty("--quizh", Math.max(280, h) + "px");
+}
+function fitQuestion(){
+  const card = $("qCard"), wrap = $("cardWrap");
+  if(!card || !wrap || !S) return;
+  let scale = 1;
+  card.style.setProperty("--qscale", "1");
+  card.classList.remove("compact","xcompact");
+  card.style.overflowY = "hidden";
+  let guard = 0;
+  while(card.scrollHeight > wrap.clientHeight + 1 && guard < 14){
+    guard++;
+    if(scale > 0.86){ scale = Math.round((scale - 0.04) * 100) / 100; card.style.setProperty("--qscale", String(scale)); }
+    else if(!card.classList.contains("compact")){ card.classList.add("compact"); }
+    else if(scale > 0.78){ scale = Math.round((scale - 0.04) * 100) / 100; card.style.setProperty("--qscale", String(scale)); }
+    else if(!card.classList.contains("xcompact")){ card.classList.add("xcompact"); }
+    else break;
+  }
+  // last resort (longest question on a very small screen): scroll inside the card only, never clip content
+  if(card.scrollHeight > wrap.clientHeight + 1) card.style.overflowY = "auto";
+}
+function refreshResume(){
+  const saved = loadSession();
+  const box = $("resumeBox");
+  if(!saved || saved.finished){ box.classList.remove("on"); return; }
+  let done=0; Object.values(saved.rec).forEach(r=>{ if(r.st && r.st!=="u") done++; });
+  const modeTxt = saved.mode==="exam" ? "KIỂM TRA" : "HỌC";
+  $("resumeText").innerHTML = "📌 Bạn đang có bài <b>"+modeTxt+"</b> làm dở: đã xử lý <b>"+done+"/100</b> câu"+(saved.name ? " · "+esc(saved.name) : "")+".";
+  box.classList.add("on");
+}
+
+/* ---------------- quiz rendering ---------------- */
+function startTimer(){
+  stopTimer();
+  timerId = setInterval(()=>{ if(S && !$("view-quiz").classList.contains("on")) return; $("timePill").textContent = "⏱ " + fmtTime(elapsedSec()); }, 500);
+}
+function stopTimer(){ if(timerId){ clearInterval(timerId); timerId=null; } }
+
+function renderQuestion(){
+  if(!S) return;
+  const qi = S.order[S.pos];
+  const q = DATA.questions[qi];
+  const rec = recOf(qi);
+  const c = counts();
+  const locked = rec.st==="c" || rec.st==="w" || rec.st==="r";
+
+  $("modeBadge").textContent = S.mode==="exam" ? "KIỂM TRA" : "HỌC · ÔN TẬP";
+  $("modeBadge").classList.toggle("study", S.mode==="study");
+  $("posPill").textContent = "Câu " + (S.pos+1) + "/100";
+  $("scorePill").textContent = S.mode==="exam" ? ("Điểm: " + c.ok) : ("Đúng: " + c.ok + " · Sai: " + c.bad);
+  $("timePill").textContent = "⏱ " + fmtTime(elapsedSec());
+  const pct = Math.round(c.done/100*100);
+  $("progBar").style.width = pct + "%";
+  $("progTxt").textContent = "Đã xử lý " + c.done + "/100 câu";
+  $("progPct").textContent = pct + "%";
+
+  $("qNumLabel").textContent = "CÂU " + q.n;
+  $("qText").innerHTML = rich(q.q);
+  $("tagSkip").classList.toggle("hidden", rec.st!=="s");
+
+  const box = $("optBox"); box.innerHTML = "";
+  const oo = S.optOrder[qi];
+  oo.forEach((origIdx, dispPos)=>{
+    const b = document.createElement("button");
+    b.className = "opt"; b.type = "button";
+    let cls = "";
+    if(locked){
+      b.disabled = true;
+      if(origIdx === q.answer) cls = " correct";
+      else if(rec.pick === origIdx && rec.st==="w") cls = " wrong";
+      else cls = " dim";
+    } else if(rec.pick === origIdx){
+      cls = " picked";
+    }
+    b.className = "opt" + cls;
+    b.innerHTML = '<span class="ltr">'+LETTERS[dispPos]+'</span><span class="txt">'+rich(q.options[origIdx])+"</span>";
+    b.addEventListener("click", ()=>choose(qi, origIdx));
+    box.appendChild(b);
   });
 
-  /* Menu dropdown trên di động */
-  var menuBtn = document.getElementById('menuBtn');
-  var mobileMenu = document.getElementById('mobileMenu');
-  menuBtn.addEventListener('click', function(){
-    var open = mobileMenu.classList.toggle('open');
-    menuBtn.setAttribute('aria-expanded', open ? 'true' : 'false');
-    menuBtn.textContent = open ? '✕' : '☰';
-    menuBtn.setAttribute('aria-label', open ? 'Đóng menu điều hướng' : 'Mở menu điều hướng');
+  const fb = $("feedback");
+  fb.className = "feedback"; fb.innerHTML = ""; fb.style.cssText = "";
+  if(rec.st==="c"){
+    fb.classList.add("on","ok");
+    fb.innerHTML = "✓ Chính xác! " + (S.mode==="exam" ? "Bạn được +1 điểm." : "Làm tốt lắm.") +
+      retryHtml();
+  } else if(rec.st==="w"){
+    fb.classList.add("on","bad");
+    fb.innerHTML = "✗ Chưa đúng. Đáp án đúng là <b>" + LETTERS[oo.indexOf(q.answer)] + ". " + esc(q.options[q.answer].split("\n")[0]) + "</b>" + retryHtml();
+  } else if(rec.st==="r"){
+    fb.classList.add("on","info");
+    fb.innerHTML = "👁 Đáp án đúng là <b>" + LETTERS[oo.indexOf(q.answer)] + ". " + esc(q.options[q.answer].split("\n")[0]) + "</b>" + retryHtml();
+  } else if(rec.st==="s"){
+    fb.classList.add("on"); fb.style.background="var(--warn-bg)"; fb.style.color="var(--warn)";
+    fb.textContent = "⏭ Câu này đang để bỏ qua. Chọn một phương án để trả lời, hoặc bấm Tiếp để sang câu khác.";
+  }
+
+  $("studyTools").classList.toggle("hidden", !(S.mode==="study" && !locked));
+  $("btnSkip").disabled = locked;
+  $("skipLabel").textContent = rec.st==="s" ? "Đã bỏ qua" : "Bỏ qua";
+  $("btnPrev").disabled = S.pos===0;
+  $("nextLabel").textContent = S.pos===S.order.length-1 ? "Câu cuối" : "Tiếp";
+  saveSession();
+  requestAnimationFrame(fitQuestion);
+}
+function retryHtml(){
+  return S && S.mode==="study" ? '<span class="mini"><button type="button" id="btnRetry">↺ Làm lại câu này</button></span>' : "";
+}
+function bindRetry(){
+  const b = $("btnRetry");
+  if(b) b.addEventListener("click", ()=>{
+    const qi = S.order[S.pos];
+    delete S.rec[qi];
+    renderQuestion();
   });
-  mobileMenu.querySelectorAll('a').forEach(function(a){
-    a.addEventListener('click', function(){
-      mobileMenu.classList.remove('open');
-      menuBtn.setAttribute('aria-expanded', 'false');
-      menuBtn.textContent = '☰';
+}
+
+function choose(qi, origIdx){
+  if(!S || S.finished) return;
+  const rec = recOf(qi);
+  if(rec.st==="c" || rec.st==="w" || rec.st==="r") return;  // đã khóa
+  const q = DATA.questions[qi];
+  S.rec[qi] = { st: origIdx===q.answer ? "c" : "w", pick: origIdx };
+  if(origIdx===q.answer) sndCorrect(); else sndWrong();
+  renderQuestion(); bindRetry();
+  if(navigator.vibrate){ try{ navigator.vibrate(origIdx===q.answer ? 30 : [40,40,40]); }catch(e){} }
+}
+function doSkip(){
+  if(!S || S.finished) return;
+  const qi = S.order[S.pos];
+  const rec = recOf(qi);
+  if(rec.st==="c" || rec.st==="w" || rec.st==="r") return;
+  if(rec.st!=="s"){ S.rec[qi] = {st:"s", pick:null}; saveSession(); }
+  if(S.pos < S.order.length-1){ S.pos++; renderQuestion(); }
+  else { renderQuestion(); toast("Đây là câu cuối — câu này đã được đánh dấu bỏ qua."); }
+}
+function animateCard(dir){
+  const el = $("qCard"); if(!el) return;
+  el.classList.remove("anim-next","anim-prev");
+  void el.offsetWidth;
+  el.classList.add(dir === "next" ? "anim-next" : "anim-prev");
+}
+function goNext(fromSwipe){
+  if(!S) return;
+  if(S.pos < S.order.length-1){ S.pos++; renderQuestion(); if(fromSwipe === true) animateCard("next"); }
+  else { toast("Bạn đang ở câu cuối. Bấm “Kết thúc” để xem kết quả."); }
+}
+function goPrev(fromSwipe){ if(S && S.pos>0){ S.pos--; renderQuestion(); if(fromSwipe === true) animateCard("prev"); } }
+function jumpTo(pos){ S.pos = pos; renderQuestion(); closeOverlay("gridOverlay"); }
+
+/* ---------------- swipe: right = next question, left = previous ---------------- */
+let swStart = null, lastSwipeAt = 0, lastTouchEvt = null;
+function swipePoint(e){
+  if(e.changedTouches && e.changedTouches[0]) return e.changedTouches[0];
+  if(e.touches && e.touches[0]) return e.touches[0];
+  return e;
+}
+function isSynthPointer(pt){
+  return !!lastTouchEvt && (Date.now() - lastTouchEvt.t < 600) &&
+    Math.abs(pt.clientX - lastTouchEvt.x) < 40 && Math.abs(pt.clientY - lastTouchEvt.y) < 40;
+}
+function swipeDown(e, isTouch){
+  const pt = swipePoint(e);
+  if(pt.clientX === undefined) return;
+  if(isTouch){ lastTouchEvt = {t: Date.now(), x: pt.clientX, y: pt.clientY}; }
+  else if(isSynthPointer(pt)) return;
+  swStart = {x: pt.clientX, y: pt.clientY, t: Date.now()};
+}
+function swipeUp(e, isTouch){
+  const pt = swipePoint(e);
+  if(isTouch){ lastTouchEvt = {t: Date.now(), x: pt.clientX, y: pt.clientY}; }
+  if(!swStart) return;
+  if(!isTouch && isSynthPointer(pt)){ swStart = null; return; }
+  const dx = pt.clientX - swStart.x, dy = pt.clientY - swStart.y;
+  const dt = Date.now() - swStart.t;
+  swStart = null;
+  if(dt > 900) return;
+  if(Math.abs(dx) >= 60 && Math.abs(dx) > Math.abs(dy) * 1.4){
+    lastSwipeAt = Date.now();
+    if(dx > 0) goNext(true); else goPrev(true);
+  }
+}
+(function initSwipe(){
+  const v = $("view-quiz");
+  v.addEventListener("touchstart", (e)=>swipeDown(e, true), {passive:true});
+  v.addEventListener("touchend", (e)=>swipeUp(e, true), {passive:true});
+  v.addEventListener("pointerdown", (e)=>swipeDown(e, false), {passive:true});
+  v.addEventListener("pointerup", (e)=>swipeUp(e, false), {passive:true});
+  // a real swipe must not also trigger the click under the finger
+  v.addEventListener("click", (e)=>{
+    if(Date.now() - lastSwipeAt < 400){ e.stopPropagation(); e.preventDefault(); }
+  }, true);
+})();
+
+/* ---------------- grid ---------------- */
+function renderGrid(){
+  const g = $("gridBox"); g.innerHTML = "";
+  S.order.forEach((qi,pos)=>{
+    const st = recOf(qi).st;
+    const b = document.createElement("button");
+    b.type="button";
+    b.className = "cell" + (st==="c"?" c":st==="w"?" w":st==="s"?" s":st==="r"?" r":"") + (pos===S.pos?" cur":"");
+    b.textContent = DATA.questions[qi].n;
+    b.addEventListener("click", ()=>jumpTo(pos));
+    g.appendChild(b);
+  });
+}
+function openOverlay(id){ $(id).classList.add("on"); }
+function closeOverlay(id){ $(id).classList.remove("on"); }
+
+/* ---------------- finish & results ---------------- */
+function askFinish(){
+  if(!S) return;
+  const c = counts();
+  const open = c.skip + c.todo;
+  if(open===0){ doFinish(); return; }
+  $("cfTitle").textContent = S.mode==="exam" ? "Nộp bài kiểm tra?" : "Kết thúc buổi học?";
+  $("cfText").innerHTML = "Bạn còn <b>" + open + " câu</b> chưa trả lời (bỏ qua: " + c.skip + ", chưa làm: " + c.todo + "). " +
+    (S.mode==="exam" ? "Các câu này được tính 0 điểm." : "Bạn có thể quay lại làm tiếp bất cứ lúc nào.");
+  openOverlay("confirmOverlay");
+}
+function doFinish(){
+  closeOverlay("confirmOverlay"); closeOverlay("gridOverlay");
+  if(!S) return;
+  S.finished = true;
+  S.elapsedBase = elapsedSec();
+  saveSession(); stopTimer(); sndFinish();
+  renderResult();
+  show("result");
+}
+function renderResult(){
+  const c = counts();
+  $("resModeLabel").textContent = S.mode==="exam" ? "Kết quả kiểm tra" : "Tổng kết buổi học";
+  $("resScore").textContent = c.ok;
+  $("stOk").textContent = c.ok; $("stBad").textContent = c.bad;
+  $("stSkip").textContent = c.skip; $("stTodo").textContent = c.todo + (S.mode==="study" ? c.rev : 0);
+  if(S.mode==="study"){ $("stTodoLabel").textContent = "Chưa trả lời"; } else { $("stTodoLabel").textContent = "Chưa làm"; }
+  let verdict;
+  if(S.mode==="study"){
+    verdict = c.done>=100 ? "Đã ôn xong 100 câu — rất tốt!" : "Đã xử lý " + c.done + "/100 câu";
+  } else if(c.ok>=90) verdict = "Xuất sắc! 🎉";
+  else if(c.ok>=75) verdict = "Khá tốt, ôn thêm vài câu nữa nhé";
+  else if(c.ok>=50) verdict = "Đạt mức cơ bản — nên ôn lại các câu sai";
+  else verdict = "Cần ôn tập thêm — xem lại các câu sai bên dưới";
+  $("resVerdict").textContent = verdict;
+  const when = new Date().toLocaleString("vi-VN");
+  $("resWho").textContent = (S.name ? S.name + " · " : "") + "Thời gian làm: " + fmtTime(S.elapsedBase) + " · " + when;
+  document.querySelectorAll("#revTabs .tab").forEach(t=>{
+    const f=t.dataset.f;
+    const n = f==="all"?100 : f==="wrong"?c.bad : f==="right"?c.ok : (c.skip + c.todo + c.rev);
+    t.textContent = (f==="all"?"Tất cả":f==="wrong"?"Câu sai":f==="right"?"Câu đúng":"Bỏ qua / chưa làm") + " (" + n + ")";
+  });
+  renderReview(currentFilter);
+}
+let currentFilter = "all";
+function renderReview(filter){
+  currentFilter = filter;
+  document.querySelectorAll("#revTabs .tab").forEach(t=>t.classList.toggle("on", t.dataset.f===filter));
+  const list = $("revList"); list.innerHTML = "";
+  let shown = 0;
+  S.order.forEach((qi)=>{
+    const q = DATA.questions[qi];
+    const rec = recOf(qi);
+    const oo = S.optOrder[qi];
+    const match =
+      filter==="all" ? true :
+      filter==="wrong" ? rec.st==="w" :
+      filter==="right" ? rec.st==="c" :
+      (rec.st==="s" || rec.st==="u" || rec.st==="r");
+    if(!match) return;
+    shown++;
+    const div = document.createElement("div");
+    div.className = "rev";
+    let html = "<h4>Câu " + q.n + ". " + rich(q.q) + "</h4>";
+    oo.forEach((origIdx, dispPos)=>{
+      let cls = "";
+      if(origIdx===q.answer) cls += " correct";
+      if(rec.pick===origIdx && rec.st==="w") cls += " mine-wrong";
+      html += '<div class="ro'+cls+'"><span class="ltr">'+LETTERS[dispPos]+'.</span><span>'+rich(q.options[origIdx])+"</span></div>";
     });
+    let note = "";
+    if(rec.st==="c") note = '<div class="note" style="color:var(--ok)">✓ Bạn trả lời đúng (+1 điểm)</div>';
+    else if(rec.st==="w") note = '<div class="note" style="color:var(--bad)">✗ Bạn chọn ' + LETTERS[oo.indexOf(rec.pick)] + ' — đáp án đúng: ' + LETTERS[oo.indexOf(q.answer)] + "</div>";
+    else if(rec.st==="r") note = '<div class="note" style="color:var(--info)">👁 Đã xem đáp án</div>';
+    else if(rec.st==="s") note = '<div class="note" style="color:var(--warn)">⏭ Đã bỏ qua — đáp án đúng: ' + LETTERS[oo.indexOf(q.answer)] + "</div>";
+    else note = '<div class="note" style="color:var(--muted)">— Chưa làm — đáp án đúng: ' + LETTERS[oo.indexOf(q.answer)] + "</div>";
+    div.innerHTML = html + note;
+    list.appendChild(div);
   });
+  if(shown===0){
+    list.innerHTML = '<p style="text-align:center; color:var(--muted); padding:18px 4px">Không có câu nào trong nhóm này. 🎉</p>';
+  }
+}
+function shareResult(){
+  const c = counts();
+  const lines = [
+    "KẾT QUẢ " + (S.mode==="exam" ? "KIỂM TRA" : "ÔN TẬP") + " — Bộ đề 100 câu ĐL, QS, VT 2026",
+    S.name ? "Họ tên: " + S.name : null,
+    "Điểm: " + c.ok + "/100 (đúng " + c.ok + ", sai " + c.bad + ", bỏ qua " + c.skip + ", chưa làm " + c.todo + ")",
+    "Thời gian làm: " + fmtTime(S.elapsedBase),
+    "Ngày: " + new Date().toLocaleString("vi-VN")
+  ].filter(Boolean).join("\n");
+  if(navigator.share){
+    navigator.share({text: lines}).catch(()=>{});
+  } else if(navigator.clipboard){
+    navigator.clipboard.writeText(lines).then(()=>toast("Đã sao chép kết quả — dán vào nơi cần gửi.")).catch(()=>toast("Không sao chép được, hãy chụp màn hình kết quả."));
+  } else { toast("Hãy chụp màn hình kết quả để gửi."); }
+}
 
-  /* Mục lục dropdown */
-  var tocSelect = document.getElementById('tocSelect');
-  tocSelect.addEventListener('change', function(){
-    if (this.value) { window.location.hash = this.value; }
+
+/* ---------------- PDF export (canvas -> JPEG -> PDF, fully offline) ---------------- */
+function dataUrlToBytes(dataUrl){
+  const b64 = dataUrl.split(",")[1];
+  const bin = atob(b64);
+  const bytes = new Uint8Array(bin.length);
+  for(let i=0;i<bin.length;i++) bytes[i] = bin.charCodeAt(i);
+  return bytes;
+}
+function buildPdfBlob(pages){
+  const enc = new TextEncoder();
+  const parts = []; let offset = 0;
+  const push = (data)=>{ const b = typeof data==="string" ? enc.encode(data) : data; parts.push(b); offset += b.length; };
+  const objOffsets = [];
+  const beginObj = (num)=>{ objOffsets[num] = offset; push(num + " 0 obj\n"); };
+  const n = pages.length;
+  push("%PDF-1.4\n");
+  beginObj(1); push("<< /Type /Catalog /Pages 2 0 R >>\nendobj\n");
+  const kids = pages.map((_,i)=> (3+3*i) + " 0 R").join(" ");
+  beginObj(2); push("<< /Type /Pages /Kids [" + kids + "] /Count " + n + " >>\nendobj\n");
+  pages.forEach((pg,i)=>{
+    const pNum = 3+3*i, cNum = 4+3*i, iNum = 5+3*i;
+    beginObj(pNum);
+    push("<< /Type /Page /Parent 2 0 R /MediaBox [0 0 595 842] /Resources << /XObject << /Im0 " + iNum + " 0 R >> >> /Contents " + cNum + " 0 R >>\nendobj\n");
+    const content = "q 595 0 0 842 0 0 cm /Im0 Do Q";
+    beginObj(cNum);
+    push("<< /Length " + content.length + " >>\nstream\n" + content + "\nendstream\nendobj\n");
+    beginObj(iNum);
+    push("<< /Type /XObject /Subtype /Image /Width " + pg.w + " /Height " + pg.h + " /ColorSpace /DeviceRGB /BitsPerComponent 8 /Filter /DCTDecode /Length " + pg.jpeg.length + " >>\nstream\n");
+    push(pg.jpeg);
+    push("\nendstream\nendobj\n");
   });
+  const xrefPos = offset;
+  const total = 3 + 3*n;
+  push("xref\n0 " + total + "\n");
+  push("0000000000 65535 f \n");
+  for(let i=1;i<total;i++){ push(String(objOffsets[i]).padStart(10,"0") + " 00000 n \n"); }
+  push("trailer\n<< /Size " + total + " /Root 1 0 R >>\nstartxref\n" + xrefPos + "\n%%EOF");
+  return new Blob(parts, {type:"application/pdf"});
+}
+function wrapLines(ctx, text, maxW){
+  const out = [];
+  String(text).split("\n").forEach(seg=>{
+    const words = seg.split(/\s+/).filter(Boolean);
+    if(!words.length){ out.push(""); return; }
+    let cur = words[0];
+    for(let i=1;i<words.length;i++){
+      const t = cur + " " + words[i];
+      if(ctx.measureText(t).width <= maxW) cur = t; else { out.push(cur); cur = words[i]; }
+    }
+    out.push(cur);
+  });
+  return out;
+}
+function renderResultPdf(){
+  const c = counts();
+  const PW = 1240, PH = 1754, MX = 70, MAXW = PW - 2*MX;
+  const canvases = [];
+  let cv, ctx, y;
+  function newPage(){
+    cv = document.createElement("canvas"); cv.width = PW; cv.height = PH;
+    ctx = cv.getContext("2d");
+    if(!ctx) throw new Error("no canvas 2d context");
+    ctx.fillStyle = "#ffffff"; ctx.fillRect(0,0,PW,PH);
+    ctx.textBaseline = "top";
+    canvases.push(cv); y = 64;
+  }
+  function ensure(space){ if(y + space > PH - 90) newPage(); }
+  function draw(text, opt){
+    const o = Object.assign({size:30, bold:false, color:"#1d1a16", align:"left", lh:null, gap:12}, opt||{});
+    const fontStr = (o.bold ? "700 " : "400 ") + o.size + "px Arial, sans-serif";
+    const lh = o.lh || Math.round(o.size*1.35);
+    ctx.font = fontStr;
+    wrapLines(ctx, text, MAXW).forEach(line=>{
+      ensure(lh);
+      ctx.font = fontStr; ctx.fillStyle = o.color; ctx.textBaseline = "top";
+      const w = ctx.measureText(line).width;
+      const x = o.align==="center" ? MX + (MAXW - w)/2 : MX;
+      ctx.fillText(line, x, y);
+      y += lh;
+    });
+    y += o.gap;
+  }
+  function divider(){
+    ensure(34);
+    ctx.fillStyle = "#c9a227"; ctx.fillRect(MX, y, MAXW, 4);
+    y += 32;
+  }
+  newPage();
+  draw(S.mode==="exam" ? "PHIẾU KẾT QUẢ KIỂM TRA" : "PHIẾU KẾT QUẢ ÔN TẬP", {size:42, bold:true, color:"#8f1d22", align:"center", gap:6});
+  draw("Bộ đề 100 câu hỏi về công tác tập huấn Điều lệnh, Quân sự, Võ thuật — năm 2026", {size:27, color:"#6f6a61", align:"center"});
+  divider();
+  draw("Họ tên: " + (S.name || "—"), {size:30});
+  draw("Chế độ: " + (S.mode==="exam" ? "Kiểm tra (mỗi câu đúng 1 điểm, tổng 100 điểm)" : "Học — ôn tập"), {size:30});
+  draw("Ngày làm bài: " + new Date().toLocaleString("vi-VN"), {size:30});
+  draw("Thời gian làm bài: " + fmtTime(S.elapsedBase), {size:30});
+  draw((S.mode==="exam" ? "ĐIỂM: " : "SỐ CÂU ĐÚNG: ") + c.ok + "/100", {size:38, bold:true, color:"#8f1d22", gap:6});
+  let stat = "Đúng: " + c.ok + " · Sai: " + c.bad + " · Bỏ qua: " + c.skip + " · Chưa làm: " + c.todo;
+  if(c.rev) stat += " · Đã xem đáp án: " + c.rev;
+  draw(stat, {size:29, color:"#44403a"});
+  divider();
+  draw("BẢNG ĐỐI CHIẾU 100 CÂU", {size:33, bold:true, gap:14});
+  const sorted = DATA.questions.map((q,qi)=>({q,qi})).sort((a,b)=>a.q.n-b.q.n);
+  sorted.forEach(({q,qi})=>{
+    const rec = recOf(qi); const oo = S.optOrder[qi];
+    const ansL = LETTERS[oo.indexOf(q.answer)];
+    let txt, color;
+    if(rec.st==="c"){ txt = "Câu " + q.n + ": ĐÚNG — chọn " + LETTERS[oo.indexOf(rec.pick)]; color = "#177245"; }
+    else if(rec.st==="w"){ txt = "Câu " + q.n + ": SAI — chọn " + LETTERS[oo.indexOf(rec.pick)] + ", đáp án đúng " + ansL; color = "#b3261e"; }
+    else if(rec.st==="s"){ txt = "Câu " + q.n + ": BỎ QUA — đáp án đúng " + ansL; color = "#8a6d00"; }
+    else if(rec.st==="r"){ txt = "Câu " + q.n + ": ĐÃ XEM ĐÁP ÁN — đáp án đúng " + ansL; color = "#175cd3"; }
+    else { txt = "Câu " + q.n + ": CHƯA LÀM — đáp án đúng " + ansL; color = "#6f6a61"; }
+    draw(txt, {size:28, color:color, gap:7, lh:36});
+  });
+  divider();
+  draw("CHI TIẾT CÂU CHƯA ĐÚNG", {size:33, bold:true, gap:14});
+  const wrongs = sorted.filter(({qi})=> recOf(qi).st !== "c");
+  if(!wrongs.length){
+    draw("Đã trả lời đúng 100/100 câu. Xuất sắc!", {size:30, color:"#177245"});
+  } else {
+    wrongs.forEach(({q,qi})=>{
+      const rec = recOf(qi); const oo = S.optOrder[qi];
+      const ansL = LETTERS[oo.indexOf(q.answer)];
+      draw("Câu " + q.n + ". " + q.q, {size:29, bold:true, gap:5});
+      draw(rec.pick !== null && rec.pick !== undefined
+        ? ("Bạn chọn: " + LETTERS[oo.indexOf(rec.pick)] + " · Đáp án đúng: " + ansL)
+        : ("Chưa trả lời · Đáp án đúng: " + ansL), {size:28, color:"#b3261e", gap:5});
+      draw("Đáp án đúng: " + q.options[q.answer], {size:28, color:"#177245", gap:16});
+    });
+  }
+  canvases.forEach((cvs,i)=>{
+    const g = cvs.getContext("2d");
+    g.font = "400 24px Arial, sans-serif"; g.fillStyle = "#8a8378"; g.textBaseline = "top";
+    const t = "Trang " + (i+1) + "/" + canvases.length;
+    g.fillText(t, (PW - g.measureText(t).width)/2, PH - 56);
+  });
+  const pages = canvases.map(cvs=>({ jpeg: dataUrlToBytes(cvs.toDataURL("image/jpeg", 0.92)), w: PW, h: PH }));
+  return buildPdfBlob(pages);
+}
+function exportPdf(){
+  if(!S) return;
+  const btns = [$("btnPdf"), $("btnPdf2")].filter(Boolean);
+  btns.forEach(b=>{ b.dataset.old = b.textContent; b.disabled = true; b.textContent = "⏳ Đang tạo PDF..."; });
+  setTimeout(()=>{
+    try{
+      const blob = renderResultPdf();
+      const now = new Date();
+      const pad = (x)=>String(x).padStart(2,"0");
+      const fname = "Ket_qua_" + (S.mode==="exam" ? "kiem_tra" : "on_tap") + "_" + now.getFullYear() + pad(now.getMonth()+1) + pad(now.getDate()) + "_" + pad(now.getHours()) + pad(now.getMinutes()) + ".pdf";
+      const url = URL.createObjectURL(blob);
+      const a = document.createElement("a");
+      a.href = url; a.download = fname;
+      document.body.appendChild(a); a.click(); a.remove();
+      setTimeout(()=>{ try{ URL.revokeObjectURL(url); }catch(e){} }, 4000);
+      toast("Đã xuất file PDF kết quả — kiểm tra thư mục Tải xuống.");
+    }catch(e){
+      toast("Máy không tạo được PDF trực tiếp — hãy dùng nút “In phiếu kết quả” để lưu PDF thay thế.");
+    }
+    btns.forEach(b=>{ b.disabled = false; b.textContent = b.dataset.old || b.textContent; });
+  }, 60);
+}
+function printReport(){
+  renderReview("all");
+  setTimeout(()=>{ try{ window.print(); }catch(e){} }, 80);
+}
+
+/* ---------------- events ---------------- */
+$("cardStudy").addEventListener("click", ()=>{ S = newSession("study"); saveSession(); show("quiz"); renderQuestion(); startTimer(); });
+$("cardExam").addEventListener("click", ()=>{ S = newSession("exam"); saveSession(); show("quiz"); renderQuestion(); startTimer(); });
+$("btnResume").addEventListener("click", ()=>{
+  const saved = loadSession(); if(!saved) return;
+  S = saved; S.startedAt = Date.now();
+  show("quiz"); renderQuestion(); startTimer();
+});
+$("btnDiscard").addEventListener("click", ()=>{ clearSession(); refreshResume(); toast("Đã xóa bài làm dở."); });
+$("inpName").addEventListener("input", ()=>{ const saved = loadSession(); });
+$("btnPrev").addEventListener("click", ()=>goPrev(false));
+$("btnNext").addEventListener("click", ()=>goNext(false));
+$("btnSkip").addEventListener("click", doSkip);
+$("btnGrid").addEventListener("click", ()=>{ renderGrid(); openOverlay("gridOverlay"); });
+$("btnCloseGrid").addEventListener("click", ()=>closeOverlay("gridOverlay"));
+$("btnFinishTop").addEventListener("click", askFinish);
+$("btnFinishGrid").addEventListener("click", ()=>{ closeOverlay("gridOverlay"); askFinish(); });
+$("btnCfBack").addEventListener("click", ()=>{
+  closeOverlay("confirmOverlay");
+  const idx = S.order.findIndex(qi => { const st = recOf(qi).st; return st==="s" || st==="u"; });
+  if(idx>=0){ S.pos = idx; renderQuestion(); }
+});
+$("btnCfSubmit").addEventListener("click", doFinish);
+$("btnCfCancel").addEventListener("click", ()=>closeOverlay("confirmOverlay"));
+$("btnReveal").addEventListener("click", ()=>{
+  if(!S) return; const qi = S.order[S.pos]; const rec = recOf(qi);
+  if(rec.st==="u" || rec.st==="s"){ S.rec[qi] = {st:"r", pick: rec.pick}; renderQuestion(); bindRetry(); }
+});
+$("btnAgain").addEventListener("click", ()=>{ const m = S.mode; const nm = S.name || ""; clearSession(); S = newSession(m); if(nm && !S.name) S.name = nm; saveSession(); show("quiz"); renderQuestion(); startTimer(); });
+$("btnShare").addEventListener("click", shareResult);
+$("btnPdf").addEventListener("click", exportPdf);
+$("btnPdf2").addEventListener("click", exportPdf);
+$("btnPrint").addEventListener("click", printReport);
+$("btnTestSound").addEventListener("click", ()=>{
+  if(settings.sound === false){ settings.sound = true; saveSettings(); applySettings(); }
+  sndCorrect();
+  setTimeout(()=>sndWrong(), 600);
+});
+$("btnSound").addEventListener("click", ()=>{
+  settings.sound = settings.sound === false ? true : false;
+  saveSettings(); applySettings();
+  if(settings.sound) sndCorrect();
+});
+$("btnHome").addEventListener("click", ()=>{ if(S && !S.finished){ S.elapsedBase = elapsedSec(); S.startedAt = Date.now(); saveSession(); } show("home"); });
+$("btnHome2").addEventListener("click", ()=>{ show("home"); });
+document.querySelectorAll("#revTabs .tab").forEach(t=>t.addEventListener("click", ()=>renderReview(t.dataset.f)));
+$("swShuffleQ").addEventListener("change", (e)=>{ settings.shuffleQ = e.target.checked; saveSettings(); });
+$("swShuffleA").addEventListener("change", (e)=>{ settings.shuffleA = e.target.checked; saveSettings(); });
+$("btnFontUp").addEventListener("click", ()=>{ settings.fontStep = Math.min(FONT_STEPS.length-1, settings.fontStep+1); saveSettings(); applySettings(); setQuizHeight(); requestAnimationFrame(fitQuestion); });
+$("btnFontDown").addEventListener("click", ()=>{ settings.fontStep = Math.max(0, settings.fontStep-1); saveSettings(); applySettings(); setQuizHeight(); requestAnimationFrame(fitQuestion); });
+$("btnTheme").addEventListener("click", ()=>{
+  const cur = document.documentElement.getAttribute("data-theme");
+  settings.theme = cur==="dark" ? "light" : "dark"; saveSettings(); applySettings();
+});
+["gridOverlay","confirmOverlay"].forEach(id=>{
+  $(id).addEventListener("click", (e)=>{ if(e.target===$(id)) closeOverlay(id); });
+});
+window.addEventListener("resize", ()=>{ setQuizHeight(); if(S && $("view-quiz").classList.contains("on")) requestAnimationFrame(fitQuestion); });
+document.addEventListener("keydown", (e)=>{
+  if(!$("view-quiz").classList.contains("on") || !S) return;
+  if(e.key==="ArrowRight") goNext();
+  if(e.key==="ArrowLeft") goPrev();
+});
+window.addEventListener("beforeunload", ()=>{ if(S && !S.finished){ S.elapsedBase = elapsedSec(); S.startedAt = Date.now(); saveSession(); } });
+
+/* ---------------- init ---------------- */
+applySettings();
+show("home");
 </script>
 </body>
 </html>
